@@ -128,8 +128,26 @@ textarea {
   background-color: #222;
   border-color: #080808;
   color: #ccc;
+  height:30px;
 }
-
+.partner-hero-container {
+  background: url(/assets/banner1.jpg) no-repeat center;
+  background-size: cover;
+}
+.hero-container {
+  color: black;
+  background: url(/assets/banner1.jpg) no-repeat top center;
+  background-size: cover;
+  padding-bottom: 140px;
+  padding-top: 50px;
+}
+#navbar-custom-theme {
+  background-color: #B3E17C;
+  border-color: #96D770;
+}
+.main-color {
+  color: #137E2C;
+}
 
 
 
