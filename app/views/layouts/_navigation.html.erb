@@ -1,18 +1,48 @@
 <%# navigation styled for Bootstrap 4.0 %>
-<div class="container">
-  <nav class="navbar navbar-dark bg-inverse">
-    <ul class="nav navbar-nav clearfix">
-      <li class="nav-item">
-        <button class="navbar-toggler hidden-sm-up nav-link" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
-          &#9776;
-        </button>
-      </li>
-    </ul>
-    <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-      <%= link_to "Rails bootstrap", root_path, class: 'navbar-brand' %>
-      <ul class="nav navbar-nav">
-        <%= render 'layouts/navigation_links' %>
+<!--<div class="container">
+  <nav class="navbar navbar-dark navbar-inverse" style="display:-webkit-box;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Pepperminty Marketing</a>
+      </div>
+      <ul class="nav navbar-toggleable navbar-nav">
+        <%#= render 'layouts/navigation_links' %>
       </ul>
     </div>
   </nav>
-</div>
+</div>-->
+<header class="header">
+  <div class="container topnav">
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+      <div class="container topnav">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">
+          <span class="nav-image-logo">
+          </span>
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav ">
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">Pepperminty Marketing</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-toggleable navbar-nav navbar-right">
+
+            <%= render 'layouts/navigation_links' %>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+</header>
