@@ -6,6 +6,6 @@ class ApplicationController < ActionController::Base
   private
 
   def show_flash
-    flash.now[:notice] = "Found the services page!" if request.path == '/pages/services'
+    #flash.now[:notice] = "Found the services page!" if request.path == '/pages/services'
   end
 end
