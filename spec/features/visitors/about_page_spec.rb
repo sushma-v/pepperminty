@@ -1,15 +1,15 @@
 # Feature: 'About' page
 #   As a visitor
-#   I want to visit an 'about' page
-#   So I can learn more about the website
+#   I want to visit an 'services' page
+#   So I can learn more services the website
 feature 'About page' do
 
-  # Scenario: Visit the 'about' page
+  # Scenario: Visit the 'services' page
   #   Given I am a visitor
-  #   When I visit the 'about' page
+  #   When I visit the 'services' page
   #   Then I see "About the Website"
-  scenario 'Visit the about page' do
-    visit 'pages/about'
+  scenario 'Visit the services page' do
+    visit 'pages/services'
     expect(page).to have_content 'About the Website'
   end
 
