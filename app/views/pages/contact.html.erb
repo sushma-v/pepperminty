@@ -6,7 +6,14 @@
 
 <hr class="line-color"/>
 
-<div class="row alt-content-container responsive-content-container" style="margin-bottom: 5%;margin-top: 6%;">
+<div class="row alt-content-container responsive-content-container" style="margin-bottom: 5%;margin-top: 5%;">
+
+  <div class="col-md-6 text-left">
+    <div>
+      <p>Let’s chat, perhaps over some peppermint tea (or coffee, you decide)?</p>
+      <img src="/assets/teacup.jpg" alt="Contact">
+    </div>
+  </div>
 
   <div class="col-md-6 text-left">
   <%= form_tag('/contacts') do %>
@@ -28,9 +35,16 @@
     </div>
     <div class="col-md-12 text-center">
       <div class="form-group">
-        <div>
-          <%= text_area "post", "body", "cols": 20, "rows": 10, placeholder: 'Message', class: "form-control" %>
-        </div>
+        <% @categories = [["Select Category", ''],
+                          ["Website Design & Development", 1],
+                          ["Search Engine Optimisation", 2],
+                          ["Advertising", 3],
+                          ["Social Media", 4],
+                          ["Others", 5]] %>
+        <%= select_tag "category", options_for_select(@categories), class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= text_area "post", "body", "cols": 20, "rows": 10, placeholder: 'Message', class: "form-control" %>
       </div>
       <div class="form-group">
         <div class="text-right">
@@ -39,12 +53,6 @@
       </div>
     </div>
   <% end %>
-  </div>
-
-  <div class="col-md-6 text-left">
-    <div class="">
-      <p>Contact us for any of your queries, suggestions, or quotations. We will get back to you right away.</p>
-    </div>
   </div>
 
 </div>
