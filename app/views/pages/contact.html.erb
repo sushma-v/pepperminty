@@ -1,10 +1,57 @@
-<% content_for :title do %>Contact<% end %>
+<% content_for :title do %>Contact Us<% end %>
 
-<div class="jumbotron">
-  <h1 class="display-4">Contact Us</h1>
-  <p class="lead">
-    This web application was created with
-    <%= link_to('Rails Composer', 'http://railsapps.github.io/rails-composer/') %>
-    from the <%= link_to('RailsApps project', 'http://railsapps.github.io/') %>.
-  </p>
+<div class='row text-center'>
+  <h1>Contact Us</h1>
 </div>
+
+<hr class="line-color"/>
+
+
+<div class="row alt-content-container responsive-content-container">
+  <!--<div class="col-md-6 text-left" style="padding:15px;">
+    <h3>Website Design & Development</h3>
+  </div>
+  <div class="col-md-6 text-center auto-margin">
+    Image
+  </div>-->
+
+<form class="" action="/action_page.php" style="margin-top:5%;">
+  <div class="col-md-6 text-left">
+    <div class="form-group">
+      <div>
+        <input type="text" class="form-control" id="pwd" placeholder="Name">
+      </div>
+    </div>
+    <div class="form-group">
+      <div>
+        <input type="email" class="form-control" id="email" placeholder="Email">
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 text-left">
+    <div class="form-group">
+      <div>
+        <input type="text" class="form-control" id="company_name" placeholder="Company Name">
+      </div>
+    </div>
+    <div class="form-group">
+      <div>
+        <input type="text" class="form-control" id="phone" placeholder="Telephone">
+      </div>
+    </div>
+  </div>
+  <div class="col-md-12 text-center">
+  <div class="form-group">
+    <div>
+      <%= text_area "post", "body", "cols": 20, "rows": 10, placeholder: 'Message', class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="text-right">
+      <button type="submit" class="btn btn-default">Submit</button>
+    </div>
+  </div>
+  </div>
+</form>
+
+</div><hr/>
