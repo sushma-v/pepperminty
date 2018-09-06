@@ -309,6 +309,19 @@ textarea {
   padding-bottom: 140px;
   padding-top: 50px;
 }
+.hero-container h1{
+  color: $hero-primary-color;
+}
+.hero-container h3{
+  line-height: 1.6em;
+  color: $primary-color;
+}
+.default-container{
+  padding: 40px 0px;
+}
+.text-container{
+  padding-bottom: 30px;
+}
 #navbar-custom-theme {
   background-color: $secondary-color;
   border-color: $border-color;
