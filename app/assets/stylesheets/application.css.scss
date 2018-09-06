@@ -23,6 +23,7 @@
 
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
+@import 'variables';
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -45,12 +46,12 @@ html {
  */
 
 ::-moz-selection {
-  background: #b3d4fc;
+  background: #D0E0A8;
   text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
+  background: #D0E0A8;
   text-shadow: none;
 }
 
@@ -110,65 +111,6 @@ textarea {
   color: #000;
   padding: 0.2em 0;
 }
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-.footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 20px;
-  background-color: #222;
-  border-color: #080808;
-  color: #ccc;
-  text-align: center;
-}
-.header {
-  background-color: #222;
-  border-color: #080808;
-  color: #ccc;
-  height:30px;
-}
-.hero-container {
-  color: black;
-  background: url(/assets/banner1.jpg) no-repeat top center;
-  background-size: cover;
-  padding-bottom: 140px;
-  padding-top: 50px;
-}
-#navbar-custom-theme {
-  background-color: #B3E17C;
-  border-color: #96D770;
-}
-.main-color {
-  color: #137E2C;
-}
-.line-color {
-  border-top: 2px solid #96D770;
-}
-.vertical-line{
-  border-left: thick solid #137E2C;
-  margin-right: 1%;
-}
-.side-heading{
-  padding:6px;
-  color:#137E2C;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -342,7 +284,53 @@ textarea {
     page-break-after: avoid;
   }
 }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #222;
+  border-color: #080808;
+  color: #ccc;
+  text-align: center;
+}
+.header {
+  background-color: #222;
+  border-color: #080808;
+  color: #ccc;
+  height:30px;
+}
+.hero-container {
+  color: black;
+  background: url(/assets/banner1.jpg) no-repeat top center;
+  background-size: cover;
+  padding-bottom: 140px;
+  padding-top: 50px;
+}
+#navbar-custom-theme {
+  background-color: $secondary-color;
+  border-color: $border-color;
+}
+.main-color {
+  color: $primary-color;
+}
+.line-color {
+  border-top: 2px solid $border-color;
+}
+.vertical-line{
+  border-left: thick solid $primary-color;
+  margin-right: 1%;
+}
+.side-heading{
+  padding: 6px;
+  color: $primary-color;
+}
 .auto-margin{
-  margin-top:auto;
-  margin-bottom:auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
