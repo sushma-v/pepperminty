@@ -350,3 +350,6 @@ textarea {
   margin-top: auto;
   margin-bottom: auto;
 }
+select.form-control:not([size]):not([multiple]) {
+  height: calc(2.50rem + 9px);
+}
