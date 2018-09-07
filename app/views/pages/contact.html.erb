@@ -18,7 +18,8 @@
   </div>
 
   <div class="col-md-6 text-left">
-  <%= form_tag('/contacts') do %>
+  <%#= form_tag('/contacts') do %>
+  <%= form_tag(submit_query_path, method: 'POST') do %>
     <div class="col-md-6 text-left">
       <div class="form-group">
         <%= text_field_tag :name, nil, class:"form-control", placeholder: "Name" %>
@@ -41,7 +42,7 @@
                        class: 'form-control', prompt: 'Select Category' %>
       </div>
       <div class="form-group">
-        <%= text_area "post", "body", "cols": 20, "rows": 10, placeholder: 'Message', class: "form-control" %>
+        <%= text_area_tag "message", "", "cols": 20, "rows": 10, placeholder: 'Message', class: "form-control" %>
       </div>
       <div class="form-group">
         <div class="text-right">

@@ -12,4 +12,11 @@ class PagesController < ApplicationController
                    ["Social Media", 4],
                    ["Others", 5]]
   end
+
+  def submit_query
+    Rails.logger.info("params #{params.to_json}")
+
+    flash[:notice] = "Your Query has been submitted, we will be in touch with you shortly"
+    redirect_to contact_path
+  end
 end

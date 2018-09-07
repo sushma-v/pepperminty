@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   get '/services', to: 'pages#services', as: 'services'
   get '/contact', to: 'pages#contact', as: 'contact'
 
+  post "/submit_query" => "pages#submit_query"
+
 end
