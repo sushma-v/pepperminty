@@ -289,6 +289,21 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* nav bar */
+#navbar-custom-theme {
+  background-color: $secondary-color;
+  border-color: $border-color;
+}
+.navbar-nav .nav-link {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  color: #333;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+/* home page */
 .footer {
   left: 0;
   bottom: 0;
@@ -327,10 +342,6 @@ textarea {
 }
 .sub-container{
   padding:30px 20px;
-}
-#navbar-custom-theme {
-  background-color: $secondary-color;
-  border-color: $border-color;
 }
 .main-color {
   color: $primary-color;

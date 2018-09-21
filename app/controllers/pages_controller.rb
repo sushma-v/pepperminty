@@ -5,6 +5,18 @@ class PagesController < ApplicationController
   def services
   end
 
+  def website
+  end
+
+  def seo
+  end
+
+  def advertising
+  end
+
+  def social
+  end
+
   def contact
     @categories = [["Website Design & Development", 1],
                    ["Search Engine Optimisation", 2],
