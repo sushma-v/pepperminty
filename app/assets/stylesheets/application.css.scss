@@ -317,6 +317,19 @@ textarea {
 .header {
   height:30px;
 }
+p {
+  text-align: justify;
+  line-height: 1.5em;
+  font-weight: normal;
+  font-size: 1.2em;
+}
+.sub-container p{
+  text-align: center;
+}
+li{
+  font-weight: normal;
+  font-size: 1.1em;
+}
 .hero-container {
   color: black;
   background: url(/assets/hero.jpg) no-repeat top center;
@@ -331,6 +344,42 @@ textarea {
   line-height: 1.6em;
   color: $primary-color;
 }
+
+.website-bgimg {
+  color: $hero-primary-color;
+  background: url(/assets/banner-website.png) no-repeat center center;
+  background-size: cover;
+  padding-bottom: 26%;
+  padding-top: 5%;
+  font-family: "PT Sans";
+}
+
+.seo-bgimg{
+  color: black;
+  background: url(/assets/banner-seo.jpg) no-repeat center center;
+  background-size: cover;
+  padding-top: 45%;
+  font-family: "PT Sans";
+}
+
+.advertising-bgimg{
+  color: $hero-primary-color;
+  background: url(/assets/banner-advertising.jpg) no-repeat center center;
+  background-size: cover;
+  padding-bottom: 23%;
+  padding-top: 6%;
+  font-family: "PT Sans";
+}
+
+.social-bgimg{
+  color: black;
+  background: url(/assets/banner-social.jpg) no-repeat center center;
+  background-size: auto;
+  padding-top: 10%;
+  padding-bottom: 20%;
+  font-family: "PT Sans";
+}
+
 .default-container{
   padding: 40px 0px;
 }
@@ -363,4 +412,7 @@ textarea {
 }
 select.form-control:not([size]):not([multiple]) {
   height: calc(2.50rem + 9px);
+}
+.quote-btn{
+  width: 20%;
 }
