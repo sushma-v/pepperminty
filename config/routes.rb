@@ -3,7 +3,6 @@ Rails.application.routes.draw do
 
   get '/home', to: 'pages#home', as: ''
 
-  get '/services', to: 'pages#services', as: 'services'
   get '/website', to: 'pages#website'
   get '/seo', to: 'pages#seo'
   get '/advertising', to: 'pages#advertising'
