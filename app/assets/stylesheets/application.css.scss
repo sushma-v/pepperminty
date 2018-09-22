@@ -365,7 +365,7 @@ li{
 .seo-bgimg{
   color: black;
   background: url(/assets/banner-seo.jpg) no-repeat center center;
-  background-size: cover;
+  background-size: contain;
   padding-top: 45%;
   font-family: "PT Sans";
 }
@@ -382,7 +382,7 @@ li{
 .social-bgimg{
   color: black;
   background: url(/assets/banner-social.jpg) no-repeat center center;
-  background-size: auto;
+  background-size: cover;
   padding-top: 10%;
   padding-bottom: 20%;
   font-family: "PT Sans";
