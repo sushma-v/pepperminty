@@ -420,20 +420,27 @@ select.form-control:not([size]):not([multiple]) {
   position: absolute;
   bottom: 0;
   background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 1);
   color: #ffffff;
   width: 150px;
   height: 100px;
   transition: .5s ease;
-  opacity:1;
-  font-size: 18px;
-  padding: 25px 0px;
-  text-align: center;
+  opacity: 0.5;
 }
 .btn-container:hover .overlay {
   opacity: 0.8;
-  border:5px;
 }
-.btn-container span{
+.overlay-text {
+  position: absolute;
+  bottom: 0;
+  width: 150px;
+  height: 100px;
+  font-size: 18px;
+  padding: 25px 0px;
+  text-align: center;
   color: $secondary-color;
+
+  span{
+    color: #ffffff;
+  }
 }
