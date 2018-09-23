@@ -3,15 +3,19 @@ class PagesController < ApplicationController
   end
 
   def website
+    @service = __method__.to_s
   end
 
   def seo
+    @service = __method__.to_s
   end
 
   def advertising
+    @service = __method__.to_s
   end
 
   def social
+    @service = __method__.to_s
   end
 
   def contact
