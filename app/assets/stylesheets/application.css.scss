@@ -354,39 +354,46 @@ li{
   color: $primary-color;
 }
 
-.website-bgimg {
+.bgimg{
+  padding-bottom: 25%;
+  padding-top: 25%;
+  font-family: "PT Sans";
+}
+
+.website-bgimg{
   color: $hero-primary-color;
   background: url(/assets/banner-website.png) no-repeat center center;
   background-size: cover;
-  padding-bottom: 26%;
-  padding-top: 5%;
-  font-family: "PT Sans";
+  .bgimg-content{
+    margin-top: -14%;
+  }
 }
 
 .seo-bgimg{
   color: black;
-  background: url(/assets/banner-seo.jpg) no-repeat center center;
-  background-size: contain;
-  padding-top: 45%;
-  font-family: "PT Sans";
+  background: url(/assets/banner-seo.png) no-repeat center center;
+  background-size: cover;
+  .bgimg-content{
+    margin-top:13%;
+  }
 }
 
 .advertising-bgimg{
   color: $hero-primary-color;
-  background: url(/assets/banner-advertising.jpg) no-repeat center center;
+  background: url(/assets/banner-advertising.png) no-repeat center center;
   background-size: cover;
-  padding-bottom: 23%;
-  padding-top: 6%;
-  font-family: "PT Sans";
+  .bgimg-content{
+    margin-top:-26%;
+  }
 }
 
 .social-bgimg{
   color: black;
   background: url(/assets/banner-social.jpg) no-repeat center center;
   background-size: cover;
-  padding-top: 10%;
-  padding-bottom: 20%;
-  font-family: "PT Sans";
+  .bgimg-content{
+    margin-top:-18%;
+  }
 }
 
 .default-container{
