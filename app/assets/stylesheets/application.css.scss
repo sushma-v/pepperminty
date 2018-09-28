@@ -304,9 +304,6 @@ textarea {
 }
 
 /* home page */
-main{
-  width: 100%;
-}
 .footer {
   left: 0;
   bottom: 0;
@@ -359,6 +356,8 @@ li{
 .bgimg{
   padding-bottom: 25%;
   padding-top: 25%;
+  margin-left: -15px;
+  margin-right: -15px;
   font-family: "PT Sans";
 }
 
