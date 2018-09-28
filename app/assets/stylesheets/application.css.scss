@@ -421,8 +421,13 @@ select.form-control:not([size]):not([multiple]) {
 }
 .border-img {
   border: 10px solid #cccccc;
+  border-radius: 20px 50px;
   padding: 15px;
-  width: 50%;
+  width: 80%;
+}
+.border-img-1 {
+  border-radius: 25px;
+  width: 90%;
 }
 /* page links */
 .overlay {
@@ -461,4 +466,41 @@ select.form-control:not([size]):not([multiple]) {
 }
 .grey{
   background-color: #f2f2f2;
+}
+.bullet-point {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 33px;
+  background-image: url(checkmark.png);
+  background-position: 0 4px;
+  background-size: 22px;
+  background-repeat: no-repeat;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 25px;
+}
+.margin-bottom-50{
+  margin-bottom: 50px;
+}
+.margin-bottom-20{
+  margin-bottom: 20px;
+}
+
+.left-text{
+  width: 80%;
+  text-align: left;
+  float: right;
+}
+.right-text{
+  width: 80%;
+  text-align: left;
+  float: left;
+}
+.wrapper{
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  text-align: left;
 }

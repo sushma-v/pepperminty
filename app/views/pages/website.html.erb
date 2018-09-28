@@ -11,50 +11,68 @@
 </div>
 
 <div class="row">
-  <div class="col-md-12 text-center default-container">
-    <h3>Website Design & Development</h3>
-
-    <div class="col-md-12 text-left">
+  <div class="section">
+    <div class="col-xs-12 text-center margin-bottom-20">
+      <h2>Website Design & Development</h2>
+    </div>
+    <div class="col-xs-12 text-left">
       <p>We specialise in the design and development of websites for start-ups and small businesses.</p>
       <p>Getting your website right is critical for your business - it not only lets customers know who you are as a brand,
         it also can get you repeat visitors and most importantly for you make you some sales! Whether it's brochure design,
         or e-commerce, let us help you set up and manage a beautifully branded website using the latest technology (HTML5, CSS3).</p>
-    </div>
-    <div class="col-md-12 text-left text-container">
+
       <h4><strong>We offer affordability, and you can get your website from as little as £149</strong></h4>
-      <div class="col-md-12 text-right"><%= submit_tag 'Get a quote', class: "btn btn-success quote-btn" %></div>
+      <div class="text-right"><%= submit_tag 'Get a quote', class: "btn btn-success quote-btn" %></div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="section grey" style="width:100%;">
+    <div class="col-xs-12 text-center margin-bottom-50">
+      <h2>Our website services include: </h2>
+    </div>
+    <div class="col-xs-6 text-right">
+      <%= image_tag 'website-image.png', class: 'border-img-1' %>
+    </div>
+    <div class="col-xs-6 text-left" style="height:100%">
+      <div class="wrapper right-text">
+        <div class="bullet-point">WordPress platform</div>
+        <div class="bullet-point">Bespoke design</div>
+        <div class="bullet-point">Mobile optimised</div>
+        <div class="bullet-point">Secure web (SSL Certification)</div>
+        <div class="bullet-point">Back end development</div>
+        <div class="bullet-point">Training & support</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="section" style="width:100%;">
+    <div class="col-xs-12 text-center margin-bottom-50">
+      <h2>Project timescales </h2>
     </div>
 
-    <div class="col-md-12 text-left text-container">
-      <h3>Our website services include:</h3>
-      <ul>
-        <li>WordPress platform</li>
-        <li>Bespoke design</li>
-        <li>Mobile optimised</li>
-        <li>Secure web (SSL Certification)</li>
-        <li>Back end development</li>
-        <li>Training & support</li>
-      </ul>
+    <div class="col-xs-6 text-right">
+      <div class="left-text">
+        <h3>We'll keep you in the loop every step of the way with your website, and with an 8-week turnaround,
+          here are the steps to get your business set up online:</h3>
+      </div>
     </div>
-
-    <div class="col-md-12 text-left">
-      <h3>Project timescales</h3>
-      <p>We'll keep you in the loop every step of the way with your website, and with an 8-week turnaround,
-        here are the steps to get your business set up online:</p>
-    </div>
-    <div class="col-md-12 text-center text-container">
+    <div class="col-xs-6">
       <%= image_tag 'timeline.png', class: 'border-img' %>
     </div>
 
-    <div class="col-md-12 text-right text-container">
-      <%= submit_tag 'Get a quote', class: "btn btn-success quote-btn" %>
-    </div>
+  </div>
+</div>
 
+<div class="row grey">
+  <div class="section" style="width:100%;">
     <div class="col-md-12 text-left text-container">
       <p>Checkout our supporting services that will ensure you're ranked high on search engines such as Google.</p>
     </div>
 
     <%= render partial: "page_links", locals: {service: @service} %>
-
   </div>
 </div>
