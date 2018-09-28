@@ -304,6 +304,9 @@ textarea {
 }
 
 /* home page */
+main{
+  width: 100%;
+}
 .footer {
   left: 0;
   bottom: 0;
@@ -351,9 +354,8 @@ li{
 }
 .hero-container h3{
   line-height: 1.6em;
-  color: $primary-color;
+  color: #cefbc4;
 }
-
 .bgimg{
   padding-bottom: 25%;
   padding-top: 25%;
@@ -451,4 +453,13 @@ select.form-control:not([size]):not([multiple]) {
   span{
     color: #ffffff;
   }
+}
+.section {
+  padding: 100px 20px;
+}
+.section h3{
+  color: #606757;
+}
+.grey{
+  background-color: #f2f2f2;
 }

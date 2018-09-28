@@ -14,45 +14,52 @@
 </div>
 
 <div class="row">
+  <div class="section grey">
 
-  <div class="col-xs-12 text-center default-container">
-    <h3>Why Us</h3>
-
-    <div class="col-xs-12 text-left text-container">
-      <p>We're a London based agency, working together with our clients to bring creative and strategic campaigns suitable for
+    <div class="col-xs-12 text-center">
+      <h2>Why Us</h2>
+      <h3>We're a London based agency, working together with our clients to bring creative and strategic campaigns suitable for
         you. Every client is refreshingly unique and so working closely with our clients, we can really bring your
-        brand personality to life and really engage with those wanting to buy your product or service.</p>
-      <p>We offer a bespoke digital marketing service built around your needs, including</p>
+        brand personality to life and really engage with those wanting to buy your product or service.</h3>
     </div>
 
-    <%= link_to website_path, class: 'service-link' do %>
-      <div class="col-md-3 text-center">
-        <%= image_tag 'icon-home-browser.png' %>
-        <h4>Website Design & Development</h4>
-        <p>Stand out from the crowd, with a creative and bespoke website to pull in your customers</p>
-      </div>
-    <% end %>
-    <%= link_to seo_path, class: 'service-link' do %>
-      <div class="col-md-3 text-center">
-        <%= image_tag 'icon-home-analysis.png' %>
-        <h4>SEO</h4>
-        <p>Get the right people to your website with our organic Search Engine Optimisation strategy</p>
-      </div>
-    <% end %>
-    <%= link_to advertising_path, class: 'service-link' do %>
-      <div class="col-md-3 text-center">
-        <%= image_tag 'icon-home-marketing.png' %>
-        <h4>Advertising</h4>
-        <p>Creative advertising campaigns which brings your business to life</p>
-      </div>
-    <% end %>
-    <%= link_to social_path, class: 'service-link' do %>
-      <div class="col-md-3 text-center">
-        <%= image_tag 'icon-home-social-media.png' %>
-        <h4>Social Media</h4>
-        <p>Let your voice be heard in the massive social media arena</p>
-      </div>
-    <% end %>
+  </div>
+</div>
 
+<div class="row">
+  <div class="section">
+    <div class="col-xs-12 text-center">
+      <h2>We offer a bespoke digital marketing service built around your needs, including</h2><br/><br/>
+
+      <%= link_to website_path, class: 'service-link' do %>
+        <div class="col-md-3 text-center">
+          <%= image_tag 'icon-home-browser.png' %>
+          <h4>Website Design & Development</h4>
+          <p>Stand out from the crowd, with a creative and bespoke website to pull in your customers</p>
+        </div>
+      <% end %>
+      <%= link_to seo_path, class: 'service-link' do %>
+        <div class="col-md-3 text-center">
+          <%= image_tag 'icon-home-analysis.png' %>
+          <h4>SEO</h4>
+          <p>Get the right people to your website with our organic Search Engine Optimisation strategy</p>
+        </div>
+      <% end %>
+      <%= link_to advertising_path, class: 'service-link' do %>
+        <div class="col-md-3 text-center">
+          <%= image_tag 'icon-home-marketing.png' %>
+          <h4>Advertising</h4>
+          <p>Creative advertising campaigns which brings your business to life</p>
+        </div>
+      <% end %>
+      <%= link_to social_path, class: 'service-link' do %>
+        <div class="col-md-3 text-center">
+          <%= image_tag 'icon-home-social-media.png' %>
+          <h4>Social Media</h4>
+          <p>Let your voice be heard in the massive social media arena</p>
+        </div>
+      <% end %>
+
+    </div>
   </div>
 </div>
