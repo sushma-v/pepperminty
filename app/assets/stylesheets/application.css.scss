@@ -360,6 +360,15 @@ li{
   font-family: "PT Sans";
 }
 
+.hero-bgimg{
+  color: $hero-primary-color;
+  background: url(/assets/hero-img.jpg) no-repeat center center;
+  background-size: cover;
+  .bgimg-content{
+    margin-top: -14%;
+  }
+}
+
 .website-bgimg{
   color: $hero-primary-color;
   background: url(/assets/banner-website.png) no-repeat center center;
