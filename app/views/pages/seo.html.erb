@@ -11,10 +11,11 @@
 </div>
 
 <div class="row">
-  <div class="col-xs-12 text-center default-container">
-    <h3>Search Engine Optimisation</h3>
-
-    <div class="col-xs-12 text-left text-container">
+  <div class="section">
+    <div class="col-xs-12 text-center margin-bottom-20">
+      <h2>Search Engine Optimisation</h2>
+    </div>
+    <div class="col-xs-12 text-left">
       <p>Search Engine Optimisation (SEO) is the process of improving the visibility of your site in Google’s search results,
         essentially putting your business at the forefront of your target audience – an integral part of your digital marketing strategy. </p>
       <p>There are two main rules of thumb when following an SEO strategy:</p>
@@ -29,23 +30,35 @@
       <p>With affordable prices specifically tailored to your needs, we will work with you on analysing your requirements
         and determining exactly what's required.</p>
     </div>
+  </div>
+</div>
 
-    <div class="col-xs-12 text-left">
-      <h3>Our services include:</h3>
-      <ul>
-        <li>Keyword research backed with search trend analysis</li>
-        <li>Full site audits</li>
-        <li>Creative content creation</li>
-        <li>Outreach</li>
-        <li>Full monthly reports detailing successes and actions moving forward and analysis of results</li>
-      </ul>
+<div class="row">
+  <div class="section grey" style="width:100%;">
+    <div class="col-xs-12 text-center margin-bottom-50">
+      <h2>Our services include:</h2>
     </div>
+    <div class="col-xs-6 text-right">
+      <%= image_tag 'website-image.png', class: 'border-img-1' %>
+    </div>
+    <div class="col-xs-6 text-left" style="height:100%">
+      <div class="wrapper right-text">
+        <div class="bullet-point">Keyword research backed with search trend analysis</div>
+        <div class="bullet-point">Full site audits</div>
+        <div class="bullet-point">Creative content creation</div>
+        <div class="bullet-point">Outreach</div>
+        <div class="bullet-point">Full monthly reports detailing successes and actions moving forward and analysis of results</div>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <div class="col-xs-12 text-left text-container">
-      <div class="col-xs-12 text-right"><%= submit_tag 'Get in touch', class: "btn btn-success quote-btn" %></div>
+<div class="row">
+  <div class="section" style="width:100%;">
+    <div class="col-md-12 text-center margin-bottom-50">
+      <h2>Additional Services</h2>
     </div>
 
     <%= render partial: "page_links", locals: {service: @service} %>
-
   </div>
 </div>
