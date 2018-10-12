@@ -500,7 +500,7 @@ select.form-control:not([size]):not([multiple]) {
   text-align: left;
 }
 .service-heading{
-  color: $alt-primary-color;
+  //color: $alt-primary-color;
 }
 .footer-heading{
   color: $primary-color;
@@ -540,7 +540,7 @@ select.form-control:not([size]):not([multiple]) {
   color: white;
 }
 .mail-icon{
-  color: $primary-color;
+  color: $secondary-color;
 }
 .navbar-default{
   background-color: white !important;
