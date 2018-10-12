@@ -290,10 +290,6 @@ textarea {
    ========================================================================== */
 
 /* nav bar */
-#navbar-custom-theme {
-  background-color: $secondary-color;
-  border-color: $border-color;
-}
 .navbar-nav .nav-link {
   display: block;
   padding: 3px 15px;
@@ -408,9 +404,6 @@ li{
 .sub-container{
   padding:30px 0px;
 }
-.main-color {
-  color: $primary-color;
-}
 .auto-margin{
   margin-top: auto;
   margin-bottom: auto;
@@ -506,8 +499,11 @@ select.form-control:not([size]):not([multiple]) {
   flex-direction: column;
   text-align: left;
 }
-.service-heading, .footer-heading{
-  color: $heading-color;
+.service-heading{
+  color: $alt-primary-color;
+}
+.footer-heading{
+  color: $primary-color;
 }
 .margin-top-bottom-20{
   margin: 20px 0px;
@@ -544,7 +540,7 @@ select.form-control:not([size]):not([multiple]) {
   color: white;
 }
 .mail-icon{
-  color: $heading-color;
+  color: $primary-color;
 }
 .navbar-default{
   background-color: white !important;
@@ -570,7 +566,7 @@ select.form-control:not([size]):not([multiple]) {
   -ms-user-select: none;
   user-select: none;
   background-color: rgba(255,255,255,0.3);
-  border: 3px solid $heading-color;
+  border: 3px solid $primary-color;
   border-radius: 29px;
 }
 .btn-style:hover, .btn-style:focus, .btn-style:active{
