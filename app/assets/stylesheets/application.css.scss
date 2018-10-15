@@ -565,3 +565,6 @@ select.form-control:not([size]):not([multiple]) {
 .link-container a:hover{
   text-decoration: none;
 }
+.service-link h4{
+  color: $primary-color;
+}
