@@ -425,34 +425,6 @@ select.form-control:not([size]):not([multiple]) {
   width: 79%;
 }
 /* page links */
-.overlay {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 1);
-  color: #ffffff;
-  width: 150px;
-  height: 100px;
-  transition: .5s ease;
-  opacity: 0.5;
-}
-.btn-container:hover .overlay {
-  opacity: 0.8;
-}
-.overlay-text {
-  position: absolute;
-  bottom: 0;
-  width: 150px;
-  height: 100px;
-  font-size: 18px;
-  padding: 25px 0px;
-  text-align: center;
-  color: $secondary-color;
-
-  span{
-    color: #ffffff;
-  }
-}
 .section {
   padding: 100px 20px;
 }
@@ -461,6 +433,10 @@ select.form-control:not([size]):not([multiple]) {
 }
 .grey{
   background-color: #f2f2f2;
+}
+.green{
+  background-color: $primary-backgound-color;
+  color: white;
 }
 .bullet-point {
   margin-top: 8px;
@@ -571,4 +547,21 @@ select.form-control:not([size]):not([multiple]) {
 }
 .btn-style:hover, .btn-style:focus, .btn-style:active{
   background-color: rgba(255,255,255,0.4);
+}
+.page-link{
+  border: 5px solid $hero-primary-color;
+  color: $hero-primary-color;
+  background-color: $primary-backgound-color;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px 20px 20px 20px;
+}
+.page-link:hover{
+  border: 5px solid $hero-primary-color;
+  color: $hero-primary-color;
+  background-color: $primary-backgound-hover;
+}
+.link-container a:hover{
+  text-decoration: none;
 }

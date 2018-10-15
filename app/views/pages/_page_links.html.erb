@@ -1,34 +1,38 @@
-<div class="col-xs-12 text-left">
+<div class="col-xs-12 text-left link-container">
 
   <% unless (service == 'website') %>
-    <%= link_to website_path, class: "col-md-2 btn-container" do %>
-        <%= image_tag 'btn-website.png' %>
-        <div class="overlay"></div>
-        <div class="overlay-text"><strong>Website design <span> >> </span> </strong></div>
+    <%= link_to website_path, class: "col-md-2" do %>
+        <div class="page-link">
+          <%= image_tag 'icon-home-marketing2.png' %><br/><br/>
+          <div><strong>Website design</strong></div>
+        </div>
     <% end %>
   <% end %>
 
   <% unless (service == 'seo') %>
-    <%= link_to seo_path, class: "col-md-2 btn-container" do %>
-        <%= image_tag 'btn-seo.jpg' %>
-        <div class="overlay"></div>
-        <div class="overlay-text"><strong>SEO <span> >> </span> </strong></div>
+    <%= link_to seo_path, class: "col-md-2" do %>
+        <div class="page-link">
+          <%= image_tag 'icon-home-marketing2.png' %><br/><br/>
+          <div><strong>SEO</strong></div>
+        </div>
     <% end %>
   <% end %>
 
   <% unless (service == 'advertising') %>
-    <%= link_to advertising_path, class: "col-md-2 btn-container" do %>
-        <%= image_tag 'btn-advertising.jpg' %>
-        <div class="overlay"></div>
-        <div class="overlay-text"><strong>PPC <span> >> </span> </strong></div>
+    <%= link_to advertising_path, class: "col-md-2" do %>
+        <div class="page-link">
+          <%= image_tag 'icon-home-marketing2.png' %><br/><br/>
+          <div><strong>PPC</strong></div>
+        </div>
     <% end %>
   <% end %>
 
   <% unless (service == 'social') %>
-    <%= link_to social_path, class: "col-md-2 btn-container" do %>
-        <%= image_tag 'btn-social.jpg' %>
-        <div class="overlay"></div>
-        <div class="overlay-text"><strong>Social media <span> >> </span> </strong></div>
+    <%= link_to social_path, class: "col-md-2" do %>
+        <div class="page-link">
+          <%= image_tag 'icon-home-marketing2.png' %><br/><br/>
+          <div><strong>Social media</strong></div>
+        </div>
     <% end %>
   <% end %>
 
