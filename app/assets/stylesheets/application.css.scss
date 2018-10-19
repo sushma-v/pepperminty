@@ -566,3 +566,15 @@ select.form-control:not([size]):not([multiple]) {
 .link-container a:hover{
   text-decoration: none;
 }
+.more-home-arrow{
+  position: absolute;
+  margin-top: 8%;
+  margin-left: -0.5%;
+  color: $hero-primary-color;
+  transition: margin-top 0.3s;
+  cursor: pointer;
+}
+.more-home-arrow:hover{
+  color: $hero-primary-color;
+  margin-top: 8.5%;
+}
