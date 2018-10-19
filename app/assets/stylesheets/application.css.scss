@@ -359,6 +359,10 @@ li{
   h1{ font-weight: 600; }
 }
 
+.website-bgimg h1, .seo-bgimg h1, .advertising-bgimg h1, .social-bgimg h1 {
+  font-size: 42px;
+}
+
 .website-bgimg{
   color: $hero-primary-color;
   background: url(/assets/banner-website.png) no-repeat center center;
