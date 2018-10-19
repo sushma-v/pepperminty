@@ -578,3 +578,11 @@ select.form-control:not([size]):not([multiple]) {
   color: $hero-primary-color;
   margin-top: 8.5%;
 }
+.footer .links a{
+  color: grey;
+  text-decoration: none;
+}
+.footer .links a:hover{
+  color: $secondary-color;
+  text-decoration: none;
+}
