@@ -26,6 +26,12 @@ class PagesController < ApplicationController
                    ["Others", 5]]
   end
 
+  def privacy_policy
+  end
+
+  def cookie_policy
+  end
+
   def submit_query
     Rails.logger.info("params #{query_params.to_json}")
 

@@ -10,6 +10,9 @@ Rails.application.routes.draw do
 
   get '/contact', to: 'pages#contact'
 
+  get '/privacy_policy', to: 'pages#privacy_policy'
+  get '/cookie_policy', to: 'pages#cookie_policy'
+
   post "/submit_query" => "pages#submit_query"
 
 end
