@@ -15,12 +15,3 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
-
-$(document).ready(function(){
-    $('html, body').animate({scrollTop: 0}, "slow");
-
-    $(".more-home-arrow").click(function(){
-        var position = $('#more-home').offset();
-        $('html, body').animate({scrollTop: position.top}, "slow");
-    });
-});
