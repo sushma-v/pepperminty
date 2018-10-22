@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Rails Bootstrap" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Pepperminty Marketing" %></title>
     <%= favicon_link_tag "favicon.ico" %>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Rails Bootstrap" %>">
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Pepperminty Marketing" %>">
+    <meta name="keywords" content="<%= content_for?(:keywords) ? yield(:keywords) : "Pepperminty Marketing" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
