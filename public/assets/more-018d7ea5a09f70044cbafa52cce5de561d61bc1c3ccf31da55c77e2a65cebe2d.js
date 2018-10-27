@@ -1,1 +1,0 @@
-$(document).ready(function(){$("html, body").animate({scrollTop:0},"slow"),$(".more-home-arrow").click(function(){console.log("test");var o=$("#more-home").offset();$("html, body").animate({scrollTop:o.top},"slow")})});
