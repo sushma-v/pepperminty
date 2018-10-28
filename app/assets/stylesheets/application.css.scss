@@ -24,7 +24,6 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
 @import 'variables';
-@import 'cookies_eu';
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -588,12 +587,4 @@ select.form-control:not([size]):not([multiple]) {
 }
 .justify{
   text-align: justify;
-}
-/* Cookie notice */
-.cookies-eu .cookies-eu-button-holder .cookies-eu-ok {
-  background-color: $secondary-color;
-  border-radius: 5px;
-}
-.cookies-eu{
-  background-color: white;
 }

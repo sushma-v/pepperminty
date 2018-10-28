@@ -16,4 +16,3 @@
 //= require bootstrap-sprockets
 //= require_tree .
 //= require more.js
-//= require cookies_eu.js
