@@ -18,7 +18,7 @@ gem 'sprockets', '~>3.7.2'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap', '4.0.0.alpha6'
 gem 'jquery-rails'
-gem 'cookies_eu'
+#gem 'cookies_eu'
 gem 'rails_12factor'
 
 group :development do
