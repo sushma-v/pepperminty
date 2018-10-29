@@ -1,4 +1,11 @@
 class PagesController < ApplicationController
+
+  CATEGORIES = [["Website Design & Development", "1"],
+                ["Search Engine Optimisation", "2"],
+                ["Advertising", "3"],
+                ["Social Media", "4"],
+                ["Others", "5"]]
+
   def home
   end
 
@@ -19,11 +26,7 @@ class PagesController < ApplicationController
   end
 
   def contact
-    @categories = [["Website Design & Development", 1],
-                   ["Search Engine Optimisation", 2],
-                   ["Advertising", 3],
-                   ["Social Media", 4],
-                   ["Others", 5]]
+    @categories = CATEGORIES
   end
 
   def privacy_policy
@@ -34,7 +37,7 @@ class PagesController < ApplicationController
 
   def submit_query
     begin
-      FormMailer.contact(query_params).deliver
+      FormMailer.contact(format_params).deliver
       flash[:notice] = "Your Query has been submitted, we will be in touch with you shortly"
     rescue StandardError => ex
       flash[:error] = ex.message
@@ -46,5 +49,11 @@ class PagesController < ApplicationController
 
   def query_params
     params.permit(:name, :email, :company_name, :phone, :category, :message)
+  end
+
+  def format_params
+    format_params = query_params
+    format_params[:category] = CATEGORIES.to_h.key( query_params[:category] )
+    format_params
   end
 end

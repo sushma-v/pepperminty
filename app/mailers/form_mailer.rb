@@ -5,7 +5,7 @@ class FormMailer < ApplicationMailer
   #
   #   en.form_mailer.contact.subject
   #
-  default to: "sushma@peppermintymarketing.co.uk"
+  default to: "info@peppermintymarketing.co.uk"
   def contact(params)
     @name = params.fetch(:name, nil)
     @company_name = params.fetch(:company_name, nil)
