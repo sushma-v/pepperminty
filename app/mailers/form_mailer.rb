@@ -8,8 +8,8 @@ class FormMailer < ApplicationMailer
   default to: "sushma@peppermintymarketing.co.uk"
   def contact(params)
     @name = params.fetch(:name, nil)
-    @company_name = params.fetch(:email, nil)
-    @email_id = params.fetch(:company_name, nil)
+    @company_name = params.fetch(:company_name, nil)
+    @email_id = params.fetch(:email, nil)
     @phone = params.fetch(:phone, nil)
     @category = params.fetch(:category, nil)
     @message = params.fetch(:message, nil)
