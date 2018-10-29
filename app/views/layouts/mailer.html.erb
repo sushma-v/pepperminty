@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<!--<html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <style>
@@ -8,6 +8,38 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%#= yield %>
   </body>
+</html>-->
+<html>
+<body style="margin: 0;padding: 0;width: 100% !important;background-color: #f1f1f1;">
+<table cellpadding="0" cellspacing="0" border="0" style="background-color: #fff;width: 644px;margin-left: auto;margin-right: auto;font-size: 10pt;">
+  <tbody>
+  <tr height="30">
+    <td>
+      <%= render :partial => 'layouts/email_header' %>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<table style="background-color: #fff;width: 644px;margin-left: auto;margin-right: auto;font-size: 10pt;">
+  <tbody>
+  <tr>
+    <td style="font-family: Arial, sans-serif;font-size: 13px;color: black; margin: 20px; padding: 40px 20px 0px 20px;">
+      <%= yield %>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" style="width: 644px;margin-left: auto;margin-right: auto;font-size: 10pt;">
+  <tbody>
+  <tr height="30">
+    <td>
+      <%= render :partial => 'layouts/email_footer' %>
+    </td>
+  </tr>
+  </tbody>
+</table>
+</body>
 </html>
+
