@@ -33,9 +33,12 @@ class PagesController < ApplicationController
   end
 
   def submit_query
-    FormMailer.contact(query_params).deliver
-
-    flash[:notice] = "Your Query has been submitted, we will be in touch with you shortly"
+    begin
+      FormMailer.contact(query_params).deliver
+      flash[:notice] = "Your Query has been submitted, we will be in touch with you shortly"
+    rescue StandardError => ex
+      flash[:error] = ex.message
+    end
     redirect_to contact_path
   end
 

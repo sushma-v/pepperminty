@@ -6,6 +6,8 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+Dotenv.load("env.#{Rails.env}")
+
 module RailsBootstrap
   class Application < Rails::Application
 
