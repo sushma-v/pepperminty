@@ -7,6 +7,7 @@ class PagesController < ApplicationController
                 ["Others", "5"]]
 
   def home
+    @categories = CATEGORIES
   end
 
   def website
