@@ -73,6 +73,7 @@ Rails.application.configure do
       domain: ENV["SENDGRID_DOMAIN"],
       address: "smtp.sendgrid.net",
       port: 465,
+      ssl: true,
       authentication: :plain,
       enable_starttls_auto: true
   }
