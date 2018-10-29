@@ -5,10 +5,15 @@ class FormMailer < ApplicationMailer
   #
   #   en.form_mailer.contact.subject
   #
-  default from: "sushma@peppermintymarketing.co.uk"
-  def contact
-    @greeting = "Hi"
+  default to: "sushma@peppermintymarketing.co.uk"
+  def contact(params)
+    @name = params.fetch(:name, nil)
+    @company_name = params.fetch(:email, nil)
+    @email_id = params.fetch(:company_name, nil)
+    @phone = params.fetch(:phone, nil)
+    @category = params.fetch(:category, nil)
+    @message = params.fetch(:message, nil)
 
-    mail to: "sushma@peppermintymarketing.co.uk", subject: "Contact Form"
+    mail from: @email_id, subject: "Pepperminty Marketing: Contact Form"
   end
 end

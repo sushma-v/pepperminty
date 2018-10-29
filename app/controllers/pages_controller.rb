@@ -33,7 +33,7 @@ class PagesController < ApplicationController
   end
 
   def submit_query
-    Rails.logger.info("params #{query_params.to_json}")
+    FormMailer.contact(query_params).deliver
 
     flash[:notice] = "Your Query has been submitted, we will be in touch with you shortly"
     redirect_to contact_path
