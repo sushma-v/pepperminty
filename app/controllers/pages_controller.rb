@@ -12,18 +12,22 @@ class PagesController < ApplicationController
 
   def website
     @service = __method__.to_s
+    @categories = CATEGORIES
   end
 
   def seo
     @service = __method__.to_s
+    @categories = CATEGORIES
   end
 
   def advertising
     @service = __method__.to_s
+    @categories = CATEGORIES
   end
 
   def social
     @service = __method__.to_s
+    @categories = CATEGORIES
   end
 
   def contact
