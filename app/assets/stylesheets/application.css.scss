@@ -317,7 +317,9 @@ p {
   text-align: justify;
   line-height: 1.5em;
   font-weight: normal;
-  font-size: 1.2em;
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 .sub-container p{
   text-align: center;
@@ -599,4 +601,7 @@ select.form-control:not([size]):not([multiple]) {
   background-size: cover;
   background-attachment: fixed;
   color: $hero-primary-color;
+}
+.secondary-color{
+  color: $secondary-color;
 }
