@@ -597,5 +597,6 @@ select.form-control:not([size]):not([multiple]) {
 .contact-bg{
   background:url(/assets/contact1.jpg) no-repeat center center;
   background-size: cover;
+  background-attachment: fixed;
   color: $hero-primary-color;
 }
