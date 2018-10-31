@@ -452,9 +452,7 @@ select.form-control:not([size]):not([multiple]) {
   background-color: $primary-backgound-color;
   color: white;
 }
-.bullet-point {
-  margin-top: 8px;
-  margin-bottom: 8px;
+.bullet-point-base{
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 33px;
@@ -462,9 +460,20 @@ select.form-control:not([size]):not([multiple]) {
   background-position: 0 4px;
   background-size: 22px;
   background-repeat: no-repeat;
-  font-size: 25px;
   font-weight: 500;
   line-height: 25px;
+}
+.bullet-point {
+  @extend .bullet-point-base;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 25px;
+}
+.bullet-point-small {
+  @extend .bullet-point-base;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: 22px;
 }
 .margin-bottom-50{
   margin-bottom: 50px;
