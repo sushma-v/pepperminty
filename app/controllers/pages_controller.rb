@@ -10,6 +10,10 @@ class PagesController < ApplicationController
     @categories = CATEGORIES
   end
 
+  def about
+    @categories = CATEGORIES
+  end
+
   def website
     @service = __method__.to_s
     @categories = CATEGORIES
