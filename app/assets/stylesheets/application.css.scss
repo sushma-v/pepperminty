@@ -636,3 +636,19 @@ select.form-control:not([size]):not([multiple]) {
 .vertical-align-content{
   align-self: center;
 }
+.nav-item a{
+  font-size: 17px;
+}
+.navbar-nav>li>.dropdown-menu{
+  background-color: #f5f5f5;
+}
+.dropdown-menu .nav-item a{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.nav-item{
+  transition: transform 0.5s;
+}
+.nav-item:hover {
+  transform: translate(0px, 6px);
+}
