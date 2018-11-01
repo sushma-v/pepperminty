@@ -589,14 +589,16 @@ select.form-control:not([size]):not([multiple]) {
   border-radius: 20px;
   text-align: center;
   font-size: 20px;
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
+  width: 90%;
+  height: 200px;
 }
 .page-link:hover{
   border: 5px solid $hero-primary-color;
   color: $hero-primary-color;
   background-color: $primary-backgound-hover;
 }
-.link-container a:hover{
+.link-container a:hover, .link-container a:active{
   text-decoration: none;
 }
 .more-home-arrow{

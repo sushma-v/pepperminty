@@ -1,37 +1,37 @@
-<div class="col-xs-12 text-left link-container">
+<div class="col-xs-12 text-center link-container">
 
   <% unless (service == 'website') %>
-    <%= link_to website_path, class: "col-md-2" do %>
+    <%= link_to website_path, class: "col-md-3" do %>
         <div class="page-link">
           <%= image_tag 'icon-home-browser-w.png' %><br/><br/>
-          <div><strong>Website design</strong></div>
+          <div><strong>Website Design & Development</strong></div>
         </div>
     <% end %>
   <% end %>
 
   <% unless (service == 'seo') %>
-    <%= link_to seo_path, class: "col-md-2" do %>
+    <%= link_to seo_path, class: "col-md-3" do %>
         <div class="page-link">
           <%= image_tag 'icon-home-analysis-w.png' %><br/><br/>
-          <div><strong>SEO</strong></div>
+          <div><strong>Search Engine Optimisation</strong></div>
         </div>
     <% end %>
   <% end %>
 
   <% unless (service == 'advertising') %>
-    <%= link_to advertising_path, class: "col-md-2" do %>
+    <%= link_to advertising_path, class: "col-md-3" do %>
         <div class="page-link">
           <%= image_tag 'icon-home-marketing-w.png' %><br/><br/>
-          <div><strong>PPC</strong></div>
+          <div><strong>Pay Per Click</strong></div>
         </div>
     <% end %>
   <% end %>
 
   <% unless (service == 'social') %>
-    <%= link_to social_path, class: "col-md-2" do %>
+    <%= link_to social_path, class: "col-md-3" do %>
         <div class="page-link">
           <%= image_tag 'icon-home-social-media-w.png' %><br/><br/>
-          <div><strong>Social media</strong></div>
+          <div><strong>Social Media</strong></div>
         </div>
     <% end %>
   <% end %>
