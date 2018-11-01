@@ -475,6 +475,12 @@ select.form-control:not([size]):not([multiple]) {
   margin-bottom: 2px;
   font-size: 22px;
 }
+.bullet-point-medium{
+  @extend .bullet-point-base;
+  margin-top: 3px;
+  margin-bottom: 2px;
+  font-size: 25px;
+}
 .margin-bottom-50{
   margin-bottom: 50px;
 }
