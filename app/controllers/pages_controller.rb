@@ -49,7 +49,7 @@ class PagesController < ApplicationController
       FormMailer.contact(format_params).deliver
       flash[:notice] = "Your Query has been submitted, we will be in touch with you shortly"
     rescue StandardError => ex
-      flash[:error] = ex
+      flash[:error] = ex.message
     end
     redirect_to contact_path
   end
