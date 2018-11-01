@@ -1,0 +1,47 @@
+<div class="col-md-12 text-center link-container vertical-align-wrap" style="justify-content: center;">
+
+  <% unless (service == 'website') %>
+    <div class="col-md-3">
+      <%= link_to website_path do %>
+          <div class="page-link">
+            <%= image_tag 'icon-home-browser-w.png' %><br/><br/>
+            <div><strong>Website Design & Development</strong></div>
+          </div>
+      <% end %>
+    </div>
+  <% end %>
+
+  <% unless (service == 'seo') %>
+    <div class="col-md-3">
+      <%= link_to seo_path do %>
+          <div class="page-link">
+            <%= image_tag 'icon-home-analysis-w.png' %><br/><br/>
+            <div><strong>Search Engine Optimisation</strong></div>
+          </div>
+      <% end %>
+    </div>
+  <% end %>
+
+  <% unless (service == 'advertising') %>
+    <div class="col-md-3">
+      <%= link_to advertising_path do %>
+          <div class="page-link">
+            <%= image_tag 'icon-home-marketing-w.png' %><br/><br/>
+            <div><strong>Pay Per Click</strong></div>
+          </div>
+      <% end %>
+    </div>
+  <% end %>
+
+  <% unless (service == 'social') %>
+    <div class="col-md-3">
+      <%= link_to social_path do %>
+          <div class="page-link">
+            <%= image_tag 'icon-home-social-media-w.png' %><br/><br/>
+            <div><strong>Social Media</strong></div>
+          </div>
+      <% end %>
+    </div>
+  <% end %>
+
+</div>
