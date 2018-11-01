@@ -306,7 +306,7 @@ textarea {
   width: 100%;
   padding: 20px;
   border-top: 2px solid #ccc;
-  color: #999999;
+  color: $footer-text-color;
   text-align: center;
   font-size: 0.9em;
 }
@@ -519,35 +519,21 @@ select.form-control:not([size]):not([multiple]) {
   margin: 20px 0px;
 }
 .fa {
-  padding: 16px;
+  padding: 14px;
   font-size: 30px;
-  width: 45px;
-  height: 45px;
+  width: 43px;
+  height: 43px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
+  background: $footer-text-color;
+  color: white;
 }
 .fa:hover, .fa:active {
-  opacity: 0.7;
   color: white;
   text-decoration: none;
-}
-.fa-facebook {
-  background: #000;//#3B5998;
-  color: white;
-}
-.fa-twitter {
-  background: #000;//#55ACEE;
-  color: white;
-}
-.fa-linkedin {
-  background: #000;//#007bb5;
-  color: white;
-}
-.fa-instagram {
-  background: #000;//#125688;
-  color: white;
+  background: $secondary-color;
 }
 .mail-icon{
   color: $secondary-color;
@@ -613,8 +599,9 @@ select.form-control:not([size]):not([multiple]) {
   color: $hero-primary-color;
   margin-top: 8.5%;
 }
-.footer .links a{
-  color: grey;
+.footer .links a, .footer .links span{
+  color: $footer-text-color;
+  font-size: 0.85em;
   text-decoration: none;
 }
 .footer .links a:hover{
