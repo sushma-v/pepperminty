@@ -636,6 +636,7 @@ select.form-control:not([size]):not([multiple]) {
 .vertical-align-content{
   align-self: center;
 }
+/* Menu Animation */
 .nav-item a{
   font-size: 17px;
 }
@@ -652,3 +653,4 @@ select.form-control:not([size]):not([multiple]) {
 .nav-item:hover {
   transform: translate(0px, 6px);
 }
+/* Menu Animation Ends */
