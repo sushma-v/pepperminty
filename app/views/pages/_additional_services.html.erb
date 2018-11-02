@@ -22,12 +22,12 @@
     </div>
   <% end %>
 
-  <% unless (service == 'advertising') %>
+  <% unless (service == 'paid_search') %>
     <div class="col-md-3">
-      <%= link_to advertising_path do %>
+      <%= link_to paid_search_path do %>
           <div class="page-link">
             <%= image_tag 'icon-home-marketing-w.png' %><br/><br/>
-            <div><strong>Pay Per Click</strong></div>
+            <div><strong>Paid Search</strong></div>
           </div>
       <% end %>
     </div>

@@ -2,7 +2,7 @@ class PagesController < ApplicationController
 
   CATEGORIES = [["Website Design & Development", "1"],
                 ["Search Engine Optimisation", "2"],
-                ["Advertising", "3"],
+                ["Paid Search", "3"],
                 ["Social Media", "4"],
                 ["Others", "5"]]
 
@@ -24,7 +24,7 @@ class PagesController < ApplicationController
     @categories = CATEGORIES
   end
 
-  def advertising
+  def paid_search
     @service = __method__.to_s
     @categories = CATEGORIES
   end

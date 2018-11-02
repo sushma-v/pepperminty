@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   get '/website', to: 'pages#website'
   get '/seo', to: 'pages#seo'
-  get '/advertising', to: 'pages#advertising'
+  get '/paid_search', to: 'pages#paid_search'
   get '/social', to: 'pages#social'
 
   get '/contact', to: 'pages#contact'
