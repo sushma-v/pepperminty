@@ -383,12 +383,15 @@ li{
 }
 
 .advertising-bgimg{
-  color: $hero-primary-color;
+  /*color: $hero-primary-color;
   background: url(/assets/banner-advertising.png) no-repeat center center;
   background-size: cover;
   .bgimg-content{
     margin-top:-26%;
-  }
+  }*/
+  margin-top: 46px;
+  background: url(/assets/banner-advertising.png) no-repeat;
+  background-size: contain;
 }
 
 .social-bgimg{
