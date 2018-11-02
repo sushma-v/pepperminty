@@ -337,14 +337,6 @@ li{
   margin-right: auto;
 }
 
-.bgimg{
-  padding-bottom: 24%;
-  padding-top: 25%;
-  margin-left: -15px;
-  margin-right: -15px;
-  font-family: "PT Sans";
-}
-
 .hero-bgimg{
   padding-top: 13%;
   margin-left: -15px;
@@ -360,53 +352,37 @@ li{
   h1{ font-weight: 600; font-size: 40px; }
 }
 
-.website-bgimg h1, .seo-bgimg h1, .advertising-bgimg h1, .social-bgimg h1 {
-  font-size: 42px;
+.bgimg{
+  padding-bottom: 24%;
+  padding-top: 25%;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: 46px;
 }
 
 .website-bgimg{
-  color: $hero-primary-color;
-  background: url(/assets/banner-website.png) no-repeat center center;
-  background-size: cover;
-  .bgimg-content{
-    margin-top: -13%;
-  }
+  background: url(/assets/banner-website.png) no-repeat;
+  background-size: contain;
 }
 
 .seo-bgimg{
-  color: black;
-  background: url(/assets/banner-seo.png) no-repeat center center;
-  background-size: cover;
-  .bgimg-content{
-    margin-top:13%;
-  }
+  background: url(/assets/banner-seo.png) no-repeat;
+  background-size: contain;
 }
 
 .advertising-bgimg{
-  /*color: $hero-primary-color;
-  background: url(/assets/banner-advertising.png) no-repeat center center;
-  background-size: cover;
-  .bgimg-content{
-    margin-top:-26%;
-  }*/
-  margin-top: 46px;
   background: url(/assets/banner-advertising.png) no-repeat;
   background-size: contain;
 }
 
 .social-bgimg{
-  color: black;
-  background: url(/assets/banner-social.jpg) no-repeat center center;
-  background-size: cover;
-  .bgimg-content{
-    margin-top:-18%;
-  }
+  background: url(/assets/banner-social.png) no-repeat;
+  background-size: contain;
 }
 
 .about-bgimg{
-  color: $hero-primary-color;
-  background: url(/assets/banner-website.png) no-repeat center center;
-  background-size: cover;
+  background: url(/assets/banner-about.png) no-repeat;
+  background-size: contain;
 }
 
 .default-container{
