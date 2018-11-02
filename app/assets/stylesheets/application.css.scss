@@ -345,7 +345,7 @@ li{
   display: table;
   width: 100vw;
   height: 95vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/hero-img.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/hero.jpg);
   background-size: cover;
   background-position: center center;
   color: $hero-primary-color;
@@ -401,11 +401,8 @@ li{
 select.form-control:not([size]):not([multiple]) {
   height: calc(2.50rem + 9px);
 }
-.border-img-1 {
-  width: 90%;
-}
 .border-img-2 {
-  border-radius: 10px;
+  border-radius: 12px;
 }
 /* page links */
 .section {
@@ -593,7 +590,7 @@ select.form-control:not([size]):not([multiple]) {
   font-size: 24px;
 }
 .contact-bg{
-  background:url(/assets/contact1.jpg) no-repeat center center;
+  background:url(/assets/contact-us.jpg) no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   color: $hero-primary-color;
