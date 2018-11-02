@@ -240,7 +240,7 @@ You should see a home page with a placeholder headline.
 
 You should be able to click the navigation link for "About" and see a placeholder page.
 
-Stop the server with Control-C. If you test the app by starting the web server and then leave the server running while you install new gems, you’ll have to restart the server to see any changes. The same is true for changes to configuration files in the config folder. This can be confusing to new Rails developers because you can change files in the app folders without restarting the server. Stop the server each time after testing and you will avoid this issue.
+Stop the server with Control-C. If you test the app by starting the web server and then leave the server running while you install new gems, you'll have to restart the server to see any changes. The same is true for changes to configuration files in the config folder. This can be confusing to new Rails developers because you can change files in the app folders without restarting the server. Stop the server each time after testing and you will avoid this issue.
 
 h2. Deploy to Heroku
 
