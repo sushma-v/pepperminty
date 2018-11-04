@@ -556,18 +556,24 @@ select.form-control:not([size]):not([multiple]) {
 .link-container a:hover, .link-container a:active{
   text-decoration: none;
 }
-.more-home-arrow{
+.more{
   position: absolute;
-  margin-top: 8%;
+  cursor: pointer;
   margin-left: -0.5%;
   color: $hero-primary-color;
   transition: margin-top 0.3s;
-  cursor: pointer;
 }
-.more-home-arrow:hover{
-  color: $hero-primary-color;
-  margin-top: 8.5%;
+.more-home-arrow{
+  @extend .more;
+  margin-top: 8%;
 }
+.more-home-arrow:hover{ margin-top: 8.5%; }
+.more-arrow{
+  @extend .more;
+  margin-top: 15%;
+}
+.more-arrow:hover{ margin-top: 15.5%; }
+
 .footer .links a, .footer .links span{
   color: $footer-text-color;
   font-size: 0.85em;

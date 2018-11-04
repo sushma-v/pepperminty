@@ -6,6 +6,11 @@ $(document).ready(function(){
         $('html, body').animate({scrollTop: position.top}, "slow");
     });
 
+    $(".more-arrow").click(function(){
+        var position = $('.more-content').offset();
+        $('html, body').animate({scrollTop: position.top}, "slow");
+    });
+
     $(".start").click(function(){
         var position = $('.contact-bg').offset();
         $('html, body').animate({scrollTop: position.top}, "slow");
