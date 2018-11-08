@@ -556,6 +556,9 @@ select.form-control:not([size]):not([multiple]) {
 .additional-services a:hover, .additional-services a:active{
   text-decoration: none;
 }
+.additional-services .col{
+  margin-top: 10px;
+}
 .more{
   position: absolute;
   cursor: pointer;
