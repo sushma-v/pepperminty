@@ -109,13 +109,4 @@
 
 <%= render partial: "contact_form" %>
 
-<div class="row green">
-  <div class="section" style="width:100%;">
-    <div class="col-md-12 text-center margin-bottom-50">
-      <h2 class="margin-bottom-20">Additional Services</h2>
-      <h4>Checkout our additional services for other marketing areas that may be of interest</h4>
-    </div>
-
-    <%= render partial: "additional_services", locals: {service: @service} %>
-  </div>
-</div>
+<%= render partial: "additional_services", locals: {service: @service} %>

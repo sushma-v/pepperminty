@@ -553,13 +553,13 @@ select.form-control:not([size]):not([multiple]) {
   color: $hero-primary-color;
   background-color: $primary-backgound-hover;
 }
-.link-container a:hover, .link-container a:active{
+.additional-services a:hover, .additional-services a:active{
   text-decoration: none;
 }
 .more{
   position: absolute;
   cursor: pointer;
-  margin-left: -0.5%;
+  margin-left: -1%;
   color: $hero-primary-color;
   transition: margin-top 0.3s;
 }

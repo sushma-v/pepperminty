@@ -31,3 +31,10 @@
 
 en:
   hello: "Hello world"
+  additional_services:
+    website: "<h2 class='margin-bottom-20'>Additional Services</h2>
+              <h4>Checkout our supporting services that will ensure you're ranked high on search engines such as Google</h4>"
+    seo: "<h2>Additional Services</h2>"
+    paid_search: "<h2 class='margin-bottom-20'>Additional Services</h2>
+                  <h4>Checkout our additional services for other marketing areas that may be of interest</h4>"
+    social: "<h2>Additional Services</h2>"
