@@ -15,4 +15,9 @@ $(document).ready(function(){
         var position = $('.contact-bg').offset();
         $('html, body').animate({scrollTop: position.top}, "slow");
     });
+
+    $(".seo").click(function(){
+        var position = $('.seo').offset();
+        $('html, body').animate({scrollTop: position.top}, "slow");
+    });
 });
