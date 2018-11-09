@@ -62,6 +62,19 @@
         <div class="bullet-point-small">Banner Design</div>
       </div>
     </div>
+    <div class="clear"></div>
+    <div class="margin-bottom-20"></div>
+
+    <%= button_tag class: "btn-style website", data:{toggle:"collapse", target:".website-packages"}, 'aria-expanded'=>"false", 'aria-controls'=>"websitePackages" do %>
+        View Packages <span class='glyphicon glyphicon-chevron-right'></span>
+    <% end %>
+
+    <div class="collapse website-packages">
+      <div class="card card-body">
+        <%= render partial: "pages/packages/website_packages" %>
+      </div>
+    </div>
+
   </div>
 </div>
 
