@@ -104,6 +104,16 @@
       <%= image_tag 'ppc.png', class: 'img-border' %>
     </div>
 
+    <%= button_tag class: "btn-style search", data:{toggle:"collapse", target:".search-packages"}, 'aria-expanded'=>"false", 'aria-controls'=>"searchPackages" do %>
+        View Packages <span class='glyphicon glyphicon-chevron-right'></span>
+    <% end %>
+
+    <div class="collapse search-packages">
+      <div class="card card-body">
+        <%= render partial: "pages/packages/search_packages" %>
+      </div>
+    </div>
+
   </div>
 </div>
 
