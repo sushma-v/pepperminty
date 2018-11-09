@@ -59,13 +59,14 @@
       </div>
     </div>
 
-    <div class="col-xs-12 margin-bottom-50 text-center">
-      <%= button_tag class: "btn-style seo", data:{toggle:"collapse", target:"#seo-packages"} do %>
+    <%= button_tag class: "btn-style seo", data:{toggle:"collapse", target:".seo-packages"}, 'aria-expanded'=>"false", 'aria-controls'=>"collapseExample" do %>
         View Packages <span class='glyphicon glyphicon-chevron-right'></span>
-      <% end %>
-    </div>
-    <div id="seo-packages" class="collapse">
-      <%= render partial: "pages/packages/seo_packages" %>
+    <% end %>
+
+    <div class="collapse seo-packages">
+      <div class="card card-body">
+        <%= render partial: "pages/packages/seo_packages" %>
+      </div>
     </div>
 
   </div>

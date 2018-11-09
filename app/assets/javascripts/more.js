@@ -16,8 +16,13 @@ $(document).ready(function(){
         $('html, body').animate({scrollTop: position.top}, "slow");
     });
 
-    $(".seo").click(function(){
+    $('.seo-packages').on('shown.bs.collapse', function () {
         var position = $('.seo').offset();
         $('html, body').animate({scrollTop: position.top}, "slow");
+    });
+
+    $('.seo-packages').on('hide.bs.collapse', function () {
+        var position = $('.seo').prev().offset();
+        $('html, body').animate({scrollTop: position.top}, "5000");
     });
 });
