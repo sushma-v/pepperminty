@@ -49,6 +49,19 @@
         <div class="bullet-point">Paid Social Campaign</div>
       </div>
     </div>
+    <div class="clear"></div>
+    <div class="col-md-12 margin-bottom-20"></div>
+
+    <%= button_tag class: "btn-style social", data:{toggle:"collapse", target:".social-packages"}, 'aria-expanded'=>"false", 'aria-controls'=>"social-packages" do %>
+        View Packages <span class='glyphicon glyphicon-chevron-right'></span>
+    <% end %>
+
+    <div class="collapse social-packages">
+      <div class="card card-body">
+        <%= render partial: "pages/packages/social_packages" %>
+      </div>
+    </div>
+
   </div>
 </div>
 
