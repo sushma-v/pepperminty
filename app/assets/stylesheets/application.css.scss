@@ -588,7 +588,7 @@ select.form-control:not([size]):not([multiple]) {
 .more{
   position: absolute;
   cursor: pointer;
-  margin-left: -1%;
+  margin-left: -2%;
   color: $hero-primary-color;
   transition: margin-top 0.3s;
 }
@@ -602,6 +602,18 @@ select.form-control:not([size]):not([multiple]) {
   margin-top: 17%;
 }
 .more-arrow:hover{ margin-top: 17.5%; }
+
+@media screen and (max-width: 768px) {
+  .more-arrow{
+    position: absolute;
+    cursor: pointer;
+    margin-left: -3%;
+    color: $hero-primary-color;
+    transition: margin-top 0.3s;
+    margin-top: 13%;
+  }
+  .more-arrow:hover{ margin-top: 13.5%; }
+}
 
 .footer .links a, .footer .links span{
   color: $footer-text-color;
