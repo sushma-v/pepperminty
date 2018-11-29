@@ -681,3 +681,7 @@ select.form-control:not([size]):not([multiple]) {
   margin-left: auto;
   margin-right: auto;
 }
+.a-btn, .a-btn:hover{
+  color: inherit;
+  text-decoration: none;
+}
