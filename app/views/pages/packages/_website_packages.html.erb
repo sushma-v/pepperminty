@@ -1,4 +1,4 @@
-<div class="packages">
+<div class="packages hidden-xs hidden-sm">
   <div class="col-md-4 text-left">
     <div class="row col-md-12 hidden-xs hidden-sm" style="height: 187px;border-bottom: 1px solid lightgray"><h3><b>Feature</b></h3></div>
     <div class="row col-md-12 hidden-xs hidden-sm">Number of Pages (Excluding Contact page)</div>
@@ -77,9 +77,124 @@
     <div class="row col-md-12 hidden-xs hidden-sm mx-auto"><span class="glyphicon glyphicon-ok mx-auto"></span></div>
     <div class="row col-md-12 hidden-xs hidden-sm mx-auto"><span class="glyphicon glyphicon-ok mx-auto"></span></div>
   </div>
+
+  <div class="col-md-12 text-center">
+    <%= button_tag class: "btn", data:{toggle:"collapse", target:".website-packages"}, 'aria-expanded'=>"false", 'aria-controls'=>"websitePackages" do %>
+        Close <span class='glyphicon glyphicon-remove-circle'></span>
+    <% end %>
+  </div>
+
 </div>
-<div class="col-md-12 text-center">
-  <%= button_tag class: "btn", data:{toggle:"collapse", target:".website-packages"}, 'aria-expanded'=>"false", 'aria-controls'=>"websitePackages" do %>
-      Close <span class='glyphicon glyphicon-chevron-up'></span>
-  <% end %>
+
+
+
+<div class="panel-group hidden-md hidden-lg">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="text-left" data-toggle="collapse" href="#pack1"><span>Starter Lite</span></a>
+        <span class="float-right">£149 + VAT</span>
+      </h4>
+    </div>
+    <div id="pack1" class="panel-collapse collapse">
+      <ul class="list-group">
+        <li class="list-group-item">Number of Pages (Excluding Contact page) <span class="float-right">3</span></li>
+        <li class="list-group-item">Support & Training <span class="glyphicon glyphicon-ok float-right"></span></li>
+        <li class="list-group-item">Blog <span class="float-right">-</span></li>
+        <li class="list-group-item">Logo <span class="float-right">-</span></li>
+        <li class="list-group-item">Lead Capture Forms <span class="float-right">-</span></li>
+        <li class="list-group-item">Dynamic links & images <span class="float-right">-</span></li>
+        <li class="list-group-item">Live chat <span class="float-right">-</span></li>
+        <li class="list-group-item">Number of products <span class="float-right">-</span></li>
+        <li class="list-group-item">Shopping Cart Integration <span class="float-right">-</span></li>
+        <li class="list-group-item">Payment Gateway <span class="float-right">-</span></li>
+        <li class="list-group-item">Product Search Functionality <span class="float-right">-</span></li>
+      </ul>
+      <div class="panel-footer text-center">
+        <a class="a-btn" data-toggle="collapse" href="#pack1">Close <span class='glyphicon glyphicon-remove-circle'></span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="text-left" data-toggle="collapse" href="#pack2"><span>Starter Premium</span></a>
+        <span class="float-right">£399 + VAT</span>
+      </h4>
+    </div>
+    <div id="pack2" class="panel-collapse collapse">
+      <ul class="list-group">
+        <li class="list-group-item">Number of Pages (Excluding Contact page) <span class="float-right">5</span></li>
+        <li class="list-group-item">Support & Training <span class="glyphicon glyphicon-ok float-right"></span></li>
+        <li class="list-group-item">Blog <span class="glyphicon glyphicon-ok float-right"></span></li>
+        <li class="list-group-item">Logo <span class="glyphicon glyphicon-ok float-right"></span></li>
+        <li class="list-group-item">Lead Capture Forms <span class="glyphicon glyphicon-ok float-right"></span></li>
+        <li class="list-group-item">Dynamic links & images <span class="glyphicon glyphicon-ok float-right"></span></li>
+        <li class="list-group-item">Live chat <span class="glyphicon glyphicon-ok float-right"></span></li>
+        <li class="list-group-item">Number of products <span class="float-right">-</span></li>
+        <li class="list-group-item">Shopping Cart Integration <span class="float-right">-</span></li>
+        <li class="list-group-item">Payment Gateway <span class="float-right">-</span></li>
+        <li class="list-group-item">Product Search Functionality <span class="float-right">-</span></li>
+      </ul>
+      <div class="panel-footer text-center">
+        <a class="a-btn" data-toggle="collapse" href="#pack2">Close <span class='glyphicon glyphicon-remove-circle'></span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="text-left" data-toggle="collapse" href="#pack3"><span>Emommerce Lite</span></a>
+        <span class="float-right">£499 + VAT</span>
+      </h4>
+    </div>
+    <div id="pack3" class="panel-collapse collapse">
+      <ul class="list-group">
+        <li class="list-group-item">Number of Pages (Excluding Contact page) <span class="float-right">3</span></li>
+        <li class="list-group-item">Support & Training <span class="glyphicon glyphicon-ok float-right"></span></li>
+        <li class="list-group-item">Blog <span class="float-right">-</span></li>
+        <li class="list-group-item">Logo <span class="float-right">-</span></li>
+        <li class="list-group-item">Lead Capture Forms <span class="float-right">-</span></li>
+        <li class="list-group-item">Dynamic links & images <span class="float-right">-</span></li>
+        <li class="list-group-item">Live chat <span class="float-right">-</span></li>
+        <li class="list-group-item">Number of products <span class="float-right">-</span></li>
+        <li class="list-group-item">Shopping Cart Integration <span class="glyphicon glyphicon-ok float-right"></span></li>
+        <li class="list-group-item">Payment Gateway <span class="glyphicon glyphicon-ok float-right"></span></li>
+        <li class="list-group-item">Product Search Functionality <span class="glyphicon glyphicon-ok float-right"></span></li>
+      </ul>
+      <div class="panel-footer text-center">
+        <a class="a-btn" data-toggle="collapse" href="#pack3">Close <span class='glyphicon glyphicon-remove-circle'></span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="text-left" data-toggle="collapse" href="#pack4"><span>Emommerce Premium</span></a>
+        <span class="float-right">£899 + VAT</span>
+      </h4>
+    </div>
+    <div id="pack4" class="panel-collapse collapse">
+      <ul class="list-group">
+        <li class="list-group-item">Number of Pages (Excluding Contact page) <span class="float-right">5</span></li>
+        <li class="list-group-item">Support & Training <span class="glyphicon glyphicon-ok float-right"></span></li>
+        <li class="list-group-item">Blog <span class="float-right">-</span></li>
+        <li class="list-group-item">Logo <span class="float-right">-</span></li>
+        <li class="list-group-item">Lead Capture Forms <span class="glyphicon glyphicon-ok float-right"></span></li>
+        <li class="list-group-item">Dynamic links & images <span class="glyphicon glyphicon-ok float-right"></span></li>
+        <li class="list-group-item">Live chat <span class="glyphicon glyphicon-ok float-right"></span></li>
+        <li class="list-group-item">Number of products <span class="glyphicon glyphicon-ok float-right"></span></li>
+        <li class="list-group-item">Shopping Cart Integration <span class="glyphicon glyphicon-ok float-right"></span></li>
+        <li class="list-group-item">Payment Gateway <span class="glyphicon glyphicon-ok float-right"></span></li>
+        <li class="list-group-item">Product Search Functionality <span class="glyphicon glyphicon-ok float-right"></span></li>
+      </ul>
+      <div class="panel-footer text-center">
+        <a class="a-btn" data-toggle="collapse" href="#pack4">Close <span class='glyphicon glyphicon-remove-circle'></span></a>
+      </div>
+    </div>
+  </div>
+
 </div>
