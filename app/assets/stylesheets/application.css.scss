@@ -721,6 +721,9 @@ and (max-device-width : 1024px)  {
 }
 @media screen and (min-width: 768px) and (max-width: 1286px) {
   .package-container h3{
-    font-size: 19px;
+    font-size: 17px;
+  }
+  .package-container h4{
+    font-size: 15px;
   }
 }
