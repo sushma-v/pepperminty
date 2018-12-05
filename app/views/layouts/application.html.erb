@@ -6,6 +6,7 @@
     <%= favicon_link_tag "favicon.ico" %>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Pepperminty Marketing" %>">
     <meta name="keywords" content="<%= content_for?(:keywords) ? yield(:keywords) : "Pepperminty Marketing" %>">
+    <%= render 'layouts/google_analytics' %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
