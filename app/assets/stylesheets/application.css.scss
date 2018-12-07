@@ -507,6 +507,11 @@ select.form-control:not([size]):not([multiple]) {
   text-decoration: none;
   background: $secondary-color;
 }
+.fa:visited{
+  color: white;
+  text-decoration: none;
+  background: $footer-text-color;
+}
 .mail-icon{
   color: $secondary-color;
 }
