@@ -2,14 +2,8 @@
   <div class="section-footer">
 
     <p class="col-lg-3 col-md-3 col-sm-3 col-xs-3 links">
-      <%= link_to "Privacy Policy", privacy_policy_path %><br/>
-      <%= link_to "Cookie Policy", cookie_policy_path %>
-    </p>
-
-    <p class="col-lg-3 col-md-3 col-sm-3 col-xs-3 links">
-      <%= link_to "Home", root_path %><br/>
-      <%= link_to "About", about_path %><br/>
-      <%= link_to "Contact", contact_path %>
+      <%= link_to root_path do %><%= image_tag "logo.png" %><% end %><br/>
+      <a href="mailto:hello@peppermintymarketing.co.uk"><span class="glyphicon glyphicon-envelope"></span> hello@pepperminty.co.uk</a>
     </p>
 
     <p class="col-lg-3 col-md-3 col-sm-3 col-xs-3 links">
@@ -20,13 +14,21 @@
     </p>
 
     <p class="col-lg-3 col-md-3 col-sm-3 col-xs-3 links">
-      <%= link_to root_path do %><%= image_tag "logo.png" %><% end %><br/>
+      <%= link_to "Home", root_path %><br/>
+      <%= link_to "About", about_path %><br/>
+      <%= link_to "Contact", contact_path %>
     </p>
+
+    <p class="col-lg-3 col-md-3 col-sm-3 col-xs-3 links">
+      <%= link_to "Privacy Policy", privacy_policy_path %><br/>
+      <%= link_to "Cookie Policy", cookie_policy_path %>
+    </p>
+
   </div>
 </div>
 
-<div class="row" style="border-top: 2px solid #6eecb8;">
-  <div class="section-footer">
+<div class="row" style="border-top: 2px solid #FF738E;">
+  <div class="section-footer-strap">
     <p>
       <span class="text-left footer-text">
         Pepperminty Limited is a company registered in England and Wales. Registration no. 11662896
