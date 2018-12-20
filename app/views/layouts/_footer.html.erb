@@ -1,19 +1,42 @@
-<p class="text-center">
-  <h3 class="footer-heading margin-bottom-20" style="font-weight: 400;">PEPPERMINTY MARKETING</h3>
-</p>
-<p class="text-center margin-bottom-20 links">
-  <a href="mailto:hello@peppermintymarketing.co.uk"><span class="glyphicon glyphicon-envelope"></span> hello@peppermintymarketing.co.uk</a>
-  <span>|</span>
-  <%= link_to "Privacy Policy", privacy_policy_path %>
-  <span>|</span>
-  <%= link_to "Cookie Policy", cookie_policy_path %>
-</p>
-<p class="text-center links">
-  <span>Pepperminty Limited is a company registered in England and Wales. Registration no. 11662896</span>
-</p>
-<p class="text-center">
-  <a href="https://twitter.com/PeppermintyHQ" target="_blank" class="fa fa-twitter"></a>
-  <a href="https://www.facebook.com/peppermintyHQ/" target="_blank" class="fa fa-facebook"></a>
-  <a href="https://www.instagram.com/pepperminty_marketing/" target="_blank" class="fa fa-instagram"></a>
-  <a href="https://www.linkedin.com/company/pepperminty/" target="_blank" class="fa fa-linkedin"></a>
-</p>
+<div class="row">
+  <div class="section-footer">
+
+    <p class="col-lg-3 col-md-3 col-sm-3 col-xs-3 links">
+      <%= link_to "Privacy Policy", privacy_policy_path %><br/>
+      <%= link_to "Cookie Policy", cookie_policy_path %>
+    </p>
+
+    <p class="col-lg-3 col-md-3 col-sm-3 col-xs-3 links">
+      <%= link_to "Home", root_path %><br/>
+      <%= link_to "About", about_path %><br/>
+      <%= link_to "Contact", contact_path %>
+    </p>
+
+    <p class="col-lg-3 col-md-3 col-sm-3 col-xs-3 links">
+      <%= link_to "Website Design & Development", website_path %><br/>
+      <%= link_to "SEO", seo_path %><br/>
+      <%= link_to "Paid Search", paid_search_path %><br/>
+      <%= link_to "Social Media", social_path %>
+    </p>
+
+    <p class="col-lg-3 col-md-3 col-sm-3 col-xs-3 links">
+      <%= link_to root_path do %><%= image_tag "logo.png" %><% end %><br/>
+    </p>
+  </div>
+</div>
+
+<div class="row" style="border-top: 2px solid #6eecb8;">
+  <div class="section-footer">
+    <p>
+      <span class="text-left footer-text">
+        Pepperminty Limited is a company registered in England and Wales. Registration no. 11662896
+      </span>
+      <span class="pull-right">
+        <a href="https://twitter.com/PeppermintyHQ" target="_blank" class="fa fa-twitter footer-icon"></a>
+        <a href="https://www.facebook.com/peppermintyHQ/" target="_blank" class="fa fa-facebook footer-icon"></a>
+        <a href="https://www.instagram.com/pepperminty_marketing/" target="_blank" class="fa fa-instagram footer-icon"></a>
+        <a href="https://www.linkedin.com/company/pepperminty/" target="_blank" class="fa fa-linkedin footer-icon"></a>
+      </span>
+    </p>
+  </div>
+</div>

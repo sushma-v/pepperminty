@@ -307,7 +307,7 @@ textarea {
   left: 0;
   bottom: 0;
   width: 100%;
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
   border-top: 2px solid #ccc;
   color: $footer-text-color;
   text-align: center;
@@ -416,6 +416,12 @@ select.form-control:not([size]):not([multiple]) {
 }
 .section h3{
   color: #303030;
+}
+.section-footer {
+  padding: 10px 30px;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .grey{
   background-color: #f2f2f2;
@@ -621,12 +627,24 @@ select.form-control:not([size]):not([multiple]) {
   .more-arrow:hover{ margin-top: 13.5%; }
 }
 
-.footer .links a, .footer .links span{
+.footer-text{
+  color: $footer-text-color;
+  font-size: 0.80em;
+}
+.footer-icon{
+  background-color: $footer-text-color;
+  text-decoration: none;
+}
+.footer-icon:hover{
+  background-color: $secondary-color;
+  text-decoration: none;
+}
+.links a{
   color: $footer-text-color;
   font-size: 0.80em;
   text-decoration: none;
 }
-.footer .links a:hover{
+.links a:hover{
   color: $secondary-color;
   text-decoration: none;
 }
