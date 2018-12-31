@@ -20,6 +20,7 @@ gem 'bootstrap', '4.0.0.alpha6'
 gem 'jquery-rails'
 gem 'rails_12factor'
 gem 'sitemap_generator'
+gem "recaptcha", require: "recaptcha/rails"
 
 group :development do
   gem 'web-console', '>= 3.3.0'

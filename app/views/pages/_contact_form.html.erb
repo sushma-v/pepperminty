@@ -11,7 +11,7 @@
       <div class="col-lg-3 col-md-3 col-sm-3"></div>
 
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <%= form_tag(submit_query_url) do %>
+        <%= form_tag(submit_query_url, class: "contact-form") do %>
             <div class="col-xs-12 col-md-6 text-left">
               <div class="form-group">
                 <%= text_field_tag :name, nil, class:"form-control", required: true, placeholder: "Name" %>
@@ -38,7 +38,8 @@
               </div>
               <div class="form-group">
                 <div class="text-center">
-                  <div class="g-recaptcha" data-sitekey="6LdRzIUUAAAAANLfXAxpDfNyJMn3ZYN_TVizLfJE"></div>
+                  <div class="g-recaptcha" data-callback="validateRecaptcha" data-sitekey="6LdRzIUUAAAAANLfXAxpDfNyJMn3ZYN_TVizLfJE"></div>
+                  <div id="recaptcha-error" class="alert alert-danger">Please verify that you are not a robot.</div>
                 </div>
               </div>
               <div class="form-group">
@@ -55,3 +56,4 @@
   </div>
 </div>
 <script src='https://www.google.com/recaptcha/api.js'></script>
+<%= javascript_include_tag 'recaptcha' %>

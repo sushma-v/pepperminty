@@ -46,8 +46,10 @@ class PagesController < ApplicationController
 
   def submit_query
     begin
-      FormMailer.contact(format_params).deliver
-      flash[:notice] = "Your Query has been submitted, we will be in touch with you shortly"
+      if verify_recaptcha
+        FormMailer.contact(format_params).deliver
+        flash[:notice] = "Your Query has been submitted, we will be in touch with you shortly"
+      end
     rescue StandardError => ex
       flash[:error] = ex.message
     end
@@ -57,7 +59,7 @@ class PagesController < ApplicationController
   private
 
   def query_params
-    params.permit(:name, :email, :company_name, :phone, :category, :message)
+    params.permit(:name, :email, :company_name, :phone, :category, :message, "g-recaptcha-response")
   end
 
   def format_params
