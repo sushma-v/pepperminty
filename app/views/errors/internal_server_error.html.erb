@@ -1,1 +1,20 @@
-<b>PM: Internal server error</b>
+<% content_for :title do %>Internal Server Error<% end %>
+
+<div class="row">
+  <div class="section contact">
+    <div class="col-xs-12 text-center margin-bottom-20">
+
+      <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
+        <h2>Oops, We're sorry, but something went wrong.</h2>
+        <p>If you are the application owner check the logs for more information.</p>
+        <p>For any other help contact support via <a href='mailto:%{email}'>Email</a></p>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div>
+  <%= render partial: "contact_form" %>
+</div>
