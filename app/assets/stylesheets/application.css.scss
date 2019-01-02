@@ -665,6 +665,14 @@ select.form-control:not([size]):not([multiple]) {
   color: $secondary-color;
   text-decoration: none;
 }
+.error-link{
+  color: $secondary-color;
+  text-decoration: none;
+}
+.error-link:hover{
+  color: #333333;
+  text-decoration: none;
+}
 .privacy-policy h3{
   color: $primary-color;
 }
@@ -766,4 +774,10 @@ and (max-device-width : 1024px)  {
   .package-container h4{
     font-size: 15px;
   }
+}
+.error-text{
+  color: $footer-text-color;
+}
+.error-heading{
+  font-size: 7em;
 }
