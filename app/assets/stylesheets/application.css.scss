@@ -755,6 +755,10 @@ and (max-device-width : 1024px)  {
   color: #333;
   text-decoration: none;
 }
+.hero-btn, .hero-btn:hover, .hero-btn:visited, hero-btn:active{
+  color: #ffffff;
+  text-decoration: none;
+}
 .float-right{
   float: right;
 }
