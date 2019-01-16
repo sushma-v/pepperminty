@@ -127,26 +127,8 @@
     </div>
     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center"></div>
     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
-      <div style="height: 540px; max-height: 540px; overflow-y: auto; background-color: #ffffff; padding: 20px 20px 50px 20px;">
-        <p class="text-left">
-          <a href="https://www.instagram.com/pepperminty_marketing/" class="a-btn">
-            <%= image_tag @instagram.first.user.profile_picture, style:"border-radius: 50%; width: 15%; border: 1px solid #ccc;" %>
-            <%= @instagram.first.user.username %>
-          </a>
-        </p>
-        <hr/>
-        <% @instagram.each do |instagram| %>
-            <a href=<%=instagram.link%> style="text-decoration:none;" >
-              <p class="text-left"><%= instagram.caption.text %></p>
-              <p><%= image_tag instagram.images.standard_resolution.url %></p>
-            </a>
-            <p>
-              <%= instagram.likes[:count] %> likes <br/>
-              <span class="footer-text"><%= distance_of_time_in_words(Time.at(instagram.created_time.to_i),Time.now).upcase %> AGO</span>
-            </p>
-            <hr/>
-        <% end %>
-      </div>
+      <h3>Instagram</h3>
+      <%= render partial: "pages/social_channels/instagram", locals: {instagram_feed: @instagram} %>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center"></div>
   </div>
