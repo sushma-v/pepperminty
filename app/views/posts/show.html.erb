@@ -1,39 +1,25 @@
-<p id="notice"><%= notice %></p>
+<% content_for :title do %>Blog<% end %>
+<% content_for :description do %>Pepperminty Marketing is the Digital Marketing and Software Development & Design agency for Start-ups and Small Businesses. We range in services that include website design, Search Engine Optimisation, Paid Search Social Media and more. Contact us today to discuss your business' marketing requirements.<% end %>
+<% content_for :keywords do %>Pepperminty Marketing, Digital Marketing, London Marketing Agency, Marketing for Start-ups, Marketing for Small Businesses, Marketing for SMEs, Search Engine Optimistation, SEO, Website Design, Website Development, PPC, Paid Search Marketing, Pay Per Click, AdWords, Bing, Social Media Marketing, internet marketing<% end %>
 
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
+<div class="row more-content">
+  <div class="section">
+    <div class="col-xs-2"></div>
 
-<p>
-  <strong>Content:</strong>
-  <%= @post.content %>
-</p>
+    <div class="col-xs-8">
+      <p class="margin-bottom-20" style="font-size: 3em;"><%= @post.title %></p>
 
-<p>
-  <strong>Thumb image:</strong>
-  <%= @post.thumb_image %>
-</p>
+      <p class="margin-bottom-20" style="font-size: 0.95em;">Posted <%= distance_of_time_in_words(Time.at(@post.created_at.to_i),Time.now) %> ago in <%= @post.category %></p>
 
-<p>
-  <strong>Main image:</strong>
-  <%= @post.main_image %>
-</p>
+      <p><%= image_tag @post.main_image %></p>
 
-<p>
-  <strong>Category:</strong>
-  <%= @post.category %>
-</p>
+      <p><%= @post.content %></p>
 
-<p>
-  <strong>Author:</strong>
-  <%= @post.author %>
-</p>
+      <%= link_to 'Edit', edit_post_path(@post) %> |
+      <%= link_to 'Back', posts_path %>
+    </div>
 
-<p>
-  <strong>Status:</strong>
-  <%= @post.status %>
-</p>
-
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+    <div class="col-xs-2"></div>
+    <div class="clear"></div>
+  </div>
+</div>
