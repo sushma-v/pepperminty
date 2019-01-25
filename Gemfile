@@ -22,6 +22,7 @@ gem 'rails_12factor'
 gem 'sitemap_generator'
 gem "recaptcha", require: "recaptcha/rails"
 gem "instagram"
+gem 'ckeditor'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

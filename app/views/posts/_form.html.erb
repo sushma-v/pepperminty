@@ -1,3 +1,4 @@
+<%= javascript_include_tag Ckeditor.cdn_url %>
 <%= form_with(model: post, local: true) do |form| %>
   <% if post.errors.any? %>
     <div id="error_explanation">
@@ -18,7 +19,8 @@
 
   <div class="field form-group">
     <%= form.label :content %>
-    <%= form.text_area :content, id: :post_content, class: "form-control" %>
+    <%#= form.text_area :content, id: :post_content, class: "form-control" %>
+    <%= form.cktext_area :content, id: :post_content, class: "form-control", ckeditor: { language: 'uk'} %>
   </div>
 
   <div class="field form-group">
