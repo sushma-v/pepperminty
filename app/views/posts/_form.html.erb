@@ -18,18 +18,12 @@
 
   <div class="field form-group">
     <%= form.label :content %>
-    <%#= form.text_area :content, id: :post_content, class: "form-control" %>
     <%= form.cktext_area :content, id: :post_content, class: "form-control" %>
   </div>
 
   <div class="field form-group">
-    <%= form.label :thumb_image %>
-    <%= form.text_area :thumb_image, id: :post_thumb_image, class: "form-control" %>
-  </div>
-
-  <div class="field form-group">
     <%= form.label :main_image %>
-    <%= form.text_area :main_image, id: :post_main_image, class: "form-control" %>
+    <%= form.file_field :main_image, id: :post_main_image, class: "form-control", style: "padding: 10px; height: 46px;" %>
   </div>
 
   <div class="field form-group">
