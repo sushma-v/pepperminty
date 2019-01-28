@@ -11,7 +11,7 @@
 
       <p class="margin-bottom-20" style="font-size: 1em;">Posted <%= distance_of_time_in_words(Time.at(@post.created_at.to_i),Time.now) %> ago in <%= @post.category %></p>
 
-      <p><%= image_tag @post.main_image %></p>
+      <p><%= image_tag @post.main_image, alt: @post.alt_text %></p>
 
       <p><%= @post.content.html_safe %></p>
 
