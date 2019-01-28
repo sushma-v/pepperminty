@@ -24,6 +24,7 @@ gem "recaptcha", require: "recaptcha/rails"
 gem "instagram"
 gem 'ckeditor'
 gem 'carrierwave', '~> 1.0'
+gem 'mini_magick'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
