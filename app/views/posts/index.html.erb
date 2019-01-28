@@ -12,7 +12,7 @@
     <% @posts.each do |post| %>
       <div class="col-xs-4 text-left">
         <div class="blog-card">
-          <%= image_tag post.thumb_image, style: "width: 100%; border-radius: 5px 5px 0px 0px;" %>
+          <%= image_tag post.main_image, style: "width: 100%; border-radius: 5px 5px 0px 0px;" %>
           <div class="blog-container">
             <h5><%= post.category.upcase %></h5>
             <p class="margin-bottom-20" style="font-size: 1.5em;"><%= post.title %></p>
