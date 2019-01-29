@@ -1,4 +1,6 @@
 class Post < ApplicationRecord
+  enum status: [:draft, :published]
+
   validates :title, presence: true
   validates :content, presence: true
 

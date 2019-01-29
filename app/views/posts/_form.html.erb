@@ -23,7 +23,7 @@
 
   <div class="field form-group">
     <%= form.label :main_image %>
-    <%= form.file_field :main_image, id: :post_main_image, class: "form-control", style: "padding: 10px; height: 46px;" %>
+    <%= form.file_field :main_image, id: :post_main_image, class: "form-control file-btn", style: "height:38px;" %>
   </div>
 
   <div class="field form-group">
@@ -43,7 +43,7 @@
 
   <div class="field form-group">
     <%= form.label :status %>
-    <%= form.number_field :status, id: :post_status, class: "form-control" %>
+    <%= form.select :status, options_for_select(Post.statuses.keys, selected: @post.status),{}, class: "form-control width-100-percent" %>
   </div>
 
   <div class="actions form-group">
