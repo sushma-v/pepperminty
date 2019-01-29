@@ -5,4 +5,6 @@ class Post < ApplicationRecord
   validates :content, presence: true
 
   mount_uploader :main_image, ImageUploader
+
+  scope :published, -> { where(status: :published) }
 end
