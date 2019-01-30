@@ -1,4 +1,4 @@
-# PEPPERMINTY MARKETING
+# PEPPERMINTY LIMITED
 
 A website created using Ruby on Rails and Postgresql.
 

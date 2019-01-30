@@ -14,6 +14,6 @@ class FormMailer < ApplicationMailer
     @category = params.fetch(:category, nil)
     @message = params.fetch(:message, nil)
 
-    mail from: @email_id, subject: "Pepperminty Marketing: Contact Form"
+    mail from: @email_id, subject: "Pepperminty Limited: Contact Form"
   end
 end
