@@ -41,14 +41,15 @@ class PostsController < ApplicationController
   # PATCH/PUT /posts/1
   # PATCH/PUT /posts/1.json
   def update
-    respond_to do |format|
-      if @post.update(post_params)
+    Post.transaction do
+      begin
+        @post.update(post_params)
+        @post.create_hash_tags
         @post.update_attribute(:published_date, DateTime.now) if @post.published?
-        format.html { redirect_to @post, notice: 'Post was successfully updated.' }
-        format.json { render :show, status: :ok, location: @post }
-      else
-        format.html { render :edit }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
+        redirect_to @post, notice: 'Post was successfully updated.'
+      rescue StandardError => ex
+        flash[:error] = ex.message
+        render :edit
       end
     end
   end
