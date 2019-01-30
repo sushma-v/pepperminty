@@ -28,6 +28,7 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.save
+        @post.update_attribute(:published_date, DateTime.now) if @post.published?
         format.html { redirect_to @post, notice: 'Post was successfully created.' }
         format.json { render :show, status: :created, location: @post }
       else
