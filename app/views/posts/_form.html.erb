@@ -31,6 +31,16 @@
     <%= form.text_field :alt_text, id: :post_alt_text, class: "form-control" %>
   </div>
 
+    <div class="field form-group">
+      <%= form.label :meta_description %>
+      <%= form.text_field :meta_description, id: :post_meta_description, class: "form-control" %>
+    </div>
+
+    <div class="field form-group">
+      <%= form.label :meta_keywords %>
+      <%= form.text_field :meta_keywords, id: :post_meta_keywords, class: "form-control" %>
+    </div>
+
   <div class="field form-group">
     <%= form.label :category %>
     <%= form.text_field :category, id: :post_category, class: "form-control" %>
