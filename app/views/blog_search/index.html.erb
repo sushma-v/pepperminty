@@ -1,0 +1,42 @@
+<% content_for :title do %>Blog<% end %>
+<% content_for :description do %>Pepperminty Limited is the Digital Marketing and Software Development & Design agency for Start-ups and Small Businesses. We range in services that include website design, Search Engine Optimisation, Paid Search Social Media and more. Contact us today to discuss your business' marketing requirements.<% end %>
+<% content_for :keywords do %>Pepperminty Limited, Digital Marketing, London Marketing Agency, Marketing for Start-ups, Marketing for Small Businesses, Marketing for SMEs, Search Engine Optimistation, SEO, Website Design, Website Development, PPC, Paid Search Marketing, Pay Per Click, AdWords, Bing, Social Media Marketing, internet marketing<% end %>
+
+<div class="row more-content">
+  <div class="section">
+
+    <div class="col-xs-12 text-center margin-bottom-20">
+      <div class="search-page">
+        <% if @posts.exists? %>
+            <h1>Search Results</h1>
+        <% else %>
+            <h1>Oop! No matching posts ...</h1>
+        <% end %>
+        <div class="user-images">
+
+          <% @posts.each do |post| %>
+              <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 text-left">
+                <div class="blog-card">
+                  <%= image_tag post.main_image, alt: post.alt_text, style: "width: 100%; border-radius: 5px 5px 0px 0px;" %>
+                  <div class="blog-container">
+                    <h5><%= post.category.upcase %></h5>
+                    <p class="margin-bottom-20" style="font-size: 1.5em;"><%= post.title %></p>
+                    <p class="footer-text margin-bottom-20">
+                      <%= distance_of_time_in_words(Time.at(post.created_at.to_i),Time.now).upcase %> AGO
+                    </p>
+                    <p class="text-center"><%= link_to 'Read More', post, class: "btn-style-alt" %></p>
+                    <p>
+                      <span><%= link_to 'Edit', edit_post_path(post) %></span> |
+                      <span><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+          <% end %>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

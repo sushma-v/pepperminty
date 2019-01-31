@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'blog_search/index'
+
   mount Ckeditor::Engine => '/ckeditor'
   resources :posts
   root to: 'pages#home'
@@ -22,4 +24,6 @@ Rails.application.routes.draw do
 
   match "/404", to: "errors#not_found", via: :all
   match "/500", to: "errors#internal_server_error", via: :all
+
+  get 'blog_search' => 'blog_search#index'
 end
