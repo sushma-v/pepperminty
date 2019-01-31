@@ -44,7 +44,7 @@ class PostsController < ApplicationController
     Post.transaction do
       begin
         @post.update(post_params)
-        @post.create_hash_tags
+        @post.update_hash_tags
         @post.update_attribute(:published_date, DateTime.now) if @post.published?
         redirect_to @post, notice: 'Post was successfully updated.'
       rescue StandardError => ex
