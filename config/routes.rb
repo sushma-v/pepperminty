@@ -26,4 +26,5 @@ Rails.application.routes.draw do
   match "/500", to: "errors#internal_server_error", via: :all
 
   get '/blog_search/:query', to: 'blog_search#index'
+  post '/blog_search/:query', to: 'blog_search#index'
 end

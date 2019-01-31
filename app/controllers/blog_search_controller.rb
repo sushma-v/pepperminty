@@ -1,7 +1,6 @@
 class BlogSearchController < ApplicationController
   def index
-    Rails.logger.info("======1======="+params.to_json)
-    query = params.fetch(:query, '')
+    query = params.fetch(:tag, 'not_found') == 'not_found' ? params.fetch(:query, '') : params.fetch(:tag, '')
     @posts = Post.joins(:hash_tags).where(hash_tags: {name: query.delete('#')})
   end
 end
