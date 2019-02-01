@@ -33,25 +33,7 @@
       </div>
     </div>
 
-    <% @posts.each do |post| %>
-      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 text-left">
-        <div class="blog-card">
-          <%= image_tag post.main_image, alt: post.alt_text, style: "width: 100%; border-radius: 5px 5px 0px 0px;" %>
-          <div class="blog-container">
-            <h5><%= post.category.upcase %></h5>
-            <p class="margin-bottom-20" style="font-size: 1.5em;"><%= post.title %></p>
-            <p class="footer-text margin-bottom-20">
-              <%= distance_of_time_in_words(Time.at(post.created_at.to_i),Time.now).upcase %> AGO
-            </p>
-            <p class="text-center"><%= link_to 'Read More', post, class: "btn-style-alt" %></p>
-            <p class="text-right">
-              <%= link_to 'Edit', edit_post_path(post), class: "control-link padding-right-10"  %>
-              <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "control-link" %>
-            </p>
-          </div>
-        </div>
-      </div>
-    <% end %>
+    <%= render partial: 'list', locals: {posts: @posts} %>
 
   </div>
 
