@@ -15,16 +15,14 @@ class Post < ApplicationRecord
 
   def create_hash_tags
     extract_hash_tags.uniq.each do |name|
-      hash_tags.find_or_create_by(name: name)
+      tag = HashTag.find_or_create_by(name: name)
+      hash_tags << tag
     end
   end
 
   def update_hash_tags
     hash_tags.clear
-    extract_hash_tags.uniq.each do |name|
-      tag = HashTag.find_or_create_by(name: name)
-      hash_tags << tag
-    end
+    create_hash_tags
   end
 
   def extract_hash_tags
