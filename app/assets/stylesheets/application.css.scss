@@ -713,6 +713,9 @@ and (max-device-width : 1024px)  {
 .secondary-color, .secondary-color:hover, .secondary-color:visited{
   color: $secondary-color;
 }
+.control-link, .control-link:hover, .control-link:visited{
+  color: #888888;
+}
 .vertical-align-wrap{
   display: flex;
   //justify-content: center;
@@ -814,4 +817,7 @@ and (max-device-width : 1024px)  {
 .file-btn{
   padding: 10px;
   height: 46px;
+}
+.padding-right-10{
+  padding-right: 10px;
 }

@@ -12,7 +12,12 @@
     <div class="col-xs-8 text-left">
       <%= render 'form', post: @post %>
 
-      <%= link_to 'Preview', @post %> | <%= link_to 'Back', posts_path %>
+      <hr style="margin-top: 50px;"/>
+
+      <p class="text-left">
+        <%= link_to 'Preview', @post, class: "control-link padding-right-10" %>
+        <%= link_to 'Back', posts_path, class: "control-link" %>
+      </p>
     </div>
 
   </div>

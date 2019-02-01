@@ -17,8 +17,10 @@
 
       <hr/>
 
-      <%= link_to 'Edit', edit_post_path(@post) %> |
-      <%= link_to 'Back', posts_path %>
+      <p class="text-left">
+        <%= link_to 'Edit', edit_post_path(@post), class: "control-link padding-right-10" %>
+        <%= link_to 'Back', posts_path, class: "control-link" %>
+      </p>
     </div>
 
     <div class="col-xs-2"></div>
