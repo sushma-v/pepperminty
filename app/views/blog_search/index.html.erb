@@ -12,6 +12,7 @@
         <% else %>
             <h1>Oop! No matching posts ...</h1>
         <% end %>
+
         <div class="user-images">
 
           <% @posts.each do |post| %>
@@ -25,9 +26,9 @@
                       <%= distance_of_time_in_words(Time.at(post.created_at.to_i),Time.now).upcase %> AGO
                     </p>
                     <p class="text-center"><%= link_to 'Read More', post, class: "btn-style-alt" %></p>
-                    <p>
-                      <span><%= link_to 'Edit', edit_post_path(post) %></span> |
-                      <span><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+                    <p class="text-right">
+                      <%= link_to 'Edit', edit_post_path(post), class: "control-link padding-right-10"  %>
+                      <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "control-link" %>
                     </p>
                   </div>
                 </div>
@@ -35,8 +36,13 @@
           <% end %>
 
         </div>
+
       </div>
     </div>
 
+  </div>
+
+  <div class="col-xs-12 margin-bottom-50">
+    <p class="text-center"><%= link_to 'Back', posts_path, class: "btn-style-alt" %></p>
   </div>
 </div>
