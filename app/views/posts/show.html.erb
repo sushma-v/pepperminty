@@ -15,11 +15,12 @@
 
       <p><%= (render_with_hashtags @post.content).html_safe %></p>
 
-      <hr/>
+      <p class="text-left"><%= link_to 'Back', posts_path, class: "btn-style-alt" %></p>
+      
+      <hr style="margin-top: 50px;"/>
 
       <p class="text-left">
         <%= link_to 'Edit', edit_post_path(@post), class: "control-link padding-right-10" %>
-        <%= link_to 'Back', posts_path, class: "control-link" %>
       </p>
     </div>
 
