@@ -13,9 +13,7 @@
 
       <p><%= image_tag @post.main_image, alt: @post.alt_text %></p>
 
-      <p>
-        <%= (render_with_hashtags @post.content).html_safe %>
-      </p>
+      <p><%= (render_with_hashtags @post.content).html_safe %></p>
 
       <hr/>
 
