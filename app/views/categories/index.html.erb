@@ -1,29 +1,41 @@
-<p id="notice"><%= notice %></p>
+<% content_for :title do %>Blog<% end %>
+<% content_for :description do %>Pepperminty Limited is the Digital Marketing and Software Development & Design agency for Start-ups and Small Businesses. We range in services that include website design, Search Engine Optimisation, Paid Search Social Media and more. Contact us today to discuss your business' marketing requirements.<% end %>
+<% content_for :keywords do %>Pepperminty Limited, Digital Marketing, London Marketing Agency, Marketing for Start-ups, Marketing for Small Businesses, Marketing for SMEs, Search Engine Optimistation, SEO, Website Design, Website Development, PPC, Paid Search Marketing, Pay Per Click, AdWords, Bing, Social Media Marketing, internet marketing<% end %>
 
-<h1>Categories</h1>
+<div class="row more-content">
+  <div class="section">
+    <div class="col-xs-12 text-center margin-bottom-20">
+      <p id="notice"><%= notice %></p>
+      <h2 class="margin-bottom-50">Categories</h2>
+      <p><%= link_to 'Create Category', new_category_path, class: "btn-style-alt" %></p>
+    </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Display</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <div class="col-xs-12 text-left margin-bottom-20">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Display</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @categories.each do |category| %>
+              <tr>
+                <td><%= category.name %></td>
+                <td><%= category.display %></td>
+                <!--<td><%#= link_to 'Show', category, class: "control-link padding-right-10" %></td>-->
+                <td><%= link_to raw("<i class=\"glyphicon glyphicon-edit\"></i>"), edit_category_path(category),
+                                class: "control-link padding-right-10", title: 'edit' %></td>
+                <td><%= link_to raw("<i class=\"glyphicon glyphicon-trash\"></i>"), category, method: :delete,
+                                data: { confirm: 'Are you sure?' }, title: 'edit', class: "control-link padding-right-10" %></td>
+              </tr>
+          <% end %>
+        </tbody>
+      </table>
 
-  <tbody>
-    <% @categories.each do |category| %>
-      <tr>
-        <td><%= category.name %></td>
-        <td><%= category.display %></td>
-        <td><%= link_to 'Show', category %></td>
-        <td><%= link_to 'Edit', edit_category_path(category) %></td>
-        <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+    </div>
 
-<br>
-
-<%= link_to 'New Category', new_category_path %>
+  </div>
+</div>
