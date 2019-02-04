@@ -1,6 +1,7 @@
 class Post < ApplicationRecord
   has_many :post_hash_tags, dependent: :destroy
   has_many :hash_tags, -> { distinct }, through: :post_hash_tags
+  belongs_to :category
 
   enum status: [:draft, :published]
 
