@@ -1,6 +1,6 @@
 <%= form_with(model: @category, local: true, url: categories_path, method: :post) do |form| %>
     <td><%= form.text_field :name, id: :category_name, class: 'form-control' %></td>
-    <td><%= form.select :parent_id, Category.all.collect {|c| [c.name, c.id]}, {}, class: "form-control width-100-percent" %></td>
+    <td><%= form.select :parent_id, Category.all.collect {|c| [c.name, c.id]}, {include_blank: 'Root'}, class: "form-control width-100-percent" %></td>
     <td><%= form.check_box :display, id: :category_display, style: "height: 2.25rem;" %></td>
     <td><p><%= form.submit class: "btn-style-alt btn-sm" %></p></td>
 <% end %>
