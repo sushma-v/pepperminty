@@ -7,7 +7,6 @@
     <div class="col-xs-12 text-center margin-bottom-20">
       <p id="notice"><%= notice %></p>
       <h2 class="margin-bottom-50">Categories</h2>
-      <p><%= link_to 'Create Category', new_category_path, class: "btn-style-alt" %></p>
     </div>
 
     <div class="col-xs-12 text-left margin-bottom-20">
@@ -16,7 +15,6 @@
           <tr>
             <th>Name</th>
             <th>Display</th>
-            <th>Edit</th>
             <th>Delete</th>
           </tr>
         </thead>
@@ -24,14 +22,22 @@
           <% @categories.each do |category| %>
               <tr>
                 <td><%= category.name %></td>
-                <td><%= category.display %></td>
-                <!--<td><%#= link_to 'Show', category, class: "control-link padding-right-10" %></td>-->
-                <td><%= link_to raw("<i class=\"glyphicon glyphicon-edit\"></i>"), edit_category_path(category),
-                                class: "control-link padding-right-10", title: 'edit' %></td>
+
+                <td><%= check_box_tag :display, category.display, category.display %></td>
+
                 <td><%= link_to raw("<i class=\"glyphicon glyphicon-trash\"></i>"), category, method: :delete,
                                 data: { confirm: 'Are you sure?' }, title: 'edit', class: "control-link padding-right-10" %></td>
               </tr>
           <% end %>
+
+          <tr>
+            <%= form_with(model: @category, local: true, url: categories_path, method: :post) do |form| %>
+                <td><%= form.text_field :name, id: :category_name %></td>
+                <td><%= form.check_box :display, id: :category_display %></td>
+                <td><p><%= form.submit class: "btn-style-alt btn-sm" %></p></td>
+            <% end %>
+          </tr>
+
         </tbody>
       </table>
 
