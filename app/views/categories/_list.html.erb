@@ -10,7 +10,7 @@
 
   <tbody>
     <% categories.each do |category| %>
-      <tr id="user_list">
+      <tr>
         <td><%= category.name %></td>
 
         <td><%= category.parent.nil? ? '-' : category.parent.name %></td>
@@ -18,9 +18,9 @@
         <td><%= category.display? ? raw("<i class=\"glyphicon glyphicon-ok\"></i>") : raw("<i class=\"glyphicon glyphicon-remove\"></i>") %></td>
         <td>
           <%= link_to raw("<i class=\"glyphicon glyphicon-edit\"></i>"), edit_category_path(category),
-                      class: "control-link padding-right-10", title: 'edit' %>
+                      class: "control-link padding-right-10", title: 'edit', id: 'user_list' %>
           <%= link_to raw("<i class=\"glyphicon glyphicon-trash\"></i>"), category, method: :delete,
-                      data: { confirm: 'Are you sure?' }, title: 'edit', class: "control-link padding-right-10" %>
+                      data: { confirm: 'Are you sure?' }, title: 'delete', class: "control-link padding-right-10" %>
         </td>
       </tr>
     <% end %>
