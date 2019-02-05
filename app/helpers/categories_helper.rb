@@ -10,3 +10,5 @@ module CategoriesHelper
     end
   end
 end
+
+#<div class="tree"><%= nested_attributes(Category.all.roots) %></div>
