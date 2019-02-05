@@ -1,0 +1,32 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Parent</th>
+      <th>Display</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% categories.each do |category| %>
+      <tr id="user_list">
+        <td><%= category.name %></td>
+
+        <td><%= category.parent.nil? ? '-' : category.parent.name %></td>
+
+        <td><%= category.display? ? raw("<i class=\"glyphicon glyphicon-ok\"></i>") : raw("<i class=\"glyphicon glyphicon-remove\"></i>") %></td>
+        <td>
+          <%= link_to raw("<i class=\"glyphicon glyphicon-edit\"></i>"), edit_category_path(category),
+                      class: "control-link padding-right-10", title: 'edit' %>
+          <%= link_to raw("<i class=\"glyphicon glyphicon-trash\"></i>"), category, method: :delete,
+                      data: { confirm: 'Are you sure?' }, title: 'edit', class: "control-link padding-right-10" %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+
+  <tfoot>
+    <tr><%= render 'form', category: category_new %></tr>
+  </tfoot>
+</table>
