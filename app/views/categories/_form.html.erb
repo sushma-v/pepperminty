@@ -1,8 +1,3 @@
-<!--<%= form_with(model: category, local: true) do |form| %>
-  <td><%= form.text_field :name, id: :category_name %></td>
-  <td><%= form.check_box :display, id: :category_display %></td>
-  <td><%= form.submit %></td>
-<% end %>-->
 <%= form_with(model: @category, local: true, url: categories_path, method: :post) do |form| %>
     <td><%= form.text_field :name, id: :category_name %></td>
     <td><%= form.check_box :display, id: :category_display %></td>
