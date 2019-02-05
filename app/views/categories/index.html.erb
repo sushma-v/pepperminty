@@ -19,7 +19,7 @@
         </thead>
         <tbody>
           <% @categories.each do |category| %>
-              <tr>
+              <tr id="user_list">
                 <td><%= category.name %></td>
 
                 <td><%= check_box_tag :display, category.display, category.display %></td>
@@ -27,14 +27,14 @@
                 <td><%= link_to raw("<i class=\"glyphicon glyphicon-trash\"></i>"), category, method: :delete,
                                 data: { confirm: 'Are you sure?' }, title: 'edit', class: "control-link padding-right-10" %></td>
 
-                <td><%= link_to raw("<i class=\"glyphicon glyphicon-edit\"></i>"), edit_category_path(category),
-                                class: "control-link padding-right-10", title: 'edit' %></td>
+                <!--<td><%#= link_to raw("<i class=\"glyphicon glyphicon-edit\"></i>"), edit_category_path(category),
+                                class: "control-link padding-right-10", title: 'edit' %></td>-->
               </tr>
           <% end %>
-
-          <tr><%= render 'form', category: @category %></tr>
-
         </tbody>
+        <tfoot>
+          <tr><%= render 'form', category: @category %></tr>
+        </tfoot>
       </table>
 
     </div>
