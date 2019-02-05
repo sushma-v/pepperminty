@@ -2,10 +2,15 @@ module CategoriesHelper
   def nested_attributes(attributes)
     content_tag :ul do
       attributes.each do |attribute|
-        concat(content_tag(:li) { link_to(attribute.name, '#') })
-        if attribute.has_children?
-          concat(nested_attributes(attribute.children))
-        end
+        concat(content_tag(:li) do
+          if attribute.has_children?
+            concat(link_to(attribute.name, '#'))
+            concat(nested_attributes(attribute.children))
+          else
+            link_to(attribute.name, '#')
+          end
+        end)
+
       end
     end
   end
