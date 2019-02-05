@@ -26,16 +26,13 @@
 
                 <td><%= link_to raw("<i class=\"glyphicon glyphicon-trash\"></i>"), category, method: :delete,
                                 data: { confirm: 'Are you sure?' }, title: 'edit', class: "control-link padding-right-10" %></td>
+
+                <td><%= link_to raw("<i class=\"glyphicon glyphicon-edit\"></i>"), edit_category_path(category),
+                                class: "control-link padding-right-10", title: 'edit' %></td>
               </tr>
           <% end %>
 
-          <tr>
-            <%= form_with(model: @category, local: true, url: categories_path, method: :post) do |form| %>
-                <td><%= form.text_field :name, id: :category_name %></td>
-                <td><%= form.check_box :display, id: :category_display %></td>
-                <td><p><%= form.submit class: "btn-style-alt btn-sm" %></p></td>
-            <% end %>
-          </tr>
+          <tr><%= render 'form', category: @category %></tr>
 
         </tbody>
       </table>
