@@ -64,3 +64,16 @@
 .tree li a:hover+ul ul::before{
   border-color:  #94a0b4;
 }
+/* list */
+.row-striped{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-top: 1px solid #ccc;
+}
+.row-striped:nth-of-type(odd){
+  background-color: #f9f9f9;
+}
+
+.row-striped:nth-of-type(even){
+  background-color: #ffffff;
+}
