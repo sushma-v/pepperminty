@@ -37,9 +37,9 @@ class CategoriesController < ApplicationController
   # PATCH/PUT /categories/1.json
   def update
     if @category.update(category_params)
-      redirect_to @category, notice: 'Category was successfully updated.'
+      redirect_to categories_url, notice: 'Category was successfully updated.'
     else
-      render :edit
+      render :index
     end
   end
 
@@ -48,6 +48,13 @@ class CategoriesController < ApplicationController
   def destroy
     @category.destroy
     redirect_to categories_url, notice: 'Category was successfully destroyed.'
+  end
+
+  def inline_edit
+    @category = Category.find(params[:id])
+    respond_to do |format|
+      format.js { render :file => "categories/inline_edit.js.erb", category: @category }
+    end
   end
 
   private

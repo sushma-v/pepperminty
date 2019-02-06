@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-  resources :categories
+  resources :categories do
+    member do
+      get :inline_edit
+    end
+  end
+
   get 'blog_search/index'
 
   mount Ckeditor::Engine => '/ckeditor'
