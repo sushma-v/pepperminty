@@ -70,10 +70,13 @@
   padding-bottom: 8px;
   border-top: 1px solid #ccc;
 }
-.row-striped:nth-of-type(odd){
+.grey{
+  background-color: #f9f9f9;
+}
+/*.row-striped:nth-of-type(odd){
   background-color: #f9f9f9;
 }
 
 .row-striped:nth-of-type(even){
   background-color: #ffffff;
-}
+}*/
