@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :categories do
+  resources :categories, except: [:new, :edit] do
     member do
       get :inline_edit
     end

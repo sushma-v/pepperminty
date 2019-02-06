@@ -12,7 +12,7 @@ class PostsController < ApplicationController
   def show
   end
 
-  # GET /posts/new
+  # GET /posts/new1
   def new
     @post = Post.new
   end
