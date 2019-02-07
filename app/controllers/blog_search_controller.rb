@@ -5,6 +5,12 @@ class BlogSearchController < ApplicationController
   end
 
   def by_category
+    keyword = params.fetch(:keyword, nil)
+    category = Category.find(keyword)
 
+    descendant_ids = category.descendant_ids
+    descendant_ids << category.id
+
+    @posts = Post.where(category_id: descendant_ids)
   end
 end

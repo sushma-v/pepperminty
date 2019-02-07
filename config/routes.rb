@@ -5,7 +5,8 @@ Rails.application.routes.draw do
     end
   end
 
-  get 'blog_search/index'
+  get '/blog_search/index'
+  post '/blog_search/by_category', as: '/category_search'
 
   mount Ckeditor::Engine => '/ckeditor'
   resources :posts
