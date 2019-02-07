@@ -32,6 +32,6 @@ module RailsBootstrap
 
     config.exceptions_app = self.routes
 
-    WillPaginate.per_page = ENV.fetch('PAGINATION_PER_PAGE', 10)
+    WillPaginate.per_page = ENV.fetch('PAGINATION_PER_PAGE', 9)
   end
 end
