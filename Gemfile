@@ -26,6 +26,7 @@ gem 'ckeditor'
 gem 'carrierwave', '~> 1.0'
 gem 'mini_magick'
 gem 'ancestry'
+gem 'paper_trail'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

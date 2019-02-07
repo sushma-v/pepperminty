@@ -3,6 +3,8 @@ class Post < ApplicationRecord
   has_many :hash_tags, -> { distinct }, through: :post_hash_tags
   belongs_to :category
 
+  has_paper_trail
+
   enum status: [:draft, :published]
 
   validates :title, presence: true
