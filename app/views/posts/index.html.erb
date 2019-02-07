@@ -26,6 +26,8 @@
 
     <%= render partial: 'list', locals: {posts: @posts} %>
 
+    <%= will_paginate @posts %>
+
   </div>
 
 </div>

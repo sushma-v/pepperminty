@@ -31,5 +31,7 @@ module RailsBootstrap
     config.assets.paths << Rails.root.join('vendor', 'assets')
 
     config.exceptions_app = self.routes
+
+    WillPaginate.per_page = ENV.fetch('PAGINATION_PER_PAGE', 10)
   end
 end
