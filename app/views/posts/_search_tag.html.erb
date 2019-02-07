@@ -1,4 +1,4 @@
-<%= form_with url: blog_search_index_path, method: :post, local: true, class: 'form-inline' do |form| %>
+<%= form_with url: blog_search_index_path, method: :get, local: true, class: 'form-inline' do |form| %>
   <div class="input-group input-group-md" style="width:100%;">
     <%= form.text_field :tag, value: params[:tag], class: 'form-control', placeholder: 'Search' %>
     <div class="input-group-btn">
