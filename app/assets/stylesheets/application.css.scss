@@ -825,3 +825,21 @@ and (max-device-width : 1024px)  {
 .padding-top-10{
   padding-top: 10px;
 }
+/* pagination */
+.pagination span, .pagination em, .pagination a{
+  border: 1px solid #dddddd;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.pagination span{
+  color: #777777;
+}
+.pagination em{
+  color: #337ab7;
+  font-style: normal;
+  background-color: #eeeeee;
+}
+.pagination a:hover, .pagination a:visited, .pagination a:active{
+  background-color: #eeeeee;
+  text-decoration: none;
+}
