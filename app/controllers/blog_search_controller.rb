@@ -11,6 +11,6 @@ class BlogSearchController < ApplicationController
     descendant_ids = category.descendant_ids
     descendant_ids << category.id
 
-    @posts = Post.where(category_id: descendant_ids).order('id DESC').paginate(:page => params[:page])
+    @posts = Post.where(category_id: descendant_ids).paginate(:page => params[:page]).order('id DESC')
   end
 end
