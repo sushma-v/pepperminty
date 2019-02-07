@@ -7,10 +7,11 @@
     <div class="col-xs-12 text-center margin-bottom-20">
 
       <% if @posts.exists? %>
-          <h1>Search Results</h1>
-          <%= render partial: 'posts/list', locals: {posts: @posts} %>
+        <h1>Search Results</h1>
+        <%= render partial: 'posts/list', locals: {posts: @posts} %>
+        <%= will_paginate @posts %>
       <% else %>
-          <h1>Oop! No matching posts ...</h1>
+        <h1>Oop! No matching posts ...</h1>
       <% end %>
 
     </div>
