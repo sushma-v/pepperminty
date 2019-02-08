@@ -47,11 +47,6 @@
   </div>
 
   <div class="field form-group">
-    <%= form.label :author %>
-    <%= form.text_field :author, id: :post_author, class: "form-control" %>
-  </div>
-
-  <div class="field form-group">
     <%= form.label :status %>
     <%= form.select :status, options_for_select(Post.statuses.keys, selected: @post.status),{}, class: "form-control width-100-percent" %>
   </div>
