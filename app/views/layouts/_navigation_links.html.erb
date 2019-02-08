@@ -15,6 +15,6 @@
 <% if current_user %>
     <li class='nav-item'><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
 <% else %>
-    <li class='nav-item'><%= link_to 'Sign up', new_user_registration_path %></li>
-    <li class='nav-item'><%= link_to 'Sign in', new_user_session_path %></li>
+    <!--<li class='nav-item'><%#= link_to 'Sign up', new_user_registration_path %></li>-->
+    <!--<li class='nav-item'><%#= link_to 'Sign in', new_user_session_path %></li>-->
 <% end %>
