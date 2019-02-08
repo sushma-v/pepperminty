@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :categories, except: [:new, :edit] do
     member do
       get :inline_edit

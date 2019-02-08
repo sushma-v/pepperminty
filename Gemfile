@@ -28,6 +28,7 @@ gem 'mini_magick'
 gem 'ancestry'
 gem 'paper_trail'
 gem 'will_paginate'
+gem 'devise'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
