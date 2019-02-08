@@ -8,11 +8,13 @@
           <p class="footer-text margin-bottom-20">
             <%= distance_of_time_in_words(Time.at(post.created_at.to_i),Time.now).upcase %> AGO
           </p>
-          <p class="text-center"><%= link_to 'Read More', post, class: "btn-style-alt small" %></p>
-          <p class="text-right">
-            <%= link_to 'Edit', edit_post_path(post), class: "control-link padding-right-10"  %>
-            <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "control-link" %>
-          </p>
+          <p class="text-center margin-bottom-20"><%= link_to 'Read More', post, class: "btn-style-alt small" %></p>
+          <% if current_user %>
+            <p class="text-right">
+              <%= link_to 'Edit', edit_post_path(post), class: "control-link padding-right-10"  %>
+              <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "control-link" %>
+            </p>
+          <% end %>
         </div>
       </div>
     </div>

@@ -17,11 +17,12 @@
 
       <p class="text-left"><%= link_to 'Back', posts_path, class: "btn-style-alt small", style:"margin-top:50px;" %></p>
 
-      <hr style="margin-top: 50px;"/>
-
-      <p class="text-left">
-        <%= link_to 'Edit', edit_post_path(@post), class: "control-link padding-right-10" %>
-      </p>
+      <% if current_user %>
+        <hr style="margin-top: 50px;"/>
+        <p class="text-left">
+          <%= link_to 'Edit', edit_post_path(@post), class: "control-link padding-right-10" %>
+        </p>
+      <% end %>
     </div>
 
     <div class="col-xs-2"></div>
