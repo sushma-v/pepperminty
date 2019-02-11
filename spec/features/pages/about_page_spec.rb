@@ -9,8 +9,8 @@ feature 'About page' do
   #   When I visit the 'services' page
   #   Then I see "About the Website"
   scenario 'Visit the services page' do
-    visit 'pages/services'
-    expect(page).to have_content 'About the Website'
+    visit about_path
+    expect(page).to have_content 'Our Aim'
   end
 
 end
