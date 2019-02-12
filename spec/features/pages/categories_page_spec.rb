@@ -19,12 +19,17 @@ feature 'Categories page' do
     expect(page).to have_content 'sales'
 
     #edit
-    #within('.tab-content') do
-    #  page.all('a')[0].click
-    #end
-    #page.fill_in 'category_name', with: 'online sales'
-    #page.click_button 'Update Category'
-    #expect(page).to have_content 'Category was successfully updated.'
+    within('.tab-content') do
+      page.all('a')[0].click
+    end
+    within('.edit-row') do
+      page.fill_in 'category_name', with: 'marketing'
+      page.uncheck 'category_display'
+      page.click_button 'Update Category'
+    end
+    expect(page).to have_content 'Category was successfully updated.'
+    expect(page).to have_content 'marketing'
+    expect(page).not_to have_content 'sales'
 
     #delete
     within('.tab-content') do
@@ -32,7 +37,7 @@ feature 'Categories page' do
     end
     page.driver.browser.switch_to.alert.accept
     expect(page).to have_content 'Category was successfully destroyed.'
-    expect(page).not_to have_content 'sales'
+    expect(page).not_to have_content 'marketing'
 
   end
 
