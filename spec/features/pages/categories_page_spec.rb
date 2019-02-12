@@ -18,6 +18,17 @@ feature 'Categories page' do
     expect(page).to have_content 'Category was successfully created.'
     expect(page).to have_content 'sales'
 
+    #cancel edit
+    within('.tab-content') do
+      page.all('a')[0].click
+    end
+    within('.edit-row') do
+      page.fill_in 'category_name', with: 'marketing'
+      page.click_button 'Cancel'
+    end
+    expect(page).to have_content 'sales'
+    expect(page).not_to have_content 'marketing'
+
     #edit
     within('.tab-content') do
       page.all('a')[0].click
@@ -30,6 +41,14 @@ feature 'Categories page' do
     expect(page).to have_content 'Category was successfully updated.'
     expect(page).to have_content 'marketing'
     expect(page).not_to have_content 'sales'
+
+    #cancel delete
+    within('.tab-content') do
+      page.all('a')[1].click
+    end
+    page.driver.browser.switch_to.alert.dismiss
+    expect(page).not_to have_content 'Category was successfully destroyed.'
+    expect(page).to have_content 'marketing'
 
     #delete
     within('.tab-content') do
