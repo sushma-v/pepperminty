@@ -13,4 +13,8 @@ module SignupHelper
     page.fill_in 'user_password', with: password
     page.click_button "Sign In"
   end
+
+  def signout
+    page.click_button "Sign out"
+  end
 end

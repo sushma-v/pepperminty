@@ -14,6 +14,7 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 require './spec/support/signup_helper'
+require './spec/support/categories_helper'
 require 'capybara/rspec'
 
 RSpec.configure do |config|
@@ -21,6 +22,7 @@ RSpec.configure do |config|
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
   config.include SignupHelper
+  config.include CategoriesHelper
   config.expect_with :rspec do |expectations|
     # This option will default to `true` in RSpec 4. It makes the `description`
     # and `failure_message` of custom matchers include text for helper methods

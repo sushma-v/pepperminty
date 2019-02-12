@@ -5,6 +5,9 @@ feature 'Posts page' do
 
     signup("test@example.com", "abcd1234")
 
+    create_category('sales')
+    @category = Category.first
+
     visit posts_path
     expect(page).to have_title "Blog"
 
@@ -21,7 +24,6 @@ feature 'Posts page' do
 
     expect(page).to have_content "Post was successfully created."
 
-    page.click_link 'Read More'
     expect(page).to have_link '#best'
     expect(page).to have_link(nil, href: '/blog_search/best')
 
@@ -30,17 +32,17 @@ feature 'Posts page' do
     expect(page).to have_content 'Post1'
 
     #edit
+    visit posts_path
     within('.blog-container') do
-      click_link 'edit'
+      click_link 'Edit'
     end
     page.fill_in 'post_title', with: 'Post 1'
     page.click_button 'Update Post'
     expect(page).to have_content "Post was successfully updated."
-    within('.blog-container') do
-      expect(page).to have_content 'Post 1'
-    end
+    expect(page).to have_content 'Post 1'
 
     #cancel delete
+    visit posts_path
     within('.blog-container') do
       click_link 'Delete'
     end
@@ -49,12 +51,28 @@ feature 'Posts page' do
     expect(page).to have_content 'Post 1'
 
     #delete
+    visit posts_path
     within('.blog-container') do
       click_link 'Delete'
     end
     page.driver.browser.switch_to.alert.accept
     expect(page).to have_content 'Post was successfully destroyed.'
     expect(page).not_to have_content 'Post 1'
+
+    #signout
+    #signout
+    #visit posts_path
+    #expect(page).to have_title "Blog"
+
+  end
+
+  scenario 'Visit the posts page without logging in', js: true do
+    #before{ @category = FactoryBot.create(:category) }
+
+    #visit posts_path
+    #expect(page).to have_title "Blog"
+
+
 
   end
 
