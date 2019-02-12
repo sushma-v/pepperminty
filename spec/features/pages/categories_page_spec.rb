@@ -1,6 +1,6 @@
 feature 'Categories page' do
 
-  scenario 'Visit the categories page' do
+  scenario 'Visit the categories page', js: true do
     visit categories_path
     expect(page).to have_content 'You need to sign in or sign up before continuing'
 
@@ -16,6 +16,7 @@ feature 'Categories page' do
     page.click_button 'Create Category'
 
     expect(page).to have_content 'Category was successfully created.'
+    expect(page).to have_content 'sales'
 
     #edit
     #within('.tab-content') do
@@ -29,7 +30,9 @@ feature 'Categories page' do
     within('.tab-content') do
       page.all('a')[1].click
     end
+    page.driver.browser.switch_to.alert.accept
     expect(page).to have_content 'Category was successfully destroyed.'
+    expect(page).not_to have_content 'sales'
 
   end
 
