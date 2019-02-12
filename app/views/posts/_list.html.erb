@@ -12,7 +12,7 @@
           <% if current_user %>
             <p class="text-right">
               <%= link_to 'Edit', edit_post_path(post), class: "control-link padding-right-10"  %>
-              <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "control-link" %>
+              <%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "control-link" %>
             </p>
           <% end %>
         </div>

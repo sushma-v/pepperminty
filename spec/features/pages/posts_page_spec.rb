@@ -1,9 +1,7 @@
 feature 'Posts page' do
 
   scenario 'Visit the posts page after login', js: true do
-    #before{
-    #  FactoryBot.create(:categories, :display)
-    #}
+    #before{ @category = FactoryBot.create(:category) }
 
     signup("test@example.com", "abcd1234")
 
@@ -17,19 +15,38 @@ feature 'Posts page' do
     page.fill_in 'post_alt_text', with: 'post1 alt text'
     page.fill_in 'post_meta_description', with: 'post1 meta description'
     page.fill_in 'post_meta_keywords', with: 'post1 meta keywords'
-    page.select "sales", :from => "post[category_id]"
+    page.select @category.name, :from => "post[category_id]"
     page.select "published", :from => "post[status]"
     page.click_button 'Create Post'
 
     expect(page).to have_content "Post was successfully created."
 
-    #cancel edit
-
     #edit
+    within('.blog-container') do
+      click_link 'edit'
+    end
+    page.fill_in 'post_title', with: 'Post 1'
+    page.click_button 'Update Post'
+    expect(page).to have_content "Post was successfully updated."
+    within('.blog-container') do
+      expect(page).to have_content 'Post 1'
+    end
 
     #cancel delete
+    within('.blog-container') do
+      click_link 'Delete'
+    end
+    page.driver.browser.switch_to.alert.dismiss
+    expect(page).not_to have_content 'Post was successfully destroyed.'
+    expect(page).to have_content 'Post 1'
 
     #delete
+    within('.blog-container') do
+      click_link 'Delete'
+    end
+    page.driver.browser.switch_to.alert.accept
+    expect(page).to have_content 'Post was successfully destroyed.'
+    expect(page).not_to have_content 'Post 1'
 
   end
 

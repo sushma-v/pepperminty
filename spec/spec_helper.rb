@@ -98,3 +98,11 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 end
+
+require 'selenium/webdriver'
+Capybara.register_driver :chrome do |app|
+  options = Selenium::WebDriver::Chrome::Options.new(args: ['disable-popup-blocking', 'no-sandbox', 'headless', 'disable-gpu', 'window-size=1920,1080'])
+  Capybara::Selenium::Driver.new app, browser: :chrome, options: options
+end
+Capybara.current_driver = :chrome
+Capybara.javascript_driver = :chrome
