@@ -15,6 +15,6 @@ module SignupHelper
   end
 
   def signout
-    page.click_button "Sign out"
+    page.click_link "Sign out"
   end
 end

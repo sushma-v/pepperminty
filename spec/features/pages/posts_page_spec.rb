@@ -59,20 +59,26 @@ feature 'Posts page' do
     expect(page).to have_content 'Post was successfully destroyed.'
     expect(page).not_to have_content 'Post 1'
 
-    #signout
-    #signout
-    #visit posts_path
-    #expect(page).to have_title "Blog"
-
   end
 
   scenario 'Visit the posts page without logging in', js: true do
-    #before{ @category = FactoryBot.create(:category) }
+    create_post
+    @post = Post.first
 
-    #visit posts_path
-    #expect(page).to have_title "Blog"
+    visit posts_path
+    expect(page).to have_title "Blog"
 
+    expect(page).not_to have_link 'Create Post'
+    expect(page).not_to have_link 'Edit'
+    expect(page).not_to have_link 'Delete'
 
+    visit new_post_path
+    expect(page).to have_content 'You need to sign in or sign up before continuing'
+
+    visit edit_post_path(@post)
+    expect(page).to have_content 'You need to sign in or sign up before continuing'
+
+    expect { delete :destroy, :id => @post.id }.should_not have_content 'You need to sign in or sign up before continuing'
 
   end
 
