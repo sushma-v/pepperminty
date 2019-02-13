@@ -82,4 +82,38 @@ feature 'Posts page' do
 
   end
 
+  scenario 'Search keyword with no matching results' do
+    visit posts_path
+
+    page.fill_in 'tag', with: '#best'
+    page.click_button 'submit-search'
+
+    expect(page).to have_content 'Oop! No matching posts ...'
+  end
+
+  scenario 'Search keyword with matching results' do
+    create_post
+    @post = Post.first
+
+    visit posts_path
+
+    page.fill_in 'tag', with: '#best'
+    page.click_button 'submit-search'
+
+    expect(page).to have_content 'Search Results'
+    expect(page).to have_content @post.title
+  end
+
+  scenario 'Select category from dropdown' do
+    create_post
+    @post = Post.first
+
+    visit posts_path
+    save_and_open_page
+
+    select('sales', :from => 'search-category')
+    expect(page).to have_content 'Search Results'
+    expect(page).to have_content @post.title
+  end
+
 end
