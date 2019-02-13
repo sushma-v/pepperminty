@@ -109,7 +109,6 @@ feature 'Posts page' do
     @post = Post.first
 
     visit posts_path
-    save_and_open_page
 
     select('sales', :from => 'search-category')
     expect(page).to have_content 'Search Results'
