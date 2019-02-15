@@ -38,8 +38,13 @@ class CategoriesController < ApplicationController
   # DELETE /categories/1
   # DELETE /categories/1.json
   def destroy
-    @category.destroy
-    redirect_to categories_url, notice: 'Category was successfully destroyed.'
+    begin
+      @category.destroy
+      redirect_to categories_url, notice: 'Category was successfully destroyed.'
+    rescue StandardError => ex
+      flash[:error] = ex.message
+      redirect_to categories_url
+    end
   end
 
   def inline_edit
