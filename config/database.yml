@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: pepperminty_prod
-  username: pepperminty_prod
-  password: <%= ENV['PEPPERMINTY_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
