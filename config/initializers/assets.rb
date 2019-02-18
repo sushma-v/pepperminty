@@ -13,5 +13,5 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # folder are already added.
 Rails.application.config.assets.precompile += %w(*.js)
 Rails.application.config.autoload_paths += %W(../app/models/ckeditor)
-#Rails.application.config.assets.precompile += Ckeditor.assets
+Rails.application.config.assets.precompile += Ckeditor.assets
 Rails.application.config.assets.precompile += %w( ckeditor/* )
