@@ -5,7 +5,8 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.published.paginate(:page => params[:page]).order('id DESC')
+    return @posts = Post.published.paginate(:page => params[:page]).order('id DESC') unless current_user
+    @posts = Post.all.paginate(:page => params[:page]).order('id DESC')
   end
 
   # GET /posts/1
