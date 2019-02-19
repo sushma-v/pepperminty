@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   mount Ckeditor::Engine => '/ckeditor'
   resources :posts
+  post '/publish_post/:id', to: 'posts#publish_post', as: :publish
+
   root to: 'pages#home'
 
   get '/home', to: 'pages#home', as: ''
