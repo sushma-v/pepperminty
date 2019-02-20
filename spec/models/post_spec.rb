@@ -117,4 +117,17 @@ RSpec.describe Post, type: :model do
     end
   end
 
+  context "publish post" do
+    before(:each){
+      Post.create! post_params
+    }
+    it "check status" do
+      post = Post.first
+      expect(post.status).to eq "draft"
+
+      post.published!
+      expect(post.status).to eq "published"
+    end
+  end
+
 end
