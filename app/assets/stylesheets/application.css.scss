@@ -715,6 +715,13 @@ select.form-control:not([size]):not([multiple]) {
   background-attachment: fixed;
   color: $hero-primary-color;
 }
+.contactus-bg{
+  //background:url(/assets/contact-us.jpg) no-repeat center center;
+  background: linear-gradient(rgba(84, 84, 84, 0.7), rgba(84, 84, 84, 0.7)), url(/assets/contact-us.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: $hero-primary-color;
+}
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)  {
@@ -726,6 +733,9 @@ and (max-device-width : 1024px)  {
 
 .secondary-color, .secondary-color:hover, .secondary-color:visited{
   color: $secondary-color;
+}
+.primary-color{
+  color: $primary-color;
 }
 .control-link, .control-link:hover, .control-link:visited{
   color: #888888;
