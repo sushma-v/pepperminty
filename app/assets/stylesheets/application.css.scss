@@ -845,3 +845,20 @@ and (max-device-width : 1024px)  {
   background-color: #eeeeee;
   text-decoration: none;
 }
+.head-text, .head-a, .head-a:hover, .head-a:active{
+  margin-right: 5px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "PT Sans";
+  font-size: 20px;
+}
+.head-container{
+  background-color: #6eecb8;
+  padding: 20px 10px 5px 10px;
+  color: white;
+  text-align: right;
+  margin: -10px -10px 0px -10px;
+}
+.margin-right-10{
+  margin-right: 38px;
+}
