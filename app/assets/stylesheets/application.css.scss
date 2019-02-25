@@ -543,7 +543,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 .btn-style{
   display: inline-block;
-  padding: 10px 26px;
+  padding: 16px 28px;
   margin-bottom: 0;
   font-size: 20px;
   font-weight: 400;
@@ -558,12 +558,12 @@ select.form-control:not([size]):not([multiple]) {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: rgba(255,255,255,0.3);
-  border: 3px solid $primary-color;
-  border-radius: 29px;
+  background-color: rgba(110,236,184,0.8);
+  //border: 3px solid $primary-color;
+  border-radius: 16px;
 }
 .btn-style:hover, .btn-style:focus, .btn-style:active{
-  background-color: rgba(255,255,255,0.4);
+  background-color: rgba(110,236,184,1);
 }
 .btn-style-alt{
   display: inline-block;
