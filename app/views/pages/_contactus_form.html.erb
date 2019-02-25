@@ -4,17 +4,17 @@
   <div class="section" style="width:100%;">
 
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-      <div class="col-lg-3 col-md-3 col-sm-3">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
         <h2 style="text-align: left;">Ready to <span class="primary-color">kickstart</span> your marketing journey?</h2><br/><br/>
         <p style="color:white; width: 90%;"><span class="primary-color">Get in touch</span> with us to find out more about the services we offer and how we can support your company.
           We've worked with a number of start-ups and small business and can't wait to get working on yours too.</p>
       </div>
 
-      <div class="col-lg-9 col-md-6 col-sm-12 col-xs-12" style="padding-left:20px; border-left: 2px solid whitesmoke;">
+      <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12" style="padding-left:20px; border-left: 2px solid whitesmoke;">
         <%= form_tag(submit_query_url, class: "contact-form") do %>
-            <div class="col-lg-12 col-md-12 col-xs-12 text-left">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left">
 
-              <div class="col-lg-6 col-md-6 col-xs-6 text-left">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left">
                 <h2>Say hi<span class="primary-color">!</span></h2>
                 <p style="color:white;">We'd love to hear from you, and perhaps we could meet for a coffee or <span class="primary-color">Peppermint(y)</span> tea you decide...</p>
                 <div class="form-group">
@@ -37,7 +37,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-6 col-md-6 col-xs-6 text-right" style="padding-left: 20px;width:90%;">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left" style="padding-left:15px;width:90%;">
                 <br/><br/><br/>
                 <div class="form-group">
                   <%= text_area_tag "message", "", "cols": 25, "rows": 13, required: true, placeholder: 'Message', class: "form-control" %>
