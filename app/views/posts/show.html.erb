@@ -7,7 +7,7 @@
     <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0"></div>
 
     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-      <p class="margin-bottom-20" style="font-size: 3em;"><%= @post.title %></p><hr class="hr-green">
+      <p class="margin-bottom-20 text-left" style="font-size: 3em;"><%= @post.title %></p><hr class="hr-green">
 
       <p class="margin-bottom-20" style="font-size: 1em;">Posted <%= distance_of_time_in_words(Time.at(@post.created_at.to_i),Time.now) %> ago in <%= @post.category.name rescue 'Digital Marketing' %></p>
 
