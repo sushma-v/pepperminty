@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get '/blog_search/by_category', to: 'blog_search#by_category', as: :category_search
 
   mount Ckeditor::Engine => '/ckeditor'
-  resources :posts
+  resources :posts, path: 'blog'
   post '/publish_post/:id', to: 'posts#publish_post', as: :publish
 
   root to: 'pages#home'
