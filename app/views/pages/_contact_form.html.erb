@@ -1,57 +1,64 @@
-<div class="row contact-bg">
+<div class="row contactus-bg">
   <div class="col-md-12 text-center section-heading">Contact us for a quote</div>
 
   <div class="section" style="width:100%;">
 
-    <div class="col-md-12 text-center margin-bottom-20">
-      <h4>Let's chat, perhaps over some peppermint tea (or coffee, you decide)?</h4>
-    </div>
-
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-      <div class="col-lg-3 col-md-3 col-sm-3"></div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+        <h2 style="text-align: left;">Ready to <span class="primary-color">kickstart</span> your marketing journey?</h2><br/><br/>
+        <p style="color:white; width: 90%;"><span class="primary-color">Get in touch</span> with us to find out more about the services we offer and how we can support your company.
+          We've worked with a number of start-ups and small business and can't wait to get working on yours too.</p>
+      </div>
 
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12" style="padding-left:20px; border-left: 2px solid whitesmoke;">
         <%= form_tag(submit_query_url, class: "contact-form") do %>
-            <div class="col-xs-12 col-md-6 text-left">
-              <div class="form-group">
-                <%= text_field_tag :name, nil, class:"form-control", required: true, placeholder: "Name" %>
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left">
+                <h2>Say hi<span class="primary-color">!</span></h2>
+                <p style="color:white;">We'd love to hear from you, and perhaps we could meet for a coffee or <span class="primary-color">Peppermint(y)</span> tea you decide...</p>
               </div>
-              <div class="form-group">
-                <%= email_field_tag :email, nil, class:"form-control", required: true, placeholder: "Email ID" %>
-              </div>
-            </div>
-            <div class="col-xs-12 col-md-6 text-left">
-              <div class="form-group">
-                <%= text_field_tag :company_name, nil, class:"form-control", required: true, placeholder: "Company Name" %>
-              </div>
-              <div class="form-group">
-                <%= telephone_field_tag :phone, nil, class:"form-control", required: true, placeholder: "Telephone" %>
-              </div>
-            </div>
-            <div class="col-md-12 text-center">
-              <div class="form-group">
-                <%= select_tag "category", options_for_select(@categories), include_blank: false, required: true,
-                               class: 'form-control', prompt: 'Select Category' %>
-              </div>
-              <div class="form-group">
-                <%= text_area_tag "message", "", "cols": 10, "rows": 3, required: true, placeholder: 'Message', class: "form-control" %>
-              </div>
-              <div class="form-group">
-                <div class="text-center">
-                  <div class="g-recaptcha" data-callback="validateRecaptcha" data-sitekey="6LdRzIUUAAAAANLfXAxpDfNyJMn3ZYN_TVizLfJE"></div>
-                  <div id="recaptcha-error" class="alert alert-danger">Please verify that you are not a robot.</div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left">
+                <div class="form-group">
+                  <%= text_field_tag :name, nil, class:"form-control bg-secondary", required: true, placeholder: "Name" %>
+                </div>
+                <div class="form-group">
+                  <%= email_field_tag :email, nil, class:"form-control", required: true, placeholder: "Email" %>
+                </div>
+                <div class="form-group">
+                  <%= text_field_tag :company_name, nil, class:"form-control", required: true, placeholder: "Company Name" %>
+                </div>
+                <div class="form-group">
+                  <%= select_tag "category", options_for_select(@categories), include_blank: false, required: true,
+                                 class: 'form-control', prompt: 'Service of interest' %>
+                </div>
+                <div class="form-group">
+                  <%= text_area_tag "message", "", "cols": 25, "rows": 3, required: true, placeholder: 'Message', class: "form-control" %>
                 </div>
               </div>
-              <div class="form-group">
-                <div class="text-center">
-                  <%= submit_tag 'Submit', class: "btn-style", style: "width: 100%;" %>
+
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left" style="padding-left:15px;width:90%;">
+                <div class="form-group">
+                  <p style="color:white;"><%=check_box_tag 'accept'%> Tick if you'd like to join our mailing list and stay a fresh with digital marketing updates!</p>
+                </div>
+                <div class="form-group">
+                  <div class="text-left">
+                    <div class="g-recaptcha" data-callback="validateRecaptcha" data-sitekey="6LdRzIUUAAAAANLfXAxpDfNyJMn3ZYN_TVizLfJE"></div>
+                    <div id="recaptcha-error" class="alert alert-danger">Please verify that you are not a robot.</div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="text-center">
+                    <%= submit_tag 'Send', class: "btn-style", style: "width: 100%;" %>
+                  </div>
                 </div>
               </div>
+
             </div>
         <% end %>
       </div>
 
-      <div class="col-lg-6 col-md-6 col-sm-6"></div>
     </div>
   </div>
 </div>
