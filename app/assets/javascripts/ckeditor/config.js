@@ -28,6 +28,8 @@ CKEDITOR.editorConfig = function( config )
 
     config.allowedContent = true;
 
+    config.extraPlugins = 'filebrowser';
+
     // Toolbar groups configuration.
     config.toolbar = [
         { name: 'document', groups: [ 'mode', 'document', 'doctools' ], items: [ 'Source'] },
