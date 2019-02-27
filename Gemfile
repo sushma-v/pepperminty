@@ -25,6 +25,7 @@ gem "instagram"
 gem 'ckeditor'
 gem 'carrierwave', '~> 1.0'
 gem 'mini_magick'
+gem 'cloudinary'
 gem 'ancestry'
 gem 'paper_trail'
 gem 'will_paginate'
