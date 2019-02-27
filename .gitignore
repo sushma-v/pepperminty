@@ -42,7 +42,8 @@ db/*.sqlite3
 /public/cache
 /public/stylesheets/compiled
 /public/system/*
-/public/uploads/*
+/public/uploads/ckeditor/*
+/public/uploads/post/*
 /spec/tmp/*
 /cache
 /capybara*
