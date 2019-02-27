@@ -2,10 +2,10 @@
     <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 text-left">
       <div class="blog-card">
         <%#= image_tag post.main_image, alt: post.alt_text, style: "width: 100%; border-radius: 5px 5px 0px 0px;" %>
-        <% if post.main_image.nil? %>
-            <%= cl_image_tag post.main_image, alt: post.alt_text, style: "width: 100%; border-radius: 5px 5px 0px 0px;" rescue nil%>
-        <% else %>
+        <% if post.main_image.empty? %>
             <%= cl_image_tag Post.first.main_image, alt: post.alt_text, style: "width: 100%; border-radius: 5px 5px 0px 0px;" rescue nil%>
+        <% else %>
+            <%= cl_image_tag post.main_image, alt: post.alt_text, style: "width: 100%; border-radius: 5px 5px 0px 0px;" rescue nil%>
         <% end %>
 
         <div class="blog-container">
