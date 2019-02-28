@@ -29,7 +29,7 @@ CKEDITOR.editorConfig = function( config )
     config.allowedContent = true;
 
     config.extraPlugins = 'filebrowser';
-    //config.extraPlugins = 'uploadimage';
+    config.extraPlugins = 'uploadimage';
 
     // Toolbar groups configuration.
     config.toolbar = [
