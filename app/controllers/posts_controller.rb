@@ -77,7 +77,7 @@ class PostsController < ApplicationController
     end
 
     def transformed_params
-      response = Cloudinary::Uploader.upload(post_params[:main_image])
+      response = Cloudinary::Uploader.upload(post_params[:main_image], {folder: "/pepperminty/#{Rails.env}/blog/", use_filename: true})
 
       new_post_params = post_params
       new_post_params[:main_image] = response.fetch("public_id", nil)
