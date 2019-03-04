@@ -12,7 +12,7 @@ class Post < ApplicationRecord
 
   after_commit :create_hash_tags, on: :create
 
-  mount_uploader :main_image, ImageUploader
+  #mount_uploader :main_image, MainImageUploader
 
   scope :published, -> { where(status: :published) }
 

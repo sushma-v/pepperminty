@@ -1,0 +1,13 @@
+---
+development:
+  cloudinary_url: <%= ENV["CLOUDINARY_URL"] %>
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloudinary_url: <%= ENV["CLOUDINARY_URL"] %>
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloudinary_url: <%= ENV["CLOUDINARY_URL"] %>
+  enhance_image_tag: true
+  static_file_support: false

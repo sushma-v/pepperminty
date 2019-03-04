@@ -26,7 +26,7 @@ class PostsController < ApplicationController
   # POST /posts
   # POST /posts.json
   def create
-    @post = Post.new(post_params)
+    @post = Post.new(transformed_params)
     @post.user_id = current_user.id
 
     if @post.save
@@ -42,7 +42,7 @@ class PostsController < ApplicationController
   def update
     Post.transaction do
       begin
-        @post.update(post_params)
+        @post.update(transformed_params)
         @post.update_hash_tags
         @post.update_attribute(:published_date, DateTime.now) if @post.published?
         redirect_to @post, notice: 'Post was successfully updated.'
@@ -74,5 +74,13 @@ class PostsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
       params.require(:post).permit(:title, :content, :main_image, :alt_text, :category_id, :meta_description, :meta_keywords, :author, :status)
+    end
+
+    def transformed_params
+      response = Cloudinary::Uploader.upload(post_params[:main_image], {folder: "/pepperminty/#{Rails.env}/blog/", use_filename: true})
+
+      new_post_params = post_params
+      new_post_params[:main_image] = response.fetch("public_id", nil)
+      new_post_params
     end
 end
