@@ -390,7 +390,22 @@ li{
   background-size: cover;
   background-position: center center;
   color: #ffffff;
-  h1{ width: 44%; margin-left:auto; margin-right:auto;}
+  h1{ width: 40%; margin-left:auto; margin-right:auto;font-size:43px;}
+}
+
+.seo-show{
+  padding-top: 13%;
+  margin-left: -15px;
+  margin-right: -15px;
+  font-family: "PT Sans";
+  display: table;
+  width: 100vw;
+  height: 95vh;
+  background: linear-gradient(rgba(30, 182, 169, 0.5), rgba(30, 182, 169, 0.5)), url(/assets/seo3.jpg);
+  background-size: cover;
+  background-position: center center;
+  color: #ffffff;
+  h1{ width: 44%; margin-left:auto; margin-right:auto;font-size:43px;}
 }
 
 .bgimg{
