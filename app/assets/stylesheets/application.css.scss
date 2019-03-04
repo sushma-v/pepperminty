@@ -407,8 +407,8 @@ li{
 }
 
 .about-bgimg{
-  background: url(/assets/banner-about.png) no-repeat;
-  background-size: contain;
+  background: url(/assets/banner-about.jpg) no-repeat;
+  background-size: cover;
 }
 
 .default-container{
@@ -886,4 +886,27 @@ and (max-device-width : 1024px)  {
 }
 .margin-right-10{
   margin-right: 38px;
+}
+.text-block{
+  background-color: #6eecb8;
+  padding: 25px 30px;
+  height: 320px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  color: #ffffff;
+  p{
+    color: #ffffff;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1286px){
+  .text-block{
+    padding: 25px 30px;
+    height: 450px;
+  }
+}
+@media (max-width: 768px) {
+  .text-block{
+    min-height: 440px;
+    max-height: 450px;
+  }
 }
