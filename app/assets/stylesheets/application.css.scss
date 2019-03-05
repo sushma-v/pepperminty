@@ -533,6 +533,12 @@ select.form-control:not([size]):not([multiple]) {
   margin-bottom: 2px;
   font-size: 25px;
 }
+.margin-bottom-100{
+  margin-bottom: 100px;
+}
+.margin-bottom-20{
+  margin-bottom: 20px;
+}
 .margin-bottom-50{
   margin-bottom: 50px;
 }
@@ -972,4 +978,10 @@ and (max-device-width : 1024px)  {
   font-size: larger;
   height:280px;
   h3{color:$primary-color;}
+}
+.service-img{
+  background-color:$primary-color;
+  border-radius:50px;
+  padding:40px;
+  margin-top: -80px;
 }
