@@ -674,7 +674,7 @@ select.form-control:not([size]):not([multiple]) {
 .page-link{
   //border: 5px solid $hero-primary-color;
   color: $tertiary-color;
-  background-color: rgba(110, 236, 184, 0.5);
+  background-color: rgba(110, 236, 184, 0.8);
   border-radius: 20px;
   text-align: center;
   font-size: 20px;
@@ -685,7 +685,7 @@ select.form-control:not([size]):not([multiple]) {
 .page-link:hover{
   //border: 5px solid $hero-primary-color;
   color: $tertiary-color;
-  background-color: rgba(110, 236, 184, 0.9);
+  background-color: rgba(110, 236, 184, 1);
 }
 .additional-services a:hover, .additional-services a:active{
   text-decoration: none;
