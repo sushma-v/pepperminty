@@ -965,9 +965,11 @@ and (max-device-width : 1024px)  {
   margin-left:15px;
 }
 .service-block{
-  background-color: #e0e0e0;
+  background-color: $tertiary-color;
+  color: #ffffff;
   text-align: center;
   padding:20px;
   font-size: larger;
   height:280px;
+  h3{color:$primary-color;}
 }
