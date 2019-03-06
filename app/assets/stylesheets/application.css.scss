@@ -339,14 +339,14 @@ li{
   font-weight: normal;
   font-size: 1.1em;
 }
-.service-link, .service-link:hover{
+/*.service-link, .service-link:hover{
   color: #333;
   text-decoration: none;
 }
 .service-link > div, .sub-container > div{
   margin-left: auto;
   margin-right: auto;
-}
+}*/
 
 .hero-bgimg{
   padding-top: 15%;
@@ -999,4 +999,32 @@ and (max-device-width : 1024px)  {
 }
 .inherit-line-height {
   line-height: inherit !important;
+}
+.block-bg{
+  background-size: cover;
+  background-position: center center;
+  color: #ffffff;
+  text-align: center;
+  padding:30px;
+  font-size: larger;
+  height:20%;//380px;
+  border: 8px solid $primary-color;
+  //width:80%;
+  h3{color:#ffffff;}
+  p{line-height: inherit;color:#ffffff; width:94%;}
+}
+.website-block-bg{
+  background: linear-gradient(rgba(9, 40, 69, 0.7), rgba(9, 40, 69, 0.7)), url(/assets/service1.jpg);
+}
+.seo-block-bg{
+  background: linear-gradient(rgba(59, 25, 137, 0.7), rgba(59, 25, 137, 0.7)), url(/assets/service2.jpg);
+}
+.ppc-block-bg{
+  background: linear-gradient(rgba(56, 93, 52, 0.7), rgba(56, 93, 52, 0.7)), url(/assets/service3.jpg);
+}
+.social-block-bg{
+  background: linear-gradient(rgba(242, 156, 47, 0.7), rgba(242, 156, 47, 0.7)), url(/assets/service4.jpg);
+}
+.margin-top-3-percent{
+  margin-bottom:3%;
 }
