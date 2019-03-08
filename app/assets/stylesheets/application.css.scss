@@ -1025,7 +1025,8 @@ and (max-device-width : 1024px)  {
   text-align: center;
   padding:30px;
   font-size: larger;
-  height:20%;
+  height:60vh;
+  width:35vw;
   border: 8px solid $primary-color;
   h3{color:#ffffff;}
   p{line-height: inherit;color:#ffffff; width:94%;}
@@ -1037,10 +1038,10 @@ and (max-device-width : 1024px)  {
   background: linear-gradient(rgba(59, 25, 137, 0.7), rgba(59, 25, 137, 0.7)), url(/assets/service2.jpg);
 }
 .ppc-block-bg{
-  background: linear-gradient(rgba(56, 93, 52, 0.7), rgba(56, 93, 52, 0.7)), url(/assets/service3.jpg);
+  background: linear-gradient(rgba(56, 93, 52, 0.7), rgba(56, 93, 52, 0.7)), url(/assets/service3.png);
 }
 .social-block-bg{
-  background: linear-gradient(rgba(242, 156, 47, 0.7), rgba(242, 156, 47, 0.7)), url(/assets/service4.jpg);
+  background: linear-gradient(rgba(242, 156, 47, 0.7), rgba(242, 156, 47, 0.7)), url(/assets/service4.png);
 }
 .margin-top-3-percent{
   margin-bottom:3%;
