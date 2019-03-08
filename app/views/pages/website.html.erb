@@ -152,15 +152,16 @@
 
 <style>
   .head-container {
-    background-color: #092845;
+    --main-bg-color: #092845;
+    background-color: var(--main-bg-color);
   }
   .navbar-default{
-    background-color: #092845 !important;
+    background-color: var(--main-bg-color) !important;
     border:none;
   }
   .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
     color: #ffffff;
-    background-color: #092845;
+    background-color: var(--main-bg-color);
   }
   .navbar-default .navbar-nav>li>a {
     color: #f1f1f1;
