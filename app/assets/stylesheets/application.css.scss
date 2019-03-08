@@ -440,6 +440,11 @@ li{
   h2{ color:#ffffff;width: 66%; font-size: 3vw; line-height: inherit; }
   p{ color:#ffffff;width: 70%; text-align: center; font-size: 1.5vw; }
 }
+@media (max-width: 768px){
+  .service-bg {
+    padding-top: 23%;
+  }
+}
 
 .website-bg{  background-color: #092845;  }
 .seo-bg{  background-color: #3B1989;  }
