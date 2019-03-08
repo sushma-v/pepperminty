@@ -191,23 +191,18 @@
 <%= render partial: "contact_form" %>
 
 <style>
-  .head-container {
-    background-color: #385D34;
-  }
-  .navbar-default{
-    background-color: #385D34 !important;
-    border:none;
-  }
-  .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+  .head-container {  background-color: #385D34;  }
+  .navbar-default{  background-color: #385D34 !important;  border:none;  }
+  .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
     color: #ffffff;
     background-color: #385D34;
   }
-  .navbar-default .navbar-nav>li>a {
-    color: #f1f1f1;
-  }
-  .navbar-default .navbar-nav>li>a:hover {
-    color: #cfcfcf;
-  }
+  .navbar-default .navbar-nav>li>a {  color: #f1f1f1;  }
+  .navbar-default .navbar-nav>li>a:hover {  color: #cfcfcf;  }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a {  color: #cfcfcf;  }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {  color: #f1f1f1;  }
+  .navbar-nav > li > .dropdown-menu {  background-color: #385D34;  }
   #service-logo{display: block;}
   #logo{display: none;}
 </style>
