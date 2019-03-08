@@ -18,7 +18,8 @@
         </button>
         <%= link_to root_path, class: "1navbar-brand" do %>
           <!--<span class="glyphicon glyphicon-envelope mail-icon"></span> hello@peppermintymarketing.co.uk-->
-          <%= image_tag "logo-alt.png" %>
+          <%= image_tag "logo.png", id:'logo' %>
+          <%= image_tag "logo-alt.png", id:'service-logo' %>
         <% end %>
       </div>
 
@@ -32,3 +33,6 @@
     </div>
   </nav>
 </header>
+<style>
+  #service-logo{ display:none;}
+</style>
