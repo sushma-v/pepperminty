@@ -1043,7 +1043,7 @@ and (max-device-width : 1024px)  {
   #spacing{ display:block; }
 }
 @media screen and (min-width: 1286px) and (max-width: 1920px) {
-  #spacing{ display:none; }
+  //#spacing{ display:none; }
 }
 .website-block-bg{
   background: linear-gradient(rgba(9, 40, 69, 0.7), rgba(9, 40, 69, 0.7)), url(/assets/service1.jpg);
