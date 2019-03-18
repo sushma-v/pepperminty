@@ -3,6 +3,9 @@ class Post < ApplicationRecord
   has_many :hash_tags, -> { distinct }, through: :post_hash_tags
   belongs_to :category
 
+  extend FriendlyId
+  friendly_id :title, use: :slugged
+
   has_paper_trail
 
   enum status: [:draft, :published]

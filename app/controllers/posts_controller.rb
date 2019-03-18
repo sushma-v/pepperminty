@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show, :edit, :update, :destroy, :publish_post]
+  before_action :set_post, only: [:edit, :update, :destroy, :publish_post]
   before_action :authenticate_user!, except: [:show, :index]
 
   # GET /posts
@@ -12,6 +12,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    @post = Post.friendly.find(params[:id])
   end
 
   # GET /posts/new1

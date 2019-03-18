@@ -31,6 +31,7 @@ gem 'paper_trail'
 gem 'will_paginate'
 gem 'devise'
 gem 'non-stupid-digest-assets', '~> 1.0.4'
+gem 'friendly_id'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
