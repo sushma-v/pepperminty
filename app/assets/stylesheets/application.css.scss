@@ -1041,6 +1041,9 @@ and (max-device-width : 1024px)  {
 }
 @media screen and (min-width: 768px) and (max-width: 1286px) {
   #spacing{ display:block; }
+  .block-bg{
+    height:80vh;
+  }
 }
 @media screen and (min-width: 1286px) and (max-width: 1920px) {
   //#spacing{ display:none; }
