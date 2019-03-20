@@ -32,6 +32,7 @@ gem 'will_paginate'
 gem 'devise'
 gem 'non-stupid-digest-assets', '~> 1.0.4'
 gem 'friendly_id'
+gem 'gibbon'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

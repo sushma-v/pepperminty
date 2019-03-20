@@ -50,6 +50,7 @@ class PagesController < ApplicationController
     begin
       if verify_recaptcha
         FormMailer.contact(format_params).deliver
+        subscribe_to_mailing_list(format_params[:email], format_params[:name], format_params[:phone]) if params.fetch(:mailing_list, false)
         flash[:notice] = "Your Query has been submitted, we will be in touch with you shortly"
       end
     rescue StandardError => ex
@@ -60,8 +61,18 @@ class PagesController < ApplicationController
 
   private
 
+  def subscribe_to_mailing_list(email, name, phone)
+    fname = name.split(' ').first
+    lname = name.split[1..-1].join(' ')
+    list_id = ENV["MAILCHIMP_LIST_ID"]
+
+    @gb = Gibbon::Request.new
+    @gb.lists(list_id).members.create(body: { email_address: email, status: 'subscribed',
+                                                          merge_fields: {FNAME: fname, LNAME: lname, PHONE: phone}})
+  end
+
   def query_params
-    params.permit(:name, :email, :company_name, :phone, :category, :message, "g-recaptcha-response")
+    params.permit(:name, :email, :company_name, :phone, :category, :message, :mailing_list, "g-recaptcha-response")
   end
 
   def format_params
