@@ -789,14 +789,14 @@ select.form-control:not([size]):not([multiple]) {
   font-size: 24px;
 }
 .contact-bg{
-  background:url(/assets/contact-us.jpg) no-repeat center center;
+  background:url(/assets/contact-us.png) no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   color: $hero-primary-color;
 }
 .contactus-bg{
   //background:url(/assets/contact-us.jpg) no-repeat center center;
-  background: linear-gradient(rgba(84, 84, 84, 0.7), rgba(84, 84, 84, 0.7)), url(/assets/contact-us.jpg);
+  background: linear-gradient(rgba(84, 84, 84, 0.7), rgba(84, 84, 84, 0.7)), url(/assets/contact-us.png) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   color: $hero-primary-color;
