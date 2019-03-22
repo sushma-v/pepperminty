@@ -1048,7 +1048,7 @@ and (max-device-width : 1024px)  {
   h3{color:#ffffff;}
   p{line-height: inherit;color:#ffffff; width:94%;}
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) { //768
   .block-bg{
     height:70vh;
     width:65vw;
@@ -1056,14 +1056,25 @@ and (max-device-width : 1024px)  {
   }
   #spacing{ display:none; }
 }
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  #spacing{ display:block; }
+  .block-bg{
+    width:65vw;
+    height:55vh;
+    p{width:100%;}
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1286px) {
   #spacing{ display:block; }
   .block-bg{
-    height:80vh;
+    height:67vh;
   }
 }
 @media screen and (min-width: 1286px) and (max-width: 1920px) {
-  //#spacing{ display:none; }
+  #spacing{ display:block; }
+  .block-bg{
+    height:55vh;
+  }
 }
 .website-block-bg{
   background: linear-gradient(rgba(9, 40, 69, 0.7), rgba(9, 40, 69, 0.7)), url(/assets/service1.jpg);
