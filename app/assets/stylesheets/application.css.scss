@@ -381,7 +381,6 @@ li{
   background: linear-gradient(rgba(110, 236, 184, 0.7), rgba(110, 236, 184, 0.7)), url(/assets/website3.png);
   background-size: cover;
   background-position: center center;
-  color: $tertiary-color;
   h1{ width: 40%; margin-left:auto; margin-right:auto;font-size:42px;font-weight: 1000;line-height:inherit;}
 }
 
@@ -396,7 +395,6 @@ li{
   background: linear-gradient(rgba(110, 236, 184, 0.7), rgba(110, 236, 184, 0.7)), url(/assets/seo3.jpg);
   background-size: cover;
   background-position: center center;
-  color: $tertiary-color;
   h1{ width: 44%; margin-left:auto; margin-right:auto;font-size:42px;font-weight: 1000;line-height:inherit;}
 }
 
@@ -411,7 +409,6 @@ li{
   background: linear-gradient(rgba(110, 236, 184, 0.7), rgba(110, 236, 184, 0.7)), url(/assets/ppc1.jpg);
   background-size: cover;
   background-position: center center;
-  color: $tertiary-color;
   h1{ width: 64%; margin-left:auto; margin-right:auto;font-size:42px;font-weight: 1000;line-height:inherit;}
 }
 
@@ -426,7 +423,6 @@ li{
   background: linear-gradient(rgba(110, 236, 184, 0.7), rgba(110, 236, 184, 0.7)), url(/assets/social2.png);
   background-size: cover;
   background-position: center center;
-  color: $tertiary-color;
   h1{ width: 58%; margin-left:auto; margin-right:auto;font-size:42px;font-weight: 1000;line-height:inherit;}
 }
 
@@ -1026,8 +1022,6 @@ and (max-device-width : 1024px)  {
 @media (max-width: 768px) {
   .text-block{
     height: 10%;//60vh;//110vw;
-    //min-height: 440px;
-    //max-height: 450px;
   }
 }
 .step-number{
@@ -1035,7 +1029,6 @@ and (max-device-width : 1024px)  {
   font-size: 70px;
 }
 .step-heading{
-  color: #545454;
   margin-top:-38px;
   margin-left:15px;
 }
@@ -1054,8 +1047,13 @@ and (max-device-width : 1024px)  {
   text-align: center;
   padding:20px;
   font-size: larger;
-  height:50vh;//320px;
+  height:54vh;//320px;
   h3{color:$primary-color;}
+}
+@media screen and (max-width: 992px) {
+  .service-block{
+    height: 45vh;
+  }
 }
 .service-img{
   margin-top: -100px;
