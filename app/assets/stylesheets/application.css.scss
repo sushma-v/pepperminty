@@ -795,6 +795,15 @@ select.form-control:not([size]):not([multiple]) {
   color: #ffffff;
   font-size: 24px;
 }
+.section-heading-alt{
+  border-bottom: 3px solid $primary-color;
+  padding: 15px;
+  color: #333333;
+  font-size: 24px;
+}
+.green-filter{
+  filter: invert(88%) sepia(8%) saturate(2275%) hue-rotate(94deg) brightness(97%) contrast(90%);
+}
 .contact-bg{
   background:url(/assets/contact-us.png) no-repeat center center;
   background-size: cover;
