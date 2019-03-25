@@ -990,7 +990,7 @@ and (max-device-width : 1024px)  {
 .text-block{
   background-color: #6eecb8;
   padding: 25px 30px;
-  height: 320px;
+  //height: 320px;
   border-radius: 5px;
   margin-bottom: 50px;
   color: #ffffff;
@@ -1001,19 +1001,20 @@ and (max-device-width : 1024px)  {
 @media screen and (min-width: 1286px) and (max-width: 1920px){
   .text-block{
     padding: 25px 30px;
-    height: 340px;
+    height: 44vh;//24vw;//340px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1286px){
   .text-block{
     padding: 25px 30px;
-    height: 400px;
+    height: 400px;//48vw;//53vh;
   }
 }
 @media (max-width: 768px) {
   .text-block{
-    min-height: 440px;
-    max-height: 450px;
+    height: 10%;//60vh;//110vw;
+    //min-height: 440px;
+    //max-height: 450px;
   }
 }
 .step-number{
