@@ -801,8 +801,21 @@ select.form-control:not([size]):not([multiple]) {
   color: #333333;
   font-size: 24px;
 }
-.green-filter{
-  filter: invert(88%) sepia(8%) saturate(2275%) hue-rotate(94deg) brightness(97%) contrast(90%);
+.block-alt{
+  border-right:5px solid $secondary-color;
+  height: 330px;
+}
+@media screen and (min-width: 992px) and (max-width: 1286px) {
+  .block-alt{
+    border-right:5px solid $secondary-color;
+  }
+}
+@media screen and (max-width: 992px) {
+  .block-alt{
+    border-bottom:3px solid $secondary-color;
+    margin-bottom: 5px;
+    border-right:none;
+  }
 }
 .contact-bg{
   background:url(/assets/contact-us.png) no-repeat center center;
