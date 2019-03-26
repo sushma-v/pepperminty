@@ -1,0 +1,9 @@
+$(document).ready(function(){
+    $('.hero-bgimg').attr('title','Pepperminty_Digital_Marketing_Agency');
+    $('.website-block-bg').attr('title','Pepperminty_marketing_services_web_design');
+    $('.seo-block-bg').attr('title','Pepperminty_marketing_services_seo');
+    $('.ppc-block-bg').attr('title','Pepperminty_marketing_services_ppc');
+    $('.social-block-bg').attr('title','Pepperminty_marketing_services_social_media');
+    $('.show-bgimg').attr('title','Pepperminty_marketing_revolutionise_your_business');
+    $('.contactus-bg').attr('title','Pepperminty_digital_marketing_agency_contact_us');
+});

@@ -16,4 +16,5 @@
 //= require bootstrap-sprockets
 //= require ckeditor/init
 //= require more
+//= require seo
 //= require_tree .
