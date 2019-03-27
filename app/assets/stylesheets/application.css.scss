@@ -1136,3 +1136,9 @@ and (max-device-width : 1024px)  {
 .margin-top-3-percent{
   margin-bottom:3%;
 }
+.text-gradient{
+  background: -webkit-linear-gradient(#6eecb8, #FF738E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}

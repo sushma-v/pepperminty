@@ -99,21 +99,18 @@
 
 <%= render partial: "contact_form" %>
 
-<div class="row grey">
+<div class="row grey" style="background-color: #686969;">
   <div class="section">
-    <div class="col-xs-12 text-center margin-bottom-50">
-      <h2>What they say</h2>
-    </div>
     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
-      <h3 class="margin-bottom-20">Instagram</h3>
+      <h2 class="text-gradient margin-bottom-50">Instagram</h2>
       <%= render partial: "pages/social_channels/instagram", locals: {instagram_feed: @instagram} %>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
-      <h3 class="margin-bottom-20">Twitter</h3>
-      <a class="twitter-timeline" data-height="550" target="_blank" href="https://twitter.com/PeppermintyHQ?ref_src=twsrc%5Etfw">Tweets by PeppermintyHQ</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <h2 class="text-gradient margin-bottom-50">Twitter</h2>
+      <a class="twitter-timeline" data-height="350" target="_blank" href="https://twitter.com/PeppermintyHQ?ref_src=twsrc%5Etfw">Tweets by PeppermintyHQ</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
-      <h3 class="margin-bottom-20">Facebook</h3>
+      <h2 class="text-gradient margin-bottom-50">Facebook</h2>
       <%= render partial: "pages/social_channels/facebook" %>
     </div>
   </div>
