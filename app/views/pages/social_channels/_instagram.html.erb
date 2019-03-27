@@ -7,7 +7,7 @@
   </p>
   <hr/>
   <% instagram_feed.each do |instagram| %>
-      <a href=<%=instagram.link%> style="text-decoration:none;" >
+      <a href=<%=instagram.link%> style="text-decoration:none;" target="_blank">
         <p class="text-left"><%= instagram.caption.text %></p>
         <p><%= image_tag instagram.images.standard_resolution.url %></p>
       </a>
