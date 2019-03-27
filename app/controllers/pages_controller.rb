@@ -8,8 +8,7 @@ class PagesController < ApplicationController
 
   def home
     @categories = CATEGORIES
-    #user_id = "9484770394"
-    #@instagram = Instagram.user_recent_media(user_id, {:count => 5})
+    @instagram = Instagram.user_recent_media(ENV['INSTAGRAM_USER_ID'], {:count => 5})
   end
 
   def about
