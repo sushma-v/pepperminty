@@ -1121,6 +1121,11 @@ and (max-device-width : 1024px)  {
     height:55vh;
   }
 }
+@media screen and (orientation:landscape){
+  .block-bg{
+    height:100vh;
+  }
+}
 .website-block-bg{
   background: linear-gradient(rgba(9, 40, 69, 0.7), rgba(9, 40, 69, 0.7)), url(/assets/service1.jpg);
 }
