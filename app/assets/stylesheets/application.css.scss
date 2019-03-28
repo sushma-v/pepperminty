@@ -1095,7 +1095,7 @@ and (max-device-width : 1024px)  {
 }
 @media screen and (max-width: 480px) { //768
   .block-bg{
-    height:70vh;
+    height:10%;//70vh;
     width:65vw;
     p{width:100%;}
   }
