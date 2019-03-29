@@ -406,7 +406,10 @@ li{
 }
 @media (max-width: 768px){
   .home-show {
-    //padding-top: 35vh;
+    padding-bottom: 30vh;
+  }
+  .show-bgimg{
+    height:50vh;
   }
 }
 .service-bg{
