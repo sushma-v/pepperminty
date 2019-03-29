@@ -429,11 +429,17 @@ li{
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
   h2{ color:#ffffff;width: 66%; font-size: 3vw; line-height: inherit; }
-  p{ color:#ffffff;width: 70%; text-align: center; font-size: 1.5vw; }
+  p{ color:#ffffff;width: 70%; text-align: center; font-size: 2vw; }
+}
+.extra-line{
+  display:none;
 }
 @media (max-width: 768px){
   .service-bg {
     padding-top: 23%;
+  }
+  .extra-line{
+    display:block;
   }
 }
 
