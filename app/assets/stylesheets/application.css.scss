@@ -349,9 +349,14 @@ li{
   background-size: cover;
   background-position: center center;
   color: $hero-primary-color;
-  h1{ font-weight: 1000; font-size: 45px; width:50%; margin-left:auto; margin-right:auto;line-height:inherit;}
+  h1{ font-weight: 1000; font-size: 3vw; width:50%; margin-left:auto; margin-right:auto;line-height:inherit;margin-bottom:10vw;}
 }
-
+@media (max-width: 768px){
+  .hero-bgimg{
+    h1{font-size: 4vw;}
+    height: inherit;
+  }
+}
 .show-bgimg{
   padding-top: 15vh;
   margin-left: -15px;
