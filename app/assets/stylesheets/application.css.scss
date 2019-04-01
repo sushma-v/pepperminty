@@ -409,7 +409,7 @@ li{
     padding-bottom: 30vh;
   }
   .show-bgimg{
-    height:50vh;
+    height:40vh;
   }
 }
 .service-bg{
@@ -975,6 +975,7 @@ and (max-device-width : 1024px)  {
 @media (max-width: 768px) {
   .head-text, .head-a, .head-a:hover, .head-a:active{
     font-size: 3vw;
+    color: #ffffff;
   }
 }
 .head-container{
