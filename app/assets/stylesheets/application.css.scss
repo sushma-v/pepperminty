@@ -1145,3 +1145,36 @@ and (max-device-width : 1024px)  {
 .margin-top-3-percent{
   margin-bottom:3%;
 }
+
+/* Our Process */
+.step {
+  flex:1;
+  width:100%;
+  margin: auto;
+  margin-bottom:40px;
+  display: flex;
+}
+.step-content {
+  width: 75%;
+  //background: lightcyan;
+}
+.step-head {
+  width: 25%;
+  //background: pink;
+}
+
+@media screen and (max-width:768px) {
+  .step {
+    width: 100%;
+    flex-direction: column;
+    order:-1;
+  }
+  .step-head, .step-content {
+    flex:1;
+    width: 100%;
+  }
+  .step-head {
+    //flex: 0 0 150px;
+    //flex: 0;
+  }
+}
