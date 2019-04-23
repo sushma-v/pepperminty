@@ -344,7 +344,8 @@ li{
   font-family: "PT Sans";
   display: table;
   width: 100vw;
-  height: 95vh;
+  padding-bottom: 14vw;
+  //height: 47vw;
   background: linear-gradient(rgba(84, 84, 84, 0.5), rgba(84, 84, 84, 0.5)), url(/assets/hero.jpg);
   background-size: cover;
   background-position: center center;
@@ -429,7 +430,8 @@ li{
   }
 }
 .service-bg{
-  padding-top: 10%;
+  padding-top: 10vw;
+  //padding-bottom: 5vw;
   width: 100%;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
@@ -442,16 +444,17 @@ li{
 @media (max-width: 768px){
   .service-bg {
     padding-top: 23%;
+    padding-bottom: 8px;
   }
   .extra-line{
     display:block;
   }
 }
 
-.website-bg{  background-color: #092845;  }
-.seo-bg{  background-color: #3B1989;  }
+.website-bg{  background-color: #092845; padding-bottom: 4vw; }
+.seo-bg{  background-color: #3B1989; padding-bottom: 7vw; }
 .paid-search-bg{  background-color: #385D34;  }
-.social-bg{  background-color: #FD9055;  }
+.social-bg{  background-color: #FD9055; padding-bottom: 4.5vw; }
 
 .bgimg{
   padding-top: 18%;
@@ -668,6 +671,12 @@ select.form-control:not([size]):not([multiple]) {
 }
 .btn-style:hover, .btn-style:focus, .btn-style:active{
   background-color: rgba(110,236,184,1);
+}
+@media screen and (max-width: 768px) {
+  .btn-responsive{
+    padding: 10px 24px;
+    font-size: 16px;
+  }
 }
 .btn-style-alt{
   display: inline-block;
