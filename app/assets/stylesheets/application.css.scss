@@ -435,8 +435,8 @@ li{
   width: 100%;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
-  h2{ color:#ffffff;width: 66%; font-size: 3vw; line-height: inherit; }
-  p{ color:#ffffff;width: 70%; text-align: center; font-size: 2vw; }
+  h2{ color:#ffffff;width: 80%; font-size: 3vw; line-height: inherit; }
+  p{ color:#ffffff;width: 80%; text-align: center; font-size: 2.5vw; }
 }
 .extra-line{
   display:none;
@@ -445,6 +445,8 @@ li{
   .service-bg {
     padding-top: 23%;
     padding-bottom: 8px;
+    h2{font-size:3.5vw;}
+    p{font-size:3vw;}
   }
   .extra-line{
     display:block;
@@ -452,9 +454,16 @@ li{
 }
 
 .website-bg{  background-color: #092845; padding-bottom: 4vw; }
-.seo-bg{  background-color: #3B1989; padding-bottom: 7vw; }
-.paid-search-bg{  background-color: #385D34;  }
-.social-bg{  background-color: #FD9055; padding-bottom: 4.5vw; }
+.seo-bg{  background-color: #3B1989; padding-bottom: 5.3vw; }
+.paid-search-bg{  background-color: #385D34; }
+.social-bg{  background-color: #FD9055; padding-bottom: 2.3vw; }
+
+@media (max-width: 768px){
+  .website-bg{ padding-bottom: 7vw; }
+  .seo-bg{ padding-bottom: 3vw; }
+  .paid-search-bg{ padding-bottom: 15.3vw; }
+  .social-bg{ padding-bottom: 3vw; }
+}
 
 .bgimg{
   padding-top: 18%;
