@@ -995,10 +995,18 @@ and (max-device-width : 1024px)  {
   font-family: "PT Sans";
   font-size: 1.6vw;
 }
+#logo, #logo-alt{
+  width: auto;
+}
 @media (max-width: 768px) {
   .head-text, .head-a, .head-a:hover, .head-a:active{
     font-size: 3.5vw;
     color: #ffffff;
+  }
+}
+@media (max-width: 500px) {
+  #logo, #logo-alt{
+    width: 32vw;
   }
 }
 .head-container{
