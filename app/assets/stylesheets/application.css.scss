@@ -1074,12 +1074,6 @@ and (max-device-width : 1024px)  {
   margin-top:-38px;
   margin-left:15px;
 }
-@media screen and (min-width: 600px) and (max-width: 768px) {
-  .step-heading{ font-size:1.3vw; }
-}
-@media screen and (max-width: 600px) {
-  .step-heading{ font-size:2.5vw; }
-}
 @media screen and (min-width: 768px) and (max-width: 1286px) {
   .step-heading{ font-size:2.5vw; }
 }
