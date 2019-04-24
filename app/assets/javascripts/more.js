@@ -8,7 +8,7 @@ $(document).ready(function(){
 
     $(".more-arrow").click(function(){
         var position = $('.more-content').offset();
-        $('html, body').animate({scrollTop: position.top}, "slow");
+        $('html, body').animate({scrollTop: position.top-40}, "slow");
     });
 
     $(".start").click(function(){
