@@ -1237,3 +1237,7 @@ and (max-device-width : 1024px)  {
     border: 2px solid whitesmoke;
   }
 }
+.img-filter{
+  width:60px;
+  filter: invert(42%) sepia(12%) saturate(0%) hue-rotate(331deg) brightness(93%) contrast(91%);
+}
