@@ -1225,3 +1225,15 @@ and (max-device-width : 1024px)  {
     font-size: 25px;
   }
 }
+.text-with-line{
+  padding-left:20px;
+  border-left: 2px solid whitesmoke;
+}
+@media screen and (max-width:768px) {
+  .text-with-line{
+    padding-left:10px;
+    border-left:none;
+    padding-top:20px;
+    border: 2px solid whitesmoke;
+  }
+}
