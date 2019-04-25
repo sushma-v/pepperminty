@@ -1137,7 +1137,7 @@ and (max-device-width : 1024px)  {
   //width:35vw;
   border: 8px solid $primary-color;
   h3{color:#ffffff;}
-  p{line-height: inherit;color:#ffffff; width:94%;}
+  p{line-height: inherit;color:#ffffff; width:94%;text-align: left;}
 }
 @media screen and (max-width: 480px) { //768
   .block-bg{
@@ -1145,7 +1145,7 @@ and (max-device-width : 1024px)  {
     //width:80vw;
     margin-left:auto;
     margin-right:auto;
-    p{width:100%;}
+    p{width:100%;text-align: center;}
   }
   #spacing{ display:none; }
 }
