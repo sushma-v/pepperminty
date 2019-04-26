@@ -3,7 +3,7 @@ $(document).ready(function(){
 
     $(".more-home-arrow").click(function(){
         var position = $('#more-home').offset();
-        $('html, body').animate({scrollTop: position.top}, "slow");
+        $('html, body').animate({scrollTop: position.top-40}, "slow");
     });
 
     $(".more-arrow").click(function(){
