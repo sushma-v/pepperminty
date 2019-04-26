@@ -138,11 +138,12 @@
 <div class='show-bgimg website-show vertical-align-wrap'>
   <div class="row">
     <div class="col-xs-12 col-sm-12 text-center vertical-align-content">
-      <h1>Pepperminty is a web design agency specialising in bespoke and mobile responsive designs.</h1><br/>
-      <h1>We'd love to hear from you if you're ready to kickstart your website design journey!</h1>
+      <h1>Pepperminty is a web design agency specialising in bespoke and mobile responsive designs.</h1>
     </div>
   </div>
 </div>
+
+<%= render partial: "contact_cta", locals: {service: @service} %>
 
 <%= render partial: "additional_services", locals: {service: @service} %>
 

@@ -182,11 +182,12 @@
 <div class='show-bgimg paid-search-show vertical-align-wrap'>
   <div class="row">
     <div class="col-xs-12 col-sm-12 text-center vertical-align-content">
-      <h1>Pepperminty is a PPC agency developing highly targeted traffic to your site with intelligent pay per click campaigns.</h1><br/><br/>
-      <h1>If you're ready to kickstart your PPC journey then get in touch!</h1>
+      <h1>Pepperminty is a PPC agency developing highly targeted traffic to your site with intelligent pay per click campaigns.</h1>
     </div>
   </div>
 </div>
+
+<%= render partial: "contact_cta", locals: {service: @service} %>
 
 <%= render partial: "additional_services", locals: {service: @service} %>
 

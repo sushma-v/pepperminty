@@ -12,8 +12,8 @@ $(document).ready(function(){
     });
 
     $(".start").click(function(){
-        var position = $('.contact-bg').offset();
-        $('html, body').animate({scrollTop: position.top}, "slow");
+        var position = $('.contactus-bg').offset(); //contact-bg
+        $('html, body').animate({scrollTop: position.top-125}, "slow");
     });
 
     $('.website-packages').on('shown.bs.collapse', function () {

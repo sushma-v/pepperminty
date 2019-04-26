@@ -40,3 +40,7 @@ en:
                   <h4 class='inherit-line-height'>Our digital marketing services work hand in hand with each other, and we're happy to help our clients interested in Social Media Management to contribute to your wider marketing goals</h4>"
     social: "<h2 class='margin-bottom-20'>Our Other Managed Services</h2>
              <h4 class='inherit-line-height'>Our digital marketing services work hand in hand with each other, and we're happy to help our clients interested in Social Media Management to contribute to your wider marketing goals</h4>"
+  contact_cta:
+    website: "We'd love to hear from you if you're ready to kickstart your website design journey!"
+    seo: "We'd love to hear from you if you're ready to kickstart your SEO journey!"
+    paid_search: "If you're ready to kickstart your PPC journey then get in touch!"

@@ -137,11 +137,13 @@
 <div class='show-bgimg seo-show vertical-align-wrap'>
   <div class="row">
     <div class="col-xs-12 col-sm-12 text-center vertical-align-content">
-      <h1>Pepperminty is a SEO agency looking to improve search engine rankings for small businesses.</h1><br/>
-      <h1>We'd love to hear from you if you're ready to kickstart your SEO journey!</h1>
+      <h1>Pepperminty is a SEO agency looking to improve search engine rankings for small businesses.</h1>
+      <h1></h1>
     </div>
   </div>
 </div>
+
+<%= render partial: "contact_cta", locals: {service: @service} %>
 
 <%= render partial: "additional_services", locals: {service: @service} %>
 
