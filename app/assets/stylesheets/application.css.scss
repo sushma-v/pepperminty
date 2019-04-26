@@ -715,16 +715,18 @@ select.form-control:not([size]):not([multiple]) {
   text-decoration: none;
 }
 .page-link{
-  //border: 5px solid $hero-primary-color;
-  color: $tertiary-color;
-  background-color: rgba(110, 236, 184, 0.8);
+  color: $hero-primary-color;
   border-radius: 20px;
   text-align: center;
   font-size: 20px;
   padding: 20px;
-  //width: 10em;
   height: 200px;
+  margin-top:50px;
 }
+.website-link, .website-link:hover{background-color: rgba(9, 40, 69, 1);}
+.seo-link, .seo-link:hover{background-color: rgba(59, 25, 137, 1);}
+.paid-search-link, .paid-search-link:hover{background-color: rgba(56, 93, 52, 1);}
+.social-link, .social-link:hover{background-color: rgba(242, 156, 47, 1);}
 @media screen and (max-width: 768px) {
   .page-link{
     width: 14em;
@@ -733,9 +735,7 @@ select.form-control:not([size]):not([multiple]) {
   }
 }
 .page-link:hover{
-  //border: 5px solid $hero-primary-color;
-  color: $tertiary-color;
-  background-color: rgba(110, 236, 184, 1);
+  color: $hero-primary-color;
 }
 .additional-services a:hover, .additional-services a:active{
   text-decoration: none;

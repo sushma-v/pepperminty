@@ -8,8 +8,9 @@
   <% unless (service == 'website') %>
       <div class="col">
         <%= link_to website_path do %>
-            <div class="page-link">
-              <%= image_tag 'icon-home-browser-w.png' %><br/><br/>
+            <div class="page-link website-link">
+              <%#= image_tag 'icon-home-browser-w.png' %><!--<br/><br/>-->
+              <%= image_tag 'website-bg.png', style:"width:200px;margin-top:-65px;", title: 'Pepperminty_Web_Design_Agency_London' %><br/><br/>
               <div><strong>Website Design & Development</strong></div>
             </div>
         <% end %>
@@ -19,8 +20,9 @@
   <% unless (service == 'seo') %>
       <div class="col">
         <%= link_to seo_path do %>
-            <div class="page-link">
-              <%= image_tag 'icon-home-analysis-w.png' %><br/><br/>
+            <div class="page-link seo-link">
+              <%#= image_tag 'icon-home-analysis-w.png' %><!--<br/><br/>-->
+              <%= image_tag 'seo-bg.png', style:"width:200px;margin-top:-65px;", title: 'Pepperminty_Web_Design_Agency_London' %><br/><br/>
               <div><strong>Search Engine Optimisation</strong></div>
             </div>
         <% end %>
@@ -30,8 +32,9 @@
   <% unless (service == 'paid_search') %>
       <div class="col">
         <%= link_to paid_search_path do %>
-            <div class="page-link">
-              <%= image_tag 'icon-home-marketing-w.png' %><br/><br/>
+            <div class="page-link paid-search-link">
+              <%#= image_tag 'icon-home-marketing-w.png' %><!--<br/><br/>-->
+              <%= image_tag 'paid-search-bg.png', style:"width:200px;margin-top:-65px;", title: 'Pepperminty_Web_Design_Agency_London' %><br/><br/>
               <div><strong>Paid Search</strong></div>
             </div>
         <% end %>
@@ -41,8 +44,9 @@
   <% unless (service == 'social') %>
       <div class="col">
         <%= link_to social_path do %>
-            <div class="page-link">
-              <%= image_tag 'icon-home-social-media-w.png' %><br/><br/>
+            <div class="page-link social-link">
+              <%#= image_tag 'icon-home-social-media-w.png' %><!--<br/><br/>-->
+              <%= image_tag 'social-bg.png', style:"width:200px;margin-top:-65px;", title: 'Pepperminty_Web_Design_Agency_London' %><br/><br/>
               <div><strong>Social Media</strong></div>
             </div>
         <% end %>
