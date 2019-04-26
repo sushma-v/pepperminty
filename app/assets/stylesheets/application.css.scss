@@ -365,7 +365,7 @@ li{
   background: linear-gradient(rgba(110, 236, 184, 0.7), rgba(110, 236, 184, 0.7)), url(/assets/website3.png);
   background-size: cover;
   background-position: center center;
-  h1{ width: 40%; font-size:3vw;}
+  h1{ width: 60%; font-size:3vw;}
 }
 
 .seo-show{
@@ -398,7 +398,7 @@ li{
   display: table;
   width: 100vw;
   height: 95vh;
-  h1{ margin-left:auto; margin-right:auto;font-weight: 1000;line-height:inherit;}
+  h1{ margin-left:auto; margin-right:auto;font-weight: 1000;font-size:4vw;line-height:inherit;}
 }
 @media (max-width: 768px){
   .hero-bgimg{
@@ -406,16 +406,16 @@ li{
     height: inherit;
   }
   .website-show{
-    h1{ width: 60%; font-size:3.5vw;}
+    h1{ width: 70%; font-size:6vw;}
   }
   .seo-show{
-    h1{ width: 60%; font-size:3.5vw;}
+    h1{ width: 70%; font-size:6vw;}
   }
   .paid-search-show{
-    h1{ width: 64%; font-size:3.5vw;}
+    h1{ width: 90%; font-size:6vw;}
   }
   .social-show{
-    h1{ width: 60%; font-size:4vw;}
+    h1{ width: 90%; font-size:5vw;}
   }
   .home-show {
     h1{ margin-top:16vh; }
