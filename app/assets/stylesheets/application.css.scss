@@ -1233,10 +1233,9 @@ and (max-device-width : 1024px)  {
 }
 @media screen and (max-width:768px) {
   .text-with-line{
-    padding-left:10px;
     border-left:none;
     padding-top:20px;
-    border: 2px solid whitesmoke;
+    border-top: 2px solid whitesmoke;
   }
 }
 .img-filter{
