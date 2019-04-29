@@ -402,7 +402,7 @@ li{
 }
 @media (max-width: 768px){
   .hero-bgimg{
-    //h1{font-size: 4vw;}
+    h1{width:90%;}
     height: inherit;
   }
   .website-show{
@@ -477,7 +477,7 @@ li{
 
 .bgimg1{
   padding-top: 18%;
-  padding-bottom: 24.8%;
+  padding-bottom: 21%;
 }
 
 .website-bgimg{
@@ -758,14 +758,14 @@ select.form-control:not([size]):not([multiple]) {
 }
 .more-home-arrow{
   @extend .more;
-  margin-top: 8%;
+  margin-top: 7%;
 }
-.more-home-arrow:hover{ margin-top: 8.5%; }
+.more-home-arrow:hover{ margin-top: 7.5%; }
 .more-arrow{
   @extend .more;
-  margin-top: 17%;
+  margin-top: 15%;
 }
-.more-arrow:hover{ margin-top: 17.5%; }
+.more-arrow:hover{ margin-top: 15.5%; }
 
 @media screen and (max-width: 768px) {
   .more-arrow{
@@ -774,9 +774,11 @@ select.form-control:not([size]):not([multiple]) {
     margin-left: -3%;
     color: $hero-primary-color;
     transition: margin-top 0.3s;
-    margin-top: 13%;
+    margin-top: 5%;
   }
-  .more-arrow:hover{ margin-top: 13.5%; }
+  .more-arrow:hover{ margin-top: 5.5%; }
+  .more-home-arrow{margin-left: -3.5%;margin-top: -3%;}
+  .more-home-arrow:hover{ margin-top: -2.5%; }
 }
 .footer-heading{
   color: $footer-heading-color;
