@@ -1254,7 +1254,9 @@ and (max-device-width : 1024px)  {
   .block-bg {
     height: 25%;
   }
-  .service-block-alt{
-    //height: 25%;
+  @media screen and (max-width: 768px) {
+    .service-block-alt{
+      height: 25%;
+    }
   }
 }
