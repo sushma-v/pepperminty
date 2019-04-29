@@ -722,6 +722,11 @@ select.form-control:not([size]):not([multiple]) {
   padding: 20px;
   height: 200px;
   margin-top:50px;
+
+  -webkit-transition: color 2s, font-size 2s;
+  -moz-transition: color 2s, font-size 2s;
+  -o-transition: color 2s, font-size 2s;
+  transition: color 2s, font-size 2s;
 }
 .website-link, .website-link:hover{background-color: rgba(9, 40, 69, 1);}
 .seo-link, .seo-link:hover{background-color: rgba(59, 25, 137, 1);}
@@ -736,6 +741,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 .page-link:hover{
   color: $hero-primary-color;
+  >div{font-size:24px;transition: all .2s linear;}
 }
 .additional-services a:hover, .additional-services a:active{
   text-decoration: none;
