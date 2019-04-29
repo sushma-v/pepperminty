@@ -1250,3 +1250,8 @@ and (max-device-width : 1024px)  {
   width:60px;
   filter: invert(42%) sepia(12%) saturate(0%) hue-rotate(331deg) brightness(93%) contrast(91%);
 }
+@media screen and (orientation:landscape) {
+  .block-bg {
+    height: 25%;
+  }
+}
