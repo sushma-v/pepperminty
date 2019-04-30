@@ -1252,11 +1252,11 @@ and (max-device-width : 1024px)  {
   filter: invert(42%) sepia(12%) saturate(0%) hue-rotate(331deg) brightness(93%) contrast(91%);
 }
 @media screen and (orientation:landscape) {
-  .block-bg {
-    height: 25%;
-  }
   @media screen and (max-width: 768px) {
     .service-block-alt{
+      height: 25%;
+    }
+    .block-bg {
       height: 25%;
     }
   }
