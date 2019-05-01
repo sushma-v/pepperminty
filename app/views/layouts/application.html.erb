@@ -6,6 +6,7 @@
     <%= favicon_link_tag "favicon.ico" %>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Pepperminty Limited" %>">
     <meta name="keywords" content="<%= content_for?(:keywords) ? yield(:keywords) : "Pepperminty Limited" %>">
+    <%= javascript_include_tag 'chat_drift', 'data-turbolinks-track' => 'reload' %>
     <%= render 'layouts/analytics' %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
@@ -18,7 +19,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <%= javascript_include_tag 'cookie_notice' %>
     <%= csrf_meta_tags %>
-    <%= javascript_include_tag 'chat_drift', 'data-turbolinks-track' => 'reload' %>
   </head>
   <body style="overflow-x: hidden;">
     <header>
