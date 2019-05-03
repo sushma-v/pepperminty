@@ -6,7 +6,6 @@
     <%= favicon_link_tag "favicon.ico" %>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Pepperminty Limited" %>">
     <meta name="keywords" content="<%= content_for?(:keywords) ? yield(:keywords) : "Pepperminty Limited" %>">
-    <%= javascript_include_tag 'chat_drift', 'data-turbolinks-track' => 'reload' %>
     <%= render 'layouts/analytics' %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
