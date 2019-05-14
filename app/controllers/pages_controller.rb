@@ -1,5 +1,7 @@
 class PagesController < ApplicationController
 
+  before_action :set_categories, except: [:privacy_policy, :cookie_policy, :submit_query]
+
   CATEGORIES = [["Website Design & Development", "1"],
                 ["Search Engine Optimisation", "2"],
                 ["Paid Search", "3"],
@@ -7,37 +9,30 @@ class PagesController < ApplicationController
                 ["Others", "5"]]
 
   def home
-    @categories = CATEGORIES
     #user_id = "9484770394"
     #@instagram = Instagram.user_recent_media(user_id, {:count => 5})
   end
 
   def about
-    @categories = CATEGORIES
   end
 
   def website
     @service = __method__.to_s
-    @categories = CATEGORIES
   end
 
   def seo
     @service = __method__.to_s
-    @categories = CATEGORIES
   end
 
   def paid_search
     @service = __method__.to_s
-    @categories = CATEGORIES
   end
 
   def social
     @service = __method__.to_s
-    @categories = CATEGORIES
   end
 
   def contact
-    @categories = CATEGORIES
   end
 
   def privacy_policy
@@ -82,5 +77,9 @@ class PagesController < ApplicationController
     format_params = query_params
     format_params[:category] = CATEGORIES.to_h.key( query_params[:category] )
     format_params
+  end
+
+  def set_categories
+    @categories = CATEGORIES
   end
 end
