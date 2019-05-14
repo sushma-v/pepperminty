@@ -47,14 +47,11 @@ class PagesController < ApplicationController
       if verify_recaptcha
         FormMailer.contact(format_params).deliver
         subscribe_to_mailing_list(format_params[:email], format_params[:name], format_params[:phone]) if params.fetch(:mailing_list, false)
-        #flash[:notice] = "Your Query has been submitted, we will be in touch with you shortly"
         @message = "Thanks for your form submission a member of our team will be in touch soon!"
       end
     rescue StandardError => ex
-      #flash[:error] = ex.message
       @message = ex.message
     end
-    #redirect_to contact_path
   end
 
   private
