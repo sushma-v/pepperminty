@@ -15,10 +15,10 @@
 
       <p><%= (render_with_hashtags @post.content).html_safe %></p>
 
-      <p class="text-left"><%= link_to 'Back', posts_path, class: "btn-style-alt small", style:"margin-top:50px;" %></p>
+      <p class="text-left"><%= link_to 'Back', posts_path, class: "btn-style-alt small", style: 'margin-top: 50px;' %></p>
 
       <% if current_user %>
-        <hr style="margin-top: 50px;"/>
+        <hr class="margin-top-3-percent"/>
         <p class="text-left">
           <%= link_to 'Edit', edit_post_path(@post), class: "control-link padding-right-10" %>
           <%= link_to 'Publish', publish_path(@post), method: :post, class: "control-link padding-right-10" if @post.draft? %>
