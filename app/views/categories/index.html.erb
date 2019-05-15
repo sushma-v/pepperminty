@@ -17,7 +17,8 @@
 
       <div class="tab-content padding-top-10">
         <div id="list" class="tab-pane fade in active">
-          <%= render partial: 'list', locals: {categories: @categories, category_new: @category} %>
+          <%= render partial: 'list', locals: {categories: @categories,
+                                               category_new: @category} %>
         </div>
         <div id="tree" class="tab-pane fade">
           <div class="tree"><%= nested_attributes(Category.all.roots) %></div>
