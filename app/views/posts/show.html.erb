@@ -11,14 +11,7 @@
 
       <p class="margin-bottom-20" style="font-size: 1em;">Posted <%= distance_of_time_in_words(Time.at(@post.created_at.to_i),Time.now) %> ago in <%= @post.category.name rescue 'Digital Marketing' %></p>
 
-      <p>
-        <%#= image_tag @post.main_image, alt: @post.alt_text %>
-        <% if @post.main_image.empty? %>
-            <%= cl_image_tag Post.first.main_image, alt: @post.alt_text rescue nil %>
-        <% else %>
-            <%= cl_image_tag @post.main_image, alt: @post.alt_text rescue nil %>
-        <% end %>
-      </p>
+      <p><%= display_main_image(@post) %></p>
 
       <p><%= (render_with_hashtags @post.content).html_safe %></p>
 
