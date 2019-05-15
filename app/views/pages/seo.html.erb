@@ -150,11 +150,11 @@
   </div>
 </div>
 
-<%= render partial: "contact_cta", locals: {service: @service} %>
+<%= render "contact_cta", service: @service %>
 
-<%= render partial: "additional_services", locals: {service: @service} %>
+<%= render "additional_services", service: @service %>
 
-<%= render partial: "contact_form" %>
+<%= render "contact_form" %>
 
 <style>
   .head-container {  background-color: #3B1989  }

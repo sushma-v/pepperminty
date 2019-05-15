@@ -8,7 +8,7 @@
 
       <% if @posts.exists? %>
           <h1>Search Results</h1>
-          <%= render partial: 'posts/list', posts: @posts %>
+          <%= render 'posts/list', posts: @posts %>
       <% else %>
           <h1>Oop! No matching posts ...</h1>
       <% end %>
