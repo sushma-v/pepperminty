@@ -11,11 +11,11 @@ module PostsHelper
     CGI.escapeHTML(content)
   end
 
-  def display_main_image(post)
+  def display_main_image(post, class_name=nil)
     if post.main_image.empty?
-      cl_image_tag Post.first.main_image, alt: post.alt_text rescue nil
+      cl_image_tag Post.first.main_image, alt: post.alt_text, class: class_name rescue nil
     else
-      cl_image_tag post.main_image, alt: post.alt_text rescue nil
+      cl_image_tag post.main_image, alt: post.alt_text, class: class_name rescue nil
     end
   end
 end
