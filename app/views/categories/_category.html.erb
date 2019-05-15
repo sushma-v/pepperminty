@@ -1,0 +1,21 @@
+<div class="row row-striped">
+  <div class="col-xs-3"><%= category.name %></div>
+
+  <div class="col-xs-3"><%= category.parent.nil? ? '-' : category.parent.name %></div>
+
+  <div class="col-xs-3"><%= category.display? ? raw("<i class=\"glyphicon glyphicon-ok\"></i>") : raw("<i class=\"glyphicon glyphicon-remove\"></i>") %></div>
+
+  <div class="col-xs-3">
+    <%= link_to raw("<i class=\"glyphicon glyphicon-edit\"></i>"), inline_edit_category_path(category),
+                remote: true,
+                class: "control-link padding-right-10",
+                title: 'edit' %>
+    <%= link_to raw("<i class=\"glyphicon glyphicon-trash\"></i>"), category,
+                method: :delete,
+                data: { confirm: 'Are you sure?' },
+                title: 'delete',
+                class: "control-link padding-right-10" %>
+  </div>
+</div>
+
+<div id=<%= "item#{category.id}" %>></div>

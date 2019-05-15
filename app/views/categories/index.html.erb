@@ -17,9 +17,22 @@
 
       <div class="tab-content padding-top-10">
         <div id="list" class="tab-pane fade in active">
-          <%= render partial: 'list', locals: {categories: @categories,
-                                               category_new: @category} %>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-3"><h5>Name</h5></div>
+              <div class="col-xs-3"><h5>Parent</h5></div>
+              <div class="col-xs-3"><h5>Display</h5></div>
+              <div class="col-xs-3"><h5>Actions</h5></div>
+            </div>
+
+            <%= render @categories %><br/>
+
+            <%= render 'form', category: @category %>
+          </div>
+
         </div>
+
         <div id="tree" class="tab-pane fade">
           <div class="tree"><%= nested_attributes(Category.all.roots) %></div>
         </div>
