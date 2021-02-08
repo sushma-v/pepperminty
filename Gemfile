@@ -23,7 +23,7 @@ gem 'sitemap_generator'
 gem "recaptcha", require: "recaptcha/rails"
 gem "instagram"
 gem 'ckeditor'
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
 gem 'mini_magick'
 gem 'cloudinary'
 gem 'ancestry'
