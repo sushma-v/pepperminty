@@ -173,7 +173,8 @@ GEM
       request_store (~> 1.1)
     pg (0.21.0)
     public_suffix (3.0.3)
-    puma (3.12.0)
+    puma (4.3.12)
+      nio4r (~> 2.0)
     rack (2.0.7)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -328,7 +329,7 @@ DEPENDENCIES
   non-stupid-digest-assets (~> 1.0.4)
   paper_trail
   pg (= 0.21.0)
-  puma (~> 3.7)
+  puma (~> 4.3)
   rails (~> 5.1.1)
   rails_12factor
   rails_layout
